@@ -1,0 +1,19 @@
+PREFIX sphn:<https://biomedit.ch/rdf/sphn-schema/sphn#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT *
+WHERE {
+    ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#ChromosomalLocation> .
+    optional{ ?resource sphn:hasChromosome ?Chromosome . }
+    optional{ ?resource sphn:hasChromosome/sphn:hasCode ?Chromosome_Code . }
+    optional{ ?resource sphn:hasEndCytobandCode ?EndCytobandCode . }
+    optional{ ?resource sphn:hasEndCytobandCode/sphn:hasName ?EndCytobandCode_Name . }
+    optional{ ?resource sphn:hasEndCytobandCode/sphn:hasIdentifier ?EndCytobandCode_Identifier . }
+    optional{ ?resource sphn:hasEndCytobandCode/sphn:hasCodingSystemAndVersion ?EndCytobandCode_CodingSystemAndVersion . }
+    optional{ ?resource sphn:hasStartCytobandCode ?StartCytobandCode . }
+    optional{ ?resource sphn:hasStartCytobandCode/sphn:hasName ?StartCytobandCode_Name . }
+    optional{ ?resource sphn:hasStartCytobandCode/sphn:hasIdentifier ?StartCytobandCode_Identifier . }
+    optional{ ?resource sphn:hasStartCytobandCode/sphn:hasCodingSystemAndVersion ?StartCytobandCode_CodingSystemAndVersion . }
+
+}

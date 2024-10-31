@@ -1,0 +1,43 @@
+PREFIX sphn:<https://biomedit.ch/rdf/sphn-schema/sphn#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT *
+WHERE {
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#CopyNumberVariation> .
+
+        BIND("sphn:hasGenomicPosition/sphn:hasEnd" as ?origin)
+        optional{ ?resource sphn:hasGenomicPosition/sphn:hasEnd ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#CopyNumberVariation> .
+
+        BIND("sphn:hasGenomicPosition/sphn:hasStart" as ?origin)
+        optional{ ?resource sphn:hasGenomicPosition/sphn:hasStart ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#CopyNumberVariation> .
+
+        BIND("sphn:hasTotalCopyNumber/sphn:hasValue" as ?origin)
+        optional{ ?resource sphn:hasTotalCopyNumber/sphn:hasValue ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+
+}

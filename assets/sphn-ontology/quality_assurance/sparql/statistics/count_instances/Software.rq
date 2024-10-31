@@ -1,0 +1,134 @@
+PREFIX sphn:<https://biomedit.ch/rdf/sphn-schema/sphn#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT *
+WHERE {
+    {
+    SELECT ?origin (COUNT(?origin) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Software> .
+        BIND("https://biomedit.ch/rdf/sphn-schema/sphn#Software" as ?origin)
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Software> .
+
+        BIND("sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Software> .
+
+        BIND("sphn:hasUniformResourceLocator" as ?origin)
+        optional{ ?resource sphn:hasUniformResourceLocator ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Software> .
+
+        BIND("sphn:hasDataProvider" as ?origin)
+        optional{ ?resource sphn:hasDataProvider ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Software> .
+
+        BIND("sphn:hasDataProvider/sphn:hasDepartment" as ?origin)
+        optional{ ?resource sphn:hasDataProvider/sphn:hasDepartment ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Software> .
+
+        BIND("sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Software> .
+
+        BIND("sphn:hasDataProvider/sphn:hasInstitutionCode" as ?origin)
+        optional{ ?resource sphn:hasDataProvider/sphn:hasInstitutionCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Software> .
+
+        BIND("sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Software> .
+
+        BIND("sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Software> .
+
+        BIND("sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Software> .
+
+        BIND("sphn:hasDataProvider/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasDataProvider/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Software> .
+
+        BIND("sphn:hasDescription" as ?origin)
+        optional{ ?resource sphn:hasDescription ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Software> .
+
+        BIND("sphn:hasVersion" as ?origin)
+        optional{ ?resource sphn:hasVersion ?predicate . }
+    }
+    GROUP BY ?origin
+}}

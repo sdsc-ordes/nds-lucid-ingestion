@@ -1,0 +1,684 @@
+PREFIX sphn:<https://biomedit.ch/rdf/sphn-schema/sphn#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT *
+WHERE {
+    {
+    SELECT ?origin (COUNT(?origin) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+        BIND("https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping" as ?origin)
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasDateTime" as ?origin)
+        optional{ ?resource sphn:hasDateTime ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasOutputCode" as ?origin)
+        optional{ ?resource sphn:hasOutputCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasOutputCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasOutputCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasOutputCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasOutputCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasOutputCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasOutputCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceData" as ?origin)
+        optional{ ?resource sphn:hasSourceData ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceData/sphn:hasCode" as ?origin)
+        optional{ ?resource sphn:hasSourceData/sphn:hasCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceData/sphn:hasCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasSourceData/sphn:hasCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceData/sphn:hasCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasSourceData/sphn:hasCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceData/sphn:hasCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasSourceData/sphn:hasCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceData/sphn:hasSourceSystem" as ?origin)
+        optional{ ?resource sphn:hasSourceData/sphn:hasSourceSystem ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasDataProvider" as ?origin)
+        optional{ ?resource sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasDataProvider ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasDepartment" as ?origin)
+        optional{ ?resource sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasDepartment ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode" as ?origin)
+        optional{ ?resource sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasPrimarySystem" as ?origin)
+        optional{ ?resource sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasPrimarySystem ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasCode" as ?origin)
+        optional{ ?resource sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider" as ?origin)
+        optional{ ?resource sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasDepartment" as ?origin)
+        optional{ ?resource sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasDepartment ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode" as ?origin)
+        optional{ ?resource sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasPurpose" as ?origin)
+        optional{ ?resource sphn:hasSourceData/sphn:hasSourceSystem/sphn:hasPurpose ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceData/sphn:hasStringValue" as ?origin)
+        optional{ ?resource sphn:hasSourceData/sphn:hasStringValue ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasDataProvider" as ?origin)
+        optional{ ?resource sphn:hasDataProvider ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasDataProvider/sphn:hasDepartment" as ?origin)
+        optional{ ?resource sphn:hasDataProvider/sphn:hasDepartment ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasDataProvider/sphn:hasInstitutionCode" as ?origin)
+        optional{ ?resource sphn:hasDataProvider/sphn:hasInstitutionCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasDataProvider/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasDataProvider/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceSystem" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasDataProvider" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasDataProvider ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasDepartment" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasDepartment ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasPrimarySystem" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasCode" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasDepartment" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasDepartment ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasPurpose" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasPurpose ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasMethodCode" as ?origin)
+        optional{ ?resource sphn:hasMethodCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SemanticMapping> .
+
+        BIND("sphn:hasPurpose" as ?origin)
+        optional{ ?resource sphn:hasPurpose ?predicate . }
+    }
+    GROUP BY ?origin
+}}

@@ -1,0 +1,52 @@
+PREFIX sphn:<https://biomedit.ch/rdf/sphn-schema/sphn#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT *
+WHERE {
+    {
+    SELECT ?origin ?code ?code_identifier ?code_name ?code_codingSystemAndVersion (COUNT(?code) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#AssessmentComponent> .
+
+        BIND("sphn:hasCode" as ?origin)
+        optional{ ?resource sphn:hasCode ?code . }
+        optional{ ?resource sphn:hasCode/sphn:hasIdentifier ?code_identifier . }
+        optional{ ?resource sphn:hasCode/sphn:hasName ?code_name . }
+        optional{ ?resource sphn:hasCode/sphn:hasCodingSystemAndVersion ?code_codingSystemAndVersion . }
+
+    }
+    GROUP BY ?origin ?code ?code_identifier ?code_name ?code_codingSystemAndVersion
+    }
+        UNION
+    {
+    SELECT ?origin ?code ?code_identifier ?code_name ?code_codingSystemAndVersion (COUNT(?code) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#AssessmentComponent> .
+
+        BIND("sphn:hasResult/sphn:hasCode" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasCode ?code . }
+        optional{ ?resource sphn:hasResult/sphn:hasCode/sphn:hasIdentifier ?code_identifier . }
+        optional{ ?resource sphn:hasResult/sphn:hasCode/sphn:hasName ?code_name . }
+        optional{ ?resource sphn:hasResult/sphn:hasCode/sphn:hasCodingSystemAndVersion ?code_codingSystemAndVersion . }
+
+    }
+    GROUP BY ?origin ?code ?code_identifier ?code_name ?code_codingSystemAndVersion
+    }
+        UNION
+    {
+    SELECT ?origin ?code ?code_identifier ?code_name ?code_codingSystemAndVersion (COUNT(?code) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#AssessmentComponent> .
+
+        BIND("sphn:hasResult/sphn:hasQuantity/sphn:hasUnit/sphn:hasCode" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasQuantity/sphn:hasUnit/sphn:hasCode ?code . }
+        optional{ ?resource sphn:hasResult/sphn:hasQuantity/sphn:hasUnit/sphn:hasCode/sphn:hasIdentifier ?code_identifier . }
+        optional{ ?resource sphn:hasResult/sphn:hasQuantity/sphn:hasUnit/sphn:hasCode/sphn:hasName ?code_name . }
+        optional{ ?resource sphn:hasResult/sphn:hasQuantity/sphn:hasUnit/sphn:hasCode/sphn:hasCodingSystemAndVersion ?code_codingSystemAndVersion . }
+
+    }
+    GROUP BY ?origin ?code ?code_identifier ?code_name ?code_codingSystemAndVersion
+    }
+
+}

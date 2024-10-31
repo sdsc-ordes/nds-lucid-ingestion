@@ -1,0 +1,67 @@
+PREFIX sphn:<https://biomedit.ch/rdf/sphn-schema/sphn#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT *
+WHERE {
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#ImplantPresence> .
+
+        BIND("sphn:hasRecordDateTime" as ?origin)
+        optional{ ?resource sphn:hasRecordDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#ImplantPresence> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasAdmissionDateTime" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasAdmissionDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#ImplantPresence> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDischargeDateTime" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDischargeDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#ImplantPresence> .
+
+        BIND("sphn:hasStartDateTime" as ?origin)
+        optional{ ?resource sphn:hasStartDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#ImplantPresence> .
+
+        BIND("sphn:hasEndDateTime" as ?origin)
+        optional{ ?resource sphn:hasEndDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+
+}

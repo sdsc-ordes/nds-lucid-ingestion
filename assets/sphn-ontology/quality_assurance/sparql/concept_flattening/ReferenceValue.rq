@@ -1,0 +1,14 @@
+PREFIX sphn:<https://biomedit.ch/rdf/sphn-schema/sphn#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT *
+WHERE {
+    ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#ReferenceValue> .
+    optional{ ?resource sphn:hasQuantity ?Quantity . }
+    optional{ ?resource sphn:hasQuantity/sphn:hasValue ?Quantity_Value . }
+    optional{ ?resource sphn:hasQuantity/sphn:hasUnit ?Quantity_Unit . }
+    optional{ ?resource sphn:hasQuantity/sphn:hasUnit/sphn:hasCode ?Quantity_Unit_Code . }
+    optional{ ?resource sphn:hasQuantity/sphn:hasComparator ?Quantity_Comparator . }
+
+}

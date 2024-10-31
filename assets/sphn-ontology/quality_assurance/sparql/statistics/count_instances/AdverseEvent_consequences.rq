@@ -1,0 +1,14 @@
+PREFIX sphn:<https://biomedit.ch/rdf/sphn-schema/sphn#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT *
+WHERE {
+    {
+    SELECT ?origin (COUNT(?origin) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#AdverseEvent_consequences> .
+        BIND("https://biomedit.ch/rdf/sphn-schema/sphn#AdverseEvent_consequences" as ?origin)
+    }
+    GROUP BY ?origin
+}}

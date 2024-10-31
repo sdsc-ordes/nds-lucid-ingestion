@@ -1,0 +1,28 @@
+PREFIX sphn:<https://biomedit.ch/rdf/sphn-schema/sphn#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT *
+WHERE {
+    ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Transcript> .
+    optional{ ?resource sphn:hasCode ?Code . }
+    optional{ ?resource sphn:hasCode/sphn:hasName ?Code_Name . }
+    optional{ ?resource sphn:hasCode/sphn:hasIdentifier ?Code_Identifier . }
+    optional{ ?resource sphn:hasCode/sphn:hasCodingSystemAndVersion ?Code_CodingSystemAndVersion . }
+    optional{ ?resource sphn:hasProtein ?Protein . }
+    optional{ ?resource sphn:hasProtein/sphn:hasCode ?Protein_Code . }
+    optional{ ?resource sphn:hasProtein/sphn:hasCode/sphn:hasName ?Protein_Code_Name . }
+    optional{ ?resource sphn:hasProtein/sphn:hasCode/sphn:hasIdentifier ?Protein_Code_Identifier . }
+    optional{ ?resource sphn:hasProtein/sphn:hasCode/sphn:hasCodingSystemAndVersion ?Protein_Code_CodingSystemAndVersion . }
+    optional{ ?resource sphn:hasProtein/sphn:hasOrganism ?Protein_Organism . }
+    optional{ ?resource sphn:hasProtein/sphn:hasOrganism/sphn:hasCode ?Protein_Organism_Code . }
+    optional{ ?resource sphn:hasProtein/sphn:hasOrganism/sphn:hasCode/sphn:hasName ?Protein_Organism_Code_Name . }
+    optional{ ?resource sphn:hasProtein/sphn:hasOrganism/sphn:hasCode/sphn:hasIdentifier ?Protein_Organism_Code_Identifier . }
+    optional{ ?resource sphn:hasProtein/sphn:hasOrganism/sphn:hasCode/sphn:hasCodingSystemAndVersion ?Protein_Organism_Code_CodingSystemAndVersion . }
+    optional{ ?resource sphn:hasOrganism ?Organism . }
+    optional{ ?resource sphn:hasOrganism/sphn:hasCode ?Organism_Code . }
+    optional{ ?resource sphn:hasOrganism/sphn:hasCode/sphn:hasName ?Organism_Code_Name . }
+    optional{ ?resource sphn:hasOrganism/sphn:hasCode/sphn:hasIdentifier ?Organism_Code_Identifier . }
+    optional{ ?resource sphn:hasOrganism/sphn:hasCode/sphn:hasCodingSystemAndVersion ?Organism_Code_CodingSystemAndVersion . }
+
+}

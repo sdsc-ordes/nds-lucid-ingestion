@@ -1,0 +1,101 @@
+PREFIX sphn:<https://biomedit.ch/rdf/sphn-schema/sphn#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT *
+WHERE {
+    ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#AdministrativeCase> .
+    optional{ ?resource sphn:hasAdmissionDateTime ?AdmissionDateTime . }
+    optional{ ?resource sphn:hasDischargeDateTime ?DischargeDateTime . }
+    optional{ ?resource sphn:hasIdentifier ?Identifier . }
+    optional{ ?resource sphn:hasDataProvider ?DataProvider . }
+    optional{ ?resource sphn:hasDataProvider/sphn:hasDepartment ?DataProvider_Department . }
+    optional{ ?resource sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?DataProvider_Department_Name . }
+    optional{ ?resource sphn:hasDataProvider/sphn:hasInstitutionCode ?DataProvider_InstitutionCode . }
+    optional{ ?resource sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?DataProvider_InstitutionCode_Name . }
+    optional{ ?resource sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?DataProvider_InstitutionCode_Identifier . }
+    optional{ ?resource sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?DataProvider_InstitutionCode_CodingSystemAndVersion . }
+    optional{ ?resource sphn:hasDataProvider/sphn:hasCategory ?DataProvider_Category . }
+    optional{ ?resource sphn:hasCareHandling ?CareHandling . }
+    optional{ ?resource sphn:hasCareHandling/sphn:hasSourceSystem ?CareHandling_SourceSystem . }
+    optional{ ?resource sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasName ?CareHandling_SourceSystem_Name . }
+    optional{ ?resource sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasDataProvider ?CareHandling_SourceSystem_DataProvider . }
+    optional{ ?resource sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasDepartment ?CareHandling_SourceSystem_DataProvider_Department . }
+    optional{ ?resource sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?CareHandling_SourceSystem_DataProvider_Department_Name . }
+    optional{ ?resource sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode ?CareHandling_SourceSystem_DataProvider_InstitutionCode . }
+    optional{ ?resource sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?CareHandling_SourceSystem_DataProvider_InstitutionCode_Name . }
+    optional{ ?resource sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?CareHandling_SourceSystem_DataProvider_InstitutionCode_Identifier . }
+    optional{ ?resource sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?CareHandling_SourceSystem_DataProvider_InstitutionCode_CodingSystemAndVersion . }
+    optional{ ?resource sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasCategory ?CareHandling_SourceSystem_DataProvider_Category . }
+    optional{ ?resource sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem ?CareHandling_SourceSystem_PrimarySystem . }
+    optional{ ?resource sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasName ?CareHandling_SourceSystem_PrimarySystem_Name . }
+    optional{ ?resource sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasCode ?CareHandling_SourceSystem_PrimarySystem_Code . }
+    optional{ ?resource sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider ?CareHandling_SourceSystem_PrimarySystem_DataProvider . }
+    optional{ ?resource sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasDepartment ?CareHandling_SourceSystem_PrimarySystem_DataProvider_Department . }
+    optional{ ?resource sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?CareHandling_SourceSystem_PrimarySystem_DataProvider_Department_Name . }
+    optional{ ?resource sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode ?CareHandling_SourceSystem_PrimarySystem_DataProvider_InstitutionCode . }
+    optional{ ?resource sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?CareHandling_SourceSystem_PrimarySystem_DataProvider_InstitutionCode_Name . }
+    optional{ ?resource sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?CareHandling_SourceSystem_PrimarySystem_DataProvider_InstitutionCode_Identifier . }
+    optional{ ?resource sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?CareHandling_SourceSystem_PrimarySystem_DataProvider_InstitutionCode_CodingSystemAndVersion . }
+    optional{ ?resource sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasCategory ?CareHandling_SourceSystem_PrimarySystem_DataProvider_Category . }
+    optional{ ?resource sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasCategory ?CareHandling_SourceSystem_Category . }
+    optional{ ?resource sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPurpose ?CareHandling_SourceSystem_Purpose . }
+    optional{ ?resource sphn:hasCareHandling/sphn:hasTypeCode ?CareHandling_TypeCode . }
+    optional{ ?resource sphn:hasDischargeLocation ?DischargeLocation . }
+    optional{ ?resource sphn:hasDischargeLocation/sphn:hasExact ?DischargeLocation_Exact . }
+    optional{ ?resource sphn:hasDischargeLocation/sphn:hasDataProvider ?DischargeLocation_DataProvider . }
+    optional{ ?resource sphn:hasDischargeLocation/sphn:hasDataProvider/sphn:hasDepartment ?DischargeLocation_DataProvider_Department . }
+    optional{ ?resource sphn:hasDischargeLocation/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?DischargeLocation_DataProvider_Department_Name . }
+    optional{ ?resource sphn:hasDischargeLocation/sphn:hasDataProvider/sphn:hasInstitutionCode ?DischargeLocation_DataProvider_InstitutionCode . }
+    optional{ ?resource sphn:hasDischargeLocation/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?DischargeLocation_DataProvider_InstitutionCode_Name . }
+    optional{ ?resource sphn:hasDischargeLocation/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?DischargeLocation_DataProvider_InstitutionCode_Identifier . }
+    optional{ ?resource sphn:hasDischargeLocation/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?DischargeLocation_DataProvider_InstitutionCode_CodingSystemAndVersion . }
+    optional{ ?resource sphn:hasDischargeLocation/sphn:hasDataProvider/sphn:hasCategory ?DischargeLocation_DataProvider_Category . }
+    optional{ ?resource sphn:hasDischargeLocation/sphn:hasTypeCode ?DischargeLocation_TypeCode . }
+    optional{ ?resource sphn:hasSourceSystem ?SourceSystem . }
+    optional{ ?resource sphn:hasSourceSystem/sphn:hasName ?SourceSystem_Name . }
+    optional{ ?resource sphn:hasSourceSystem/sphn:hasDataProvider ?SourceSystem_DataProvider . }
+    optional{ ?resource sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasDepartment ?SourceSystem_DataProvider_Department . }
+    optional{ ?resource sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?SourceSystem_DataProvider_Department_Name . }
+    optional{ ?resource sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode ?SourceSystem_DataProvider_InstitutionCode . }
+    optional{ ?resource sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?SourceSystem_DataProvider_InstitutionCode_Name . }
+    optional{ ?resource sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?SourceSystem_DataProvider_InstitutionCode_Identifier . }
+    optional{ ?resource sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?SourceSystem_DataProvider_InstitutionCode_CodingSystemAndVersion . }
+    optional{ ?resource sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasCategory ?SourceSystem_DataProvider_Category . }
+    optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem ?SourceSystem_PrimarySystem . }
+    optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasName ?SourceSystem_PrimarySystem_Name . }
+    optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasCode ?SourceSystem_PrimarySystem_Code . }
+    optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider ?SourceSystem_PrimarySystem_DataProvider . }
+    optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasDepartment ?SourceSystem_PrimarySystem_DataProvider_Department . }
+    optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?SourceSystem_PrimarySystem_DataProvider_Department_Name . }
+    optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode ?SourceSystem_PrimarySystem_DataProvider_InstitutionCode . }
+    optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?SourceSystem_PrimarySystem_DataProvider_InstitutionCode_Name . }
+    optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?SourceSystem_PrimarySystem_DataProvider_InstitutionCode_Identifier . }
+    optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?SourceSystem_PrimarySystem_DataProvider_InstitutionCode_CodingSystemAndVersion . }
+    optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasCategory ?SourceSystem_PrimarySystem_DataProvider_Category . }
+    optional{ ?resource sphn:hasSourceSystem/sphn:hasCategory ?SourceSystem_Category . }
+    optional{ ?resource sphn:hasSourceSystem/sphn:hasPurpose ?SourceSystem_Purpose . }
+    optional{ ?resource sphn:hasSubjectPseudoIdentifier ?SubjectPseudoIdentifier . }
+    optional{ ?resource sphn:hasSubjectPseudoIdentifier/sphn:hasSharedIdentifier ?SubjectPseudoIdentifier_SharedIdentifier . }
+    optional{ ?resource sphn:hasSubjectPseudoIdentifier/sphn:hasIdentifier ?SubjectPseudoIdentifier_Identifier . }
+    optional{ ?resource sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider ?SubjectPseudoIdentifier_DataProvider . }
+    optional{ ?resource sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasDepartment ?SubjectPseudoIdentifier_DataProvider_Department . }
+    optional{ ?resource sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?SubjectPseudoIdentifier_DataProvider_Department_Name . }
+    optional{ ?resource sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode ?SubjectPseudoIdentifier_DataProvider_InstitutionCode . }
+    optional{ ?resource sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?SubjectPseudoIdentifier_DataProvider_InstitutionCode_Name . }
+    optional{ ?resource sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?SubjectPseudoIdentifier_DataProvider_InstitutionCode_Identifier . }
+    optional{ ?resource sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?SubjectPseudoIdentifier_DataProvider_InstitutionCode_CodingSystemAndVersion . }
+    optional{ ?resource sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasCategory ?SubjectPseudoIdentifier_DataProvider_Category . }
+    optional{ ?resource sphn:hasOriginLocation ?OriginLocation . }
+    optional{ ?resource sphn:hasOriginLocation/sphn:hasExact ?OriginLocation_Exact . }
+    optional{ ?resource sphn:hasOriginLocation/sphn:hasDataProvider ?OriginLocation_DataProvider . }
+    optional{ ?resource sphn:hasOriginLocation/sphn:hasDataProvider/sphn:hasDepartment ?OriginLocation_DataProvider_Department . }
+    optional{ ?resource sphn:hasOriginLocation/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?OriginLocation_DataProvider_Department_Name . }
+    optional{ ?resource sphn:hasOriginLocation/sphn:hasDataProvider/sphn:hasInstitutionCode ?OriginLocation_DataProvider_InstitutionCode . }
+    optional{ ?resource sphn:hasOriginLocation/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?OriginLocation_DataProvider_InstitutionCode_Name . }
+    optional{ ?resource sphn:hasOriginLocation/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?OriginLocation_DataProvider_InstitutionCode_Identifier . }
+    optional{ ?resource sphn:hasOriginLocation/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?OriginLocation_DataProvider_InstitutionCode_CodingSystemAndVersion . }
+    optional{ ?resource sphn:hasOriginLocation/sphn:hasDataProvider/sphn:hasCategory ?OriginLocation_DataProvider_Category . }
+    optional{ ?resource sphn:hasOriginLocation/sphn:hasTypeCode ?OriginLocation_TypeCode . }
+
+}

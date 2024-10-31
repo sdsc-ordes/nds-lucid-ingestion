@@ -1,0 +1,35 @@
+PREFIX sphn:<https://biomedit.ch/rdf/sphn-schema/sphn#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT *
+WHERE {
+    ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#GenomicDeletion> .
+    optional{ ?resource sphn:hasGenomicPosition ?GenomicPosition . }
+    optional{ ?resource sphn:hasGenomicPosition/sphn:hasEnd ?GenomicPosition_End . }
+    optional{ ?resource sphn:hasGenomicPosition/sphn:hasStart ?GenomicPosition_Start . }
+    optional{ ?resource sphn:hasGenomicPosition/sphn:hasCoordinateConvention ?GenomicPosition_CoordinateConvention . }
+    optional{ ?resource sphn:hasGenomicPosition/sphn:hasReference ?GenomicPosition_Reference . }
+    optional{ ?resource sphn:hasGenomicPosition/sphn:hasReference/sphn:hasCode ?GenomicPosition_Reference_Code . }
+    optional{ ?resource sphn:hasGenomicPosition/sphn:hasReference/sphn:hasCode/sphn:hasName ?GenomicPosition_Reference_Code_Name . }
+    optional{ ?resource sphn:hasGenomicPosition/sphn:hasReference/sphn:hasCode/sphn:hasIdentifier ?GenomicPosition_Reference_Code_Identifier . }
+    optional{ ?resource sphn:hasGenomicPosition/sphn:hasReference/sphn:hasCode/sphn:hasCodingSystemAndVersion ?GenomicPosition_Reference_Code_CodingSystemAndVersion . }
+    optional{ ?resource sphn:hasChromosomalLocation ?ChromosomalLocation . }
+    optional{ ?resource sphn:hasChromosomalLocation/sphn:hasChromosome ?ChromosomalLocation_Chromosome . }
+    optional{ ?resource sphn:hasChromosomalLocation/sphn:hasChromosome/sphn:hasCode ?ChromosomalLocation_Chromosome_Code . }
+    optional{ ?resource sphn:hasChromosomalLocation/sphn:hasEndCytobandCode ?ChromosomalLocation_EndCytobandCode . }
+    optional{ ?resource sphn:hasChromosomalLocation/sphn:hasEndCytobandCode/sphn:hasName ?ChromosomalLocation_EndCytobandCode_Name . }
+    optional{ ?resource sphn:hasChromosomalLocation/sphn:hasEndCytobandCode/sphn:hasIdentifier ?ChromosomalLocation_EndCytobandCode_Identifier . }
+    optional{ ?resource sphn:hasChromosomalLocation/sphn:hasEndCytobandCode/sphn:hasCodingSystemAndVersion ?ChromosomalLocation_EndCytobandCode_CodingSystemAndVersion . }
+    optional{ ?resource sphn:hasChromosomalLocation/sphn:hasStartCytobandCode ?ChromosomalLocation_StartCytobandCode . }
+    optional{ ?resource sphn:hasChromosomalLocation/sphn:hasStartCytobandCode/sphn:hasName ?ChromosomalLocation_StartCytobandCode_Name . }
+    optional{ ?resource sphn:hasChromosomalLocation/sphn:hasStartCytobandCode/sphn:hasIdentifier ?ChromosomalLocation_StartCytobandCode_Identifier . }
+    optional{ ?resource sphn:hasChromosomalLocation/sphn:hasStartCytobandCode/sphn:hasCodingSystemAndVersion ?ChromosomalLocation_StartCytobandCode_CodingSystemAndVersion . }
+    optional{ ?resource sphn:hasGenomicSequence ?GenomicSequence . }
+    optional{ ?resource sphn:hasSequenceLength ?SequenceLength . }
+    optional{ ?resource sphn:hasSequenceLength/sphn:hasValue ?SequenceLength_Value . }
+    optional{ ?resource sphn:hasSequenceLength/sphn:hasUnit ?SequenceLength_Unit . }
+    optional{ ?resource sphn:hasSequenceLength/sphn:hasUnit/sphn:hasCode ?SequenceLength_Unit_Code . }
+    optional{ ?resource sphn:hasSequenceLength/sphn:hasComparator ?SequenceLength_Comparator . }
+
+}

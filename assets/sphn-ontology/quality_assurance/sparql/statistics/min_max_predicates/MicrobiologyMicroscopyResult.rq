@@ -1,0 +1,55 @@
+PREFIX sphn:<https://biomedit.ch/rdf/sphn-schema/sphn#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT *
+WHERE {
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#MicrobiologyMicroscopyResult> .
+
+        BIND("sphn:hasQuantity/sphn:hasValue" as ?origin)
+        optional{ ?resource sphn:hasQuantity/sphn:hasValue ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#MicrobiologyMicroscopyResult> .
+
+        BIND("sphn:hasNumericalReference/sphn:hasQuantity/sphn:hasValue" as ?origin)
+        optional{ ?resource sphn:hasNumericalReference/sphn:hasQuantity/sphn:hasValue ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#MicrobiologyMicroscopyResult> .
+
+        BIND("sphn:hasNumericalReference/sphn:hasLowerLimit/sphn:hasValue" as ?origin)
+        optional{ ?resource sphn:hasNumericalReference/sphn:hasLowerLimit/sphn:hasValue ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#MicrobiologyMicroscopyResult> .
+
+        BIND("sphn:hasNumericalReference/sphn:hasUpperLimit/sphn:hasValue" as ?origin)
+        optional{ ?resource sphn:hasNumericalReference/sphn:hasUpperLimit/sphn:hasValue ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+
+}

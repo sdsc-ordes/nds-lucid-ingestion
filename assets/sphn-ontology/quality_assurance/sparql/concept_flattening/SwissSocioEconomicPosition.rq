@@ -1,0 +1,16 @@
+PREFIX sphn:<https://biomedit.ch/rdf/sphn-schema/sphn#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT *
+WHERE {
+    ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SwissSocioEconomicPosition> .
+    optional{ ?resource sphn:hasValue ?Value . }
+    optional{ ?resource sphn:hasDistance ?Distance . }
+    optional{ ?resource sphn:hasDistance/sphn:hasValue ?Distance_Value . }
+    optional{ ?resource sphn:hasDistance/sphn:hasUnit ?Distance_Unit . }
+    optional{ ?resource sphn:hasDistance/sphn:hasUnit/sphn:hasCode ?Distance_Unit_Code . }
+    optional{ ?resource sphn:hasDistance/sphn:hasComparator ?Distance_Comparator . }
+    optional{ ?resource sphn:hasVersion ?Version . }
+
+}

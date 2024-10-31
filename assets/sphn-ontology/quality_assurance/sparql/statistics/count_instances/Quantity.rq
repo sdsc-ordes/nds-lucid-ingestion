@@ -1,0 +1,54 @@
+PREFIX sphn:<https://biomedit.ch/rdf/sphn-schema/sphn#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT *
+WHERE {
+    {
+    SELECT ?origin (COUNT(?origin) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Quantity> .
+        BIND("https://biomedit.ch/rdf/sphn-schema/sphn#Quantity" as ?origin)
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Quantity> .
+
+        BIND("sphn:hasValue" as ?origin)
+        optional{ ?resource sphn:hasValue ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Quantity> .
+
+        BIND("sphn:hasUnit" as ?origin)
+        optional{ ?resource sphn:hasUnit ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Quantity> .
+
+        BIND("sphn:hasUnit/sphn:hasCode" as ?origin)
+        optional{ ?resource sphn:hasUnit/sphn:hasCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Quantity> .
+
+        BIND("sphn:hasComparator" as ?origin)
+        optional{ ?resource sphn:hasComparator ?predicate . }
+    }
+    GROUP BY ?origin
+}}

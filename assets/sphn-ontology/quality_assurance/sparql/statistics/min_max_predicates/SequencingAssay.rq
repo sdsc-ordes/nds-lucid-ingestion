@@ -1,0 +1,631 @@
+PREFIX sphn:<https://biomedit.ch/rdf/sphn-schema/sphn#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT *
+WHERE {
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasSequencingRun/sphn:hasDateTime" as ?origin)
+        optional{ ?resource sphn:hasSequencingRun/sphn:hasDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasSequencingRun/sphn:hasDataFile/sphn:hasCreationDateTime" as ?origin)
+        optional{ ?resource sphn:hasSequencingRun/sphn:hasDataFile/sphn:hasCreationDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasSequencingRun/sphn:hasAverageInsertSize/sphn:hasValue" as ?origin)
+        optional{ ?resource sphn:hasSequencingRun/sphn:hasAverageInsertSize/sphn:hasValue ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasSequencingRun/sphn:hasAverageReadLength/sphn:hasValue" as ?origin)
+        optional{ ?resource sphn:hasSequencingRun/sphn:hasAverageReadLength/sphn:hasValue ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasSequencingRun/sphn:hasMeanReadDepth/sphn:hasValue" as ?origin)
+        optional{ ?resource sphn:hasSequencingRun/sphn:hasMeanReadDepth/sphn:hasValue ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasSequencingRun/sphn:hasReadCount/sphn:hasValue" as ?origin)
+        optional{ ?resource sphn:hasSequencingRun/sphn:hasReadCount/sphn:hasValue ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasSequencingRun/sphn:hasQualityControlMetric/sphn:hasQuantity/sphn:hasValue" as ?origin)
+        optional{ ?resource sphn:hasSequencingRun/sphn:hasQualityControlMetric/sphn:hasQuantity/sphn:hasValue ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasDataFile/sphn:hasCreationDateTime" as ?origin)
+        optional{ ?resource sphn:hasDataFile/sphn:hasCreationDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasIntendedReadDepth/sphn:hasValue" as ?origin)
+        optional{ ?resource sphn:hasIntendedReadDepth/sphn:hasValue ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasIntendedReadLength/sphn:hasValue" as ?origin)
+        optional{ ?resource sphn:hasIntendedReadLength/sphn:hasValue ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasLibraryPreparation/sphn:hasGenePanel/sphn:hasDataFile/sphn:hasCreationDateTime" as ?origin)
+        optional{ ?resource sphn:hasLibraryPreparation/sphn:hasGenePanel/sphn:hasDataFile/sphn:hasCreationDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasLibraryPreparation/sphn:hasIntendedInsertSize/sphn:hasValue" as ?origin)
+        optional{ ?resource sphn:hasLibraryPreparation/sphn:hasIntendedInsertSize/sphn:hasValue ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasLibraryPreparation/sphn:hasOutput/sphn:hasCollectionDateTime" as ?origin)
+        optional{ ?resource sphn:hasLibraryPreparation/sphn:hasOutput/sphn:hasCollectionDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasLibraryPreparation/sphn:hasOutput/sphn:hasAdministrativeCase/sphn:hasAdmissionDateTime" as ?origin)
+        optional{ ?resource sphn:hasLibraryPreparation/sphn:hasOutput/sphn:hasAdministrativeCase/sphn:hasAdmissionDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasLibraryPreparation/sphn:hasOutput/sphn:hasAdministrativeCase/sphn:hasDischargeDateTime" as ?origin)
+        optional{ ?resource sphn:hasLibraryPreparation/sphn:hasOutput/sphn:hasAdministrativeCase/sphn:hasDischargeDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasLibraryPreparation/sphn:hasInput/sphn:hasCollectionDateTime" as ?origin)
+        optional{ ?resource sphn:hasLibraryPreparation/sphn:hasInput/sphn:hasCollectionDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasLibraryPreparation/sphn:hasInput/sphn:hasAdministrativeCase/sphn:hasAdmissionDateTime" as ?origin)
+        optional{ ?resource sphn:hasLibraryPreparation/sphn:hasInput/sphn:hasAdministrativeCase/sphn:hasAdmissionDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasLibraryPreparation/sphn:hasInput/sphn:hasAdministrativeCase/sphn:hasDischargeDateTime" as ?origin)
+        optional{ ?resource sphn:hasLibraryPreparation/sphn:hasInput/sphn:hasAdministrativeCase/sphn:hasDischargeDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasLibraryPreparation/sphn:hasAdministrativeCase/sphn:hasAdmissionDateTime" as ?origin)
+        optional{ ?resource sphn:hasLibraryPreparation/sphn:hasAdministrativeCase/sphn:hasAdmissionDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasLibraryPreparation/sphn:hasAdministrativeCase/sphn:hasDischargeDateTime" as ?origin)
+        optional{ ?resource sphn:hasLibraryPreparation/sphn:hasAdministrativeCase/sphn:hasDischargeDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasLibraryPreparation/sphn:hasStartDateTime" as ?origin)
+        optional{ ?resource sphn:hasLibraryPreparation/sphn:hasStartDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasLibraryPreparation/sphn:hasQualityControlMetric/sphn:hasQuantity/sphn:hasValue" as ?origin)
+        optional{ ?resource sphn:hasLibraryPreparation/sphn:hasQualityControlMetric/sphn:hasQuantity/sphn:hasValue ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasLibraryPreparation/sphn:hasPredecessor/sphn:hasOutput/sphn:hasCollectionDateTime" as ?origin)
+        optional{ ?resource sphn:hasLibraryPreparation/sphn:hasPredecessor/sphn:hasOutput/sphn:hasCollectionDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasLibraryPreparation/sphn:hasPredecessor/sphn:hasOutput/sphn:hasAdministrativeCase/sphn:hasAdmissionDateTime" as ?origin)
+        optional{ ?resource sphn:hasLibraryPreparation/sphn:hasPredecessor/sphn:hasOutput/sphn:hasAdministrativeCase/sphn:hasAdmissionDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasLibraryPreparation/sphn:hasPredecessor/sphn:hasOutput/sphn:hasAdministrativeCase/sphn:hasDischargeDateTime" as ?origin)
+        optional{ ?resource sphn:hasLibraryPreparation/sphn:hasPredecessor/sphn:hasOutput/sphn:hasAdministrativeCase/sphn:hasDischargeDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasLibraryPreparation/sphn:hasPredecessor/sphn:hasInput/sphn:hasCollectionDateTime" as ?origin)
+        optional{ ?resource sphn:hasLibraryPreparation/sphn:hasPredecessor/sphn:hasInput/sphn:hasCollectionDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasLibraryPreparation/sphn:hasPredecessor/sphn:hasInput/sphn:hasAdministrativeCase/sphn:hasAdmissionDateTime" as ?origin)
+        optional{ ?resource sphn:hasLibraryPreparation/sphn:hasPredecessor/sphn:hasInput/sphn:hasAdministrativeCase/sphn:hasAdmissionDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasLibraryPreparation/sphn:hasPredecessor/sphn:hasInput/sphn:hasAdministrativeCase/sphn:hasDischargeDateTime" as ?origin)
+        optional{ ?resource sphn:hasLibraryPreparation/sphn:hasPredecessor/sphn:hasInput/sphn:hasAdministrativeCase/sphn:hasDischargeDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasLibraryPreparation/sphn:hasPredecessor/sphn:hasAdministrativeCase/sphn:hasAdmissionDateTime" as ?origin)
+        optional{ ?resource sphn:hasLibraryPreparation/sphn:hasPredecessor/sphn:hasAdministrativeCase/sphn:hasAdmissionDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasLibraryPreparation/sphn:hasPredecessor/sphn:hasAdministrativeCase/sphn:hasDischargeDateTime" as ?origin)
+        optional{ ?resource sphn:hasLibraryPreparation/sphn:hasPredecessor/sphn:hasAdministrativeCase/sphn:hasDischargeDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasLibraryPreparation/sphn:hasPredecessor/sphn:hasStartDateTime" as ?origin)
+        optional{ ?resource sphn:hasLibraryPreparation/sphn:hasPredecessor/sphn:hasStartDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasLibraryPreparation/sphn:hasPredecessor/sphn:hasQualityControlMetric/sphn:hasQuantity/sphn:hasValue" as ?origin)
+        optional{ ?resource sphn:hasLibraryPreparation/sphn:hasPredecessor/sphn:hasQualityControlMetric/sphn:hasQuantity/sphn:hasValue ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasLibraryPreparation/sphn:hasPredecessor/sphn:hasStandardOperatingProcedure/sphn:hasDataFile/sphn:hasCreationDateTime" as ?origin)
+        optional{ ?resource sphn:hasLibraryPreparation/sphn:hasPredecessor/sphn:hasStandardOperatingProcedure/sphn:hasDataFile/sphn:hasCreationDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasLibraryPreparation/sphn:hasStandardOperatingProcedure/sphn:hasDataFile/sphn:hasCreationDateTime" as ?origin)
+        optional{ ?resource sphn:hasLibraryPreparation/sphn:hasStandardOperatingProcedure/sphn:hasDataFile/sphn:hasCreationDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasAdmissionDateTime" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasAdmissionDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDischargeDateTime" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDischargeDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasSample/sphn:hasCollectionDateTime" as ?origin)
+        optional{ ?resource sphn:hasSample/sphn:hasCollectionDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasSample/sphn:hasAdministrativeCase/sphn:hasAdmissionDateTime" as ?origin)
+        optional{ ?resource sphn:hasSample/sphn:hasAdministrativeCase/sphn:hasAdmissionDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasSample/sphn:hasAdministrativeCase/sphn:hasDischargeDateTime" as ?origin)
+        optional{ ?resource sphn:hasSample/sphn:hasAdministrativeCase/sphn:hasDischargeDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasStartDateTime" as ?origin)
+        optional{ ?resource sphn:hasStartDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasPredecessor/sphn:hasOutput/sphn:hasCollectionDateTime" as ?origin)
+        optional{ ?resource sphn:hasPredecessor/sphn:hasOutput/sphn:hasCollectionDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasPredecessor/sphn:hasOutput/sphn:hasAdministrativeCase/sphn:hasAdmissionDateTime" as ?origin)
+        optional{ ?resource sphn:hasPredecessor/sphn:hasOutput/sphn:hasAdministrativeCase/sphn:hasAdmissionDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasPredecessor/sphn:hasOutput/sphn:hasAdministrativeCase/sphn:hasDischargeDateTime" as ?origin)
+        optional{ ?resource sphn:hasPredecessor/sphn:hasOutput/sphn:hasAdministrativeCase/sphn:hasDischargeDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasPredecessor/sphn:hasInput/sphn:hasCollectionDateTime" as ?origin)
+        optional{ ?resource sphn:hasPredecessor/sphn:hasInput/sphn:hasCollectionDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasPredecessor/sphn:hasInput/sphn:hasAdministrativeCase/sphn:hasAdmissionDateTime" as ?origin)
+        optional{ ?resource sphn:hasPredecessor/sphn:hasInput/sphn:hasAdministrativeCase/sphn:hasAdmissionDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasPredecessor/sphn:hasInput/sphn:hasAdministrativeCase/sphn:hasDischargeDateTime" as ?origin)
+        optional{ ?resource sphn:hasPredecessor/sphn:hasInput/sphn:hasAdministrativeCase/sphn:hasDischargeDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasPredecessor/sphn:hasAdministrativeCase/sphn:hasAdmissionDateTime" as ?origin)
+        optional{ ?resource sphn:hasPredecessor/sphn:hasAdministrativeCase/sphn:hasAdmissionDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasPredecessor/sphn:hasAdministrativeCase/sphn:hasDischargeDateTime" as ?origin)
+        optional{ ?resource sphn:hasPredecessor/sphn:hasAdministrativeCase/sphn:hasDischargeDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasPredecessor/sphn:hasStartDateTime" as ?origin)
+        optional{ ?resource sphn:hasPredecessor/sphn:hasStartDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasPredecessor/sphn:hasQualityControlMetric/sphn:hasQuantity/sphn:hasValue" as ?origin)
+        optional{ ?resource sphn:hasPredecessor/sphn:hasQualityControlMetric/sphn:hasQuantity/sphn:hasValue ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasPredecessor/sphn:hasStandardOperatingProcedure/sphn:hasDataFile/sphn:hasCreationDateTime" as ?origin)
+        optional{ ?resource sphn:hasPredecessor/sphn:hasStandardOperatingProcedure/sphn:hasDataFile/sphn:hasCreationDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#SequencingAssay> .
+
+        BIND("sphn:hasStandardOperatingProcedure/sphn:hasDataFile/sphn:hasCreationDateTime" as ?origin)
+        optional{ ?resource sphn:hasStandardOperatingProcedure/sphn:hasDataFile/sphn:hasCreationDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+
+}

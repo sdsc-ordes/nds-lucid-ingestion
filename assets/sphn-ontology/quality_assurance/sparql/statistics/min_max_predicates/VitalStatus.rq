@@ -1,0 +1,91 @@
+PREFIX sphn:<https://biomedit.ch/rdf/sphn-schema/sphn#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT *
+WHERE {
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#VitalStatus> .
+
+        BIND("sphn:hasDeath/sphn:hasDate/sphn:hasDay" as ?origin)
+        optional{ ?resource sphn:hasDeath/sphn:hasDate/sphn:hasDay ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#VitalStatus> .
+
+        BIND("sphn:hasDeath/sphn:hasDate/sphn:hasMonth" as ?origin)
+        optional{ ?resource sphn:hasDeath/sphn:hasDate/sphn:hasMonth ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#VitalStatus> .
+
+        BIND("sphn:hasDeath/sphn:hasDate/sphn:hasTime" as ?origin)
+        optional{ ?resource sphn:hasDeath/sphn:hasDate/sphn:hasTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#VitalStatus> .
+
+        BIND("sphn:hasDeath/sphn:hasDate/sphn:hasYear" as ?origin)
+        optional{ ?resource sphn:hasDeath/sphn:hasDate/sphn:hasYear ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#VitalStatus> .
+
+        BIND("sphn:hasDeath/sphn:hasAdministrativeCase/sphn:hasAdmissionDateTime" as ?origin)
+        optional{ ?resource sphn:hasDeath/sphn:hasAdministrativeCase/sphn:hasAdmissionDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#VitalStatus> .
+
+        BIND("sphn:hasDeath/sphn:hasAdministrativeCase/sphn:hasDischargeDateTime" as ?origin)
+        optional{ ?resource sphn:hasDeath/sphn:hasAdministrativeCase/sphn:hasDischargeDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+        UNION
+    {
+    SELECT ?origin (MIN(?value) as ?min) (MAX(?value) as ?max)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#VitalStatus> .
+
+        BIND("sphn:hasDeath/sphn:hasReportDateTime" as ?origin)
+        optional{ ?resource sphn:hasDeath/sphn:hasReportDateTime ?value . }
+
+    }
+    GROUP BY ?origin
+    }
+
+}

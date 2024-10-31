@@ -1,0 +1,114 @@
+PREFIX sphn:<https://biomedit.ch/rdf/sphn-schema/sphn#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT *
+WHERE {
+    {
+    SELECT ?origin (COUNT(?origin) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#ChromosomalLocation> .
+        BIND("https://biomedit.ch/rdf/sphn-schema/sphn#ChromosomalLocation" as ?origin)
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#ChromosomalLocation> .
+
+        BIND("sphn:hasChromosome" as ?origin)
+        optional{ ?resource sphn:hasChromosome ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#ChromosomalLocation> .
+
+        BIND("sphn:hasChromosome/sphn:hasCode" as ?origin)
+        optional{ ?resource sphn:hasChromosome/sphn:hasCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#ChromosomalLocation> .
+
+        BIND("sphn:hasEndCytobandCode" as ?origin)
+        optional{ ?resource sphn:hasEndCytobandCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#ChromosomalLocation> .
+
+        BIND("sphn:hasEndCytobandCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasEndCytobandCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#ChromosomalLocation> .
+
+        BIND("sphn:hasEndCytobandCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasEndCytobandCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#ChromosomalLocation> .
+
+        BIND("sphn:hasEndCytobandCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasEndCytobandCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#ChromosomalLocation> .
+
+        BIND("sphn:hasStartCytobandCode" as ?origin)
+        optional{ ?resource sphn:hasStartCytobandCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#ChromosomalLocation> .
+
+        BIND("sphn:hasStartCytobandCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasStartCytobandCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#ChromosomalLocation> .
+
+        BIND("sphn:hasStartCytobandCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasStartCytobandCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#ChromosomalLocation> .
+
+        BIND("sphn:hasStartCytobandCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasStartCytobandCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+}}

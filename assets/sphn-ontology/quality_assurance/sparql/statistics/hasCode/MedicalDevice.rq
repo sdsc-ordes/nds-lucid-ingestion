@@ -1,0 +1,52 @@
+PREFIX sphn:<https://biomedit.ch/rdf/sphn-schema/sphn#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT *
+WHERE {
+    {
+    SELECT ?origin ?code ?code_identifier ?code_name ?code_codingSystemAndVersion (COUNT(?code) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#MedicalDevice> .
+
+        BIND("sphn:hasTypeCode" as ?origin)
+        optional{ ?resource sphn:hasTypeCode ?code . }
+        optional{ ?resource sphn:hasTypeCode/sphn:hasIdentifier ?code_identifier . }
+        optional{ ?resource sphn:hasTypeCode/sphn:hasName ?code_name . }
+        optional{ ?resource sphn:hasTypeCode/sphn:hasCodingSystemAndVersion ?code_codingSystemAndVersion . }
+
+    }
+    GROUP BY ?origin ?code ?code_identifier ?code_name ?code_codingSystemAndVersion
+    }
+        UNION
+    {
+    SELECT ?origin ?code ?code_identifier ?code_name ?code_codingSystemAndVersion (COUNT(?code) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#MedicalDevice> .
+
+        BIND("sphn:hasSoftware/sphn:hasDataProvider/sphn:hasInstitutionCode" as ?origin)
+        optional{ ?resource sphn:hasSoftware/sphn:hasDataProvider/sphn:hasInstitutionCode ?code . }
+        optional{ ?resource sphn:hasSoftware/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?code_identifier . }
+        optional{ ?resource sphn:hasSoftware/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?code_name . }
+        optional{ ?resource sphn:hasSoftware/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?code_codingSystemAndVersion . }
+
+    }
+    GROUP BY ?origin ?code ?code_identifier ?code_name ?code_codingSystemAndVersion
+    }
+        UNION
+    {
+    SELECT ?origin ?code ?code_identifier ?code_name ?code_codingSystemAndVersion (COUNT(?code) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#MedicalDevice> .
+
+        BIND("sphn:hasProductCode" as ?origin)
+        optional{ ?resource sphn:hasProductCode ?code . }
+        optional{ ?resource sphn:hasProductCode/sphn:hasIdentifier ?code_identifier . }
+        optional{ ?resource sphn:hasProductCode/sphn:hasName ?code_name . }
+        optional{ ?resource sphn:hasProductCode/sphn:hasCodingSystemAndVersion ?code_codingSystemAndVersion . }
+
+    }
+    GROUP BY ?origin ?code ?code_identifier ?code_name ?code_codingSystemAndVersion
+    }
+
+}

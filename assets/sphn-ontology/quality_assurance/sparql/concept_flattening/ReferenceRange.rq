@@ -1,0 +1,19 @@
+PREFIX sphn:<https://biomedit.ch/rdf/sphn-schema/sphn#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT *
+WHERE {
+    ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#ReferenceRange> .
+    optional{ ?resource sphn:hasLowerLimit ?LowerLimit . }
+    optional{ ?resource sphn:hasLowerLimit/sphn:hasValue ?LowerLimit_Value . }
+    optional{ ?resource sphn:hasLowerLimit/sphn:hasUnit ?LowerLimit_Unit . }
+    optional{ ?resource sphn:hasLowerLimit/sphn:hasUnit/sphn:hasCode ?LowerLimit_Unit_Code . }
+    optional{ ?resource sphn:hasLowerLimit/sphn:hasComparator ?LowerLimit_Comparator . }
+    optional{ ?resource sphn:hasUpperLimit ?UpperLimit . }
+    optional{ ?resource sphn:hasUpperLimit/sphn:hasValue ?UpperLimit_Value . }
+    optional{ ?resource sphn:hasUpperLimit/sphn:hasUnit ?UpperLimit_Unit . }
+    optional{ ?resource sphn:hasUpperLimit/sphn:hasUnit/sphn:hasCode ?UpperLimit_Unit_Code . }
+    optional{ ?resource sphn:hasUpperLimit/sphn:hasComparator ?UpperLimit_Comparator . }
+
+}

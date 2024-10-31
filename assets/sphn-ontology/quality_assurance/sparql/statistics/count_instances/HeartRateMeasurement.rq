@@ -1,0 +1,2334 @@
+PREFIX sphn:<https://biomedit.ch/rdf/sphn-schema/sphn#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT *
+WHERE {
+    {
+    SELECT ?origin (COUNT(?origin) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+        BIND("https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement" as ?origin)
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasDataProvider" as ?origin)
+        optional{ ?resource sphn:hasDataProvider ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasDataProvider/sphn:hasDepartment" as ?origin)
+        optional{ ?resource sphn:hasDataProvider/sphn:hasDepartment ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasDataProvider/sphn:hasInstitutionCode" as ?origin)
+        optional{ ?resource sphn:hasDataProvider/sphn:hasInstitutionCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasDataProvider/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasDataProvider/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasBodySite" as ?origin)
+        optional{ ?resource sphn:hasBodySite ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasBodySite/sphn:hasCode" as ?origin)
+        optional{ ?resource sphn:hasBodySite/sphn:hasCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasBodySite/sphn:hasLaterality" as ?origin)
+        optional{ ?resource sphn:hasBodySite/sphn:hasLaterality ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasBodySite/sphn:hasLaterality/sphn:hasCode" as ?origin)
+        optional{ ?resource sphn:hasBodySite/sphn:hasLaterality/sphn:hasCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasSourceSystem" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasDataProvider" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasDataProvider ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasDepartment" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasDepartment ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasPrimarySystem" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasCode" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasDepartment" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasDepartment ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasPurpose" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasPurpose ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasSubjectPseudoIdentifier" as ?origin)
+        optional{ ?resource sphn:hasSubjectPseudoIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasSubjectPseudoIdentifier/sphn:hasSharedIdentifier" as ?origin)
+        optional{ ?resource sphn:hasSubjectPseudoIdentifier/sphn:hasSharedIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasSubjectPseudoIdentifier/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasSubjectPseudoIdentifier/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider" as ?origin)
+        optional{ ?resource sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasDepartment" as ?origin)
+        optional{ ?resource sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasDepartment ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode" as ?origin)
+        optional{ ?resource sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult" as ?origin)
+        optional{ ?resource sphn:hasResult ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDateTime" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDateTime ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasDataProvider" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasDataProvider ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasDataProvider/sphn:hasDepartment" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasDataProvider/sphn:hasDepartment ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasDataProvider/sphn:hasInstitutionCode" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasDataProvider/sphn:hasInstitutionCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasDataProvider/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasDataProvider/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasDataProvider" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasDataProvider ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasDepartment" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasDepartment ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasPrimarySystem" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasPrimarySystem ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasCode" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasDepartment" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasDepartment ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasPurpose" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasSourceSystem/sphn:hasPurpose ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasCreationDateTime" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasCreationDateTime ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasEntryCount" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasEntryCount ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasEntryCount/sphn:hasValue" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasEntryCount/sphn:hasValue ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasEntryCount/sphn:hasUnit" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasEntryCount/sphn:hasUnit ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasEntryCount/sphn:hasUnit/sphn:hasCode" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasEntryCount/sphn:hasUnit/sphn:hasCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasEntryCount/sphn:hasComparator" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasEntryCount/sphn:hasComparator ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasUniformResourceIdentifier" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasUniformResourceIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasSubjectPseudoIdentifier" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasSubjectPseudoIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasSubjectPseudoIdentifier/sphn:hasSharedIdentifier" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasSubjectPseudoIdentifier/sphn:hasSharedIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasSubjectPseudoIdentifier/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasSubjectPseudoIdentifier/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasDepartment" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasDepartment ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasEncoding" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasEncoding ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasFormatCode" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasFormatCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasHash" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasHash ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasHash/sphn:hasAlgorithm" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasHash/sphn:hasAlgorithm ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasDataFile/sphn:hasHash/sphn:hasStringValue" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasDataFile/sphn:hasHash/sphn:hasStringValue ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasQuantity" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasQuantity ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasQuantity/sphn:hasValue" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasQuantity/sphn:hasValue ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasQuantity/sphn:hasUnit" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasQuantity/sphn:hasUnit ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasQuantity/sphn:hasUnit/sphn:hasCode" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasQuantity/sphn:hasUnit/sphn:hasCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasQuantity/sphn:hasComparator" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasQuantity/sphn:hasComparator ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasResult/sphn:hasRegularityCode" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasRegularityCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasMethodCode" as ?origin)
+        optional{ ?resource sphn:hasMethodCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasAdmissionDateTime" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasAdmissionDateTime ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDischargeDateTime" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDischargeDateTime ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDataProvider" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDataProvider ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDataProvider/sphn:hasDepartment" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDataProvider/sphn:hasDepartment ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDataProvider/sphn:hasInstitutionCode" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDataProvider/sphn:hasInstitutionCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDataProvider/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDataProvider/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasDataProvider" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasDataProvider ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasDepartment" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasDepartment ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasCode" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasDepartment" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasDepartment ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPurpose" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPurpose ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasTypeCode" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasTypeCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDischargeLocation" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDischargeLocation ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDischargeLocation/sphn:hasExact" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDischargeLocation/sphn:hasExact ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDischargeLocation/sphn:hasDataProvider" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDischargeLocation/sphn:hasDataProvider ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDischargeLocation/sphn:hasDataProvider/sphn:hasDepartment" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDischargeLocation/sphn:hasDataProvider/sphn:hasDepartment ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDischargeLocation/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDischargeLocation/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDischargeLocation/sphn:hasDataProvider/sphn:hasInstitutionCode" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDischargeLocation/sphn:hasDataProvider/sphn:hasInstitutionCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDischargeLocation/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDischargeLocation/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDischargeLocation/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDischargeLocation/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDischargeLocation/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDischargeLocation/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDischargeLocation/sphn:hasDataProvider/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDischargeLocation/sphn:hasDataProvider/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDischargeLocation/sphn:hasTypeCode" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDischargeLocation/sphn:hasTypeCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasDataProvider" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasDataProvider ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasDepartment" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasDepartment ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasCode" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasDepartment" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasDepartment ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPurpose" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPurpose ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier/sphn:hasSharedIdentifier" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier/sphn:hasSharedIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasDepartment" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasDepartment ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasOriginLocation" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasOriginLocation ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasOriginLocation/sphn:hasExact" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasOriginLocation/sphn:hasExact ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasOriginLocation/sphn:hasDataProvider" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasOriginLocation/sphn:hasDataProvider ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasOriginLocation/sphn:hasDataProvider/sphn:hasDepartment" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasOriginLocation/sphn:hasDataProvider/sphn:hasDepartment ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasOriginLocation/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasOriginLocation/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasOriginLocation/sphn:hasDataProvider/sphn:hasInstitutionCode" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasOriginLocation/sphn:hasDataProvider/sphn:hasInstitutionCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasOriginLocation/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasOriginLocation/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasOriginLocation/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasOriginLocation/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasOriginLocation/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasOriginLocation/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasOriginLocation/sphn:hasDataProvider/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasOriginLocation/sphn:hasDataProvider/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasOriginLocation/sphn:hasTypeCode" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasOriginLocation/sphn:hasTypeCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasPerformer" as ?origin)
+        optional{ ?resource sphn:hasPerformer ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasPerformer/sphn:hasCode" as ?origin)
+        optional{ ?resource sphn:hasPerformer/sphn:hasCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasSubjectPhysiologicState" as ?origin)
+        optional{ ?resource sphn:hasSubjectPhysiologicState ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasSubjectPhysiologicState/sphn:hasCode" as ?origin)
+        optional{ ?resource sphn:hasSubjectPhysiologicState/sphn:hasCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasStartDateTime" as ?origin)
+        optional{ ?resource sphn:hasStartDateTime ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasEndDateTime" as ?origin)
+        optional{ ?resource sphn:hasEndDateTime ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasMedicalDevice" as ?origin)
+        optional{ ?resource sphn:hasMedicalDevice ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasMedicalDevice/sphn:hasTypeCode" as ?origin)
+        optional{ ?resource sphn:hasMedicalDevice/sphn:hasTypeCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasMedicalDevice/sphn:hasTypeCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasMedicalDevice/sphn:hasTypeCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasMedicalDevice/sphn:hasTypeCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasMedicalDevice/sphn:hasTypeCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasMedicalDevice/sphn:hasTypeCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasMedicalDevice/sphn:hasTypeCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasMedicalDevice/sphn:hasSoftware" as ?origin)
+        optional{ ?resource sphn:hasMedicalDevice/sphn:hasSoftware ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasMedicalDevice/sphn:hasSoftware/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasMedicalDevice/sphn:hasSoftware/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasMedicalDevice/sphn:hasSoftware/sphn:hasUniformResourceLocator" as ?origin)
+        optional{ ?resource sphn:hasMedicalDevice/sphn:hasSoftware/sphn:hasUniformResourceLocator ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasMedicalDevice/sphn:hasSoftware/sphn:hasDataProvider" as ?origin)
+        optional{ ?resource sphn:hasMedicalDevice/sphn:hasSoftware/sphn:hasDataProvider ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasMedicalDevice/sphn:hasSoftware/sphn:hasDataProvider/sphn:hasDepartment" as ?origin)
+        optional{ ?resource sphn:hasMedicalDevice/sphn:hasSoftware/sphn:hasDataProvider/sphn:hasDepartment ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasMedicalDevice/sphn:hasSoftware/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasMedicalDevice/sphn:hasSoftware/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasMedicalDevice/sphn:hasSoftware/sphn:hasDataProvider/sphn:hasInstitutionCode" as ?origin)
+        optional{ ?resource sphn:hasMedicalDevice/sphn:hasSoftware/sphn:hasDataProvider/sphn:hasInstitutionCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasMedicalDevice/sphn:hasSoftware/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasMedicalDevice/sphn:hasSoftware/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasMedicalDevice/sphn:hasSoftware/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasMedicalDevice/sphn:hasSoftware/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasMedicalDevice/sphn:hasSoftware/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasMedicalDevice/sphn:hasSoftware/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasMedicalDevice/sphn:hasSoftware/sphn:hasDataProvider/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasMedicalDevice/sphn:hasSoftware/sphn:hasDataProvider/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasMedicalDevice/sphn:hasSoftware/sphn:hasDescription" as ?origin)
+        optional{ ?resource sphn:hasMedicalDevice/sphn:hasSoftware/sphn:hasDescription ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasMedicalDevice/sphn:hasSoftware/sphn:hasVersion" as ?origin)
+        optional{ ?resource sphn:hasMedicalDevice/sphn:hasSoftware/sphn:hasVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasMedicalDevice/sphn:hasProductCode" as ?origin)
+        optional{ ?resource sphn:hasMedicalDevice/sphn:hasProductCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasMedicalDevice/sphn:hasProductCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasMedicalDevice/sphn:hasProductCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasMedicalDevice/sphn:hasProductCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasMedicalDevice/sphn:hasProductCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#HeartRateMeasurement> .
+
+        BIND("sphn:hasMedicalDevice/sphn:hasProductCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasMedicalDevice/sphn:hasProductCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+}}

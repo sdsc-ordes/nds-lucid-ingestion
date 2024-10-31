@@ -1,0 +1,274 @@
+PREFIX sphn:<https://biomedit.ch/rdf/sphn-schema/sphn#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT *
+WHERE {
+    {
+    SELECT ?origin (COUNT(?origin) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#LabResult> .
+        BIND("https://biomedit.ch/rdf/sphn-schema/sphn#LabResult" as ?origin)
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#LabResult> .
+
+        BIND("sphn:hasCode" as ?origin)
+        optional{ ?resource sphn:hasCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#LabResult> .
+
+        BIND("sphn:hasCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#LabResult> .
+
+        BIND("sphn:hasCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#LabResult> .
+
+        BIND("sphn:hasCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#LabResult> .
+
+        BIND("sphn:hasQuantity" as ?origin)
+        optional{ ?resource sphn:hasQuantity ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#LabResult> .
+
+        BIND("sphn:hasQuantity/sphn:hasValue" as ?origin)
+        optional{ ?resource sphn:hasQuantity/sphn:hasValue ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#LabResult> .
+
+        BIND("sphn:hasQuantity/sphn:hasUnit" as ?origin)
+        optional{ ?resource sphn:hasQuantity/sphn:hasUnit ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#LabResult> .
+
+        BIND("sphn:hasQuantity/sphn:hasUnit/sphn:hasCode" as ?origin)
+        optional{ ?resource sphn:hasQuantity/sphn:hasUnit/sphn:hasCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#LabResult> .
+
+        BIND("sphn:hasQuantity/sphn:hasComparator" as ?origin)
+        optional{ ?resource sphn:hasQuantity/sphn:hasComparator ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#LabResult> .
+
+        BIND("sphn:hasStringValue" as ?origin)
+        optional{ ?resource sphn:hasStringValue ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#LabResult> .
+
+        BIND("sphn:hasNumericalReference" as ?origin)
+        optional{ ?resource sphn:hasNumericalReference ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#LabResult> .
+
+        BIND("sphn:hasNumericalReference/sphn:hasQuantity" as ?origin)
+        optional{ ?resource sphn:hasNumericalReference/sphn:hasQuantity ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#LabResult> .
+
+        BIND("sphn:hasNumericalReference/sphn:hasQuantity/sphn:hasValue" as ?origin)
+        optional{ ?resource sphn:hasNumericalReference/sphn:hasQuantity/sphn:hasValue ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#LabResult> .
+
+        BIND("sphn:hasNumericalReference/sphn:hasQuantity/sphn:hasUnit" as ?origin)
+        optional{ ?resource sphn:hasNumericalReference/sphn:hasQuantity/sphn:hasUnit ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#LabResult> .
+
+        BIND("sphn:hasNumericalReference/sphn:hasQuantity/sphn:hasUnit/sphn:hasCode" as ?origin)
+        optional{ ?resource sphn:hasNumericalReference/sphn:hasQuantity/sphn:hasUnit/sphn:hasCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#LabResult> .
+
+        BIND("sphn:hasNumericalReference/sphn:hasQuantity/sphn:hasComparator" as ?origin)
+        optional{ ?resource sphn:hasNumericalReference/sphn:hasQuantity/sphn:hasComparator ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#LabResult> .
+
+        BIND("sphn:hasNumericalReference/sphn:hasLowerLimit" as ?origin)
+        optional{ ?resource sphn:hasNumericalReference/sphn:hasLowerLimit ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#LabResult> .
+
+        BIND("sphn:hasNumericalReference/sphn:hasLowerLimit/sphn:hasValue" as ?origin)
+        optional{ ?resource sphn:hasNumericalReference/sphn:hasLowerLimit/sphn:hasValue ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#LabResult> .
+
+        BIND("sphn:hasNumericalReference/sphn:hasLowerLimit/sphn:hasUnit" as ?origin)
+        optional{ ?resource sphn:hasNumericalReference/sphn:hasLowerLimit/sphn:hasUnit ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#LabResult> .
+
+        BIND("sphn:hasNumericalReference/sphn:hasLowerLimit/sphn:hasUnit/sphn:hasCode" as ?origin)
+        optional{ ?resource sphn:hasNumericalReference/sphn:hasLowerLimit/sphn:hasUnit/sphn:hasCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#LabResult> .
+
+        BIND("sphn:hasNumericalReference/sphn:hasLowerLimit/sphn:hasComparator" as ?origin)
+        optional{ ?resource sphn:hasNumericalReference/sphn:hasLowerLimit/sphn:hasComparator ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#LabResult> .
+
+        BIND("sphn:hasNumericalReference/sphn:hasUpperLimit" as ?origin)
+        optional{ ?resource sphn:hasNumericalReference/sphn:hasUpperLimit ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#LabResult> .
+
+        BIND("sphn:hasNumericalReference/sphn:hasUpperLimit/sphn:hasValue" as ?origin)
+        optional{ ?resource sphn:hasNumericalReference/sphn:hasUpperLimit/sphn:hasValue ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#LabResult> .
+
+        BIND("sphn:hasNumericalReference/sphn:hasUpperLimit/sphn:hasUnit" as ?origin)
+        optional{ ?resource sphn:hasNumericalReference/sphn:hasUpperLimit/sphn:hasUnit ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#LabResult> .
+
+        BIND("sphn:hasNumericalReference/sphn:hasUpperLimit/sphn:hasUnit/sphn:hasCode" as ?origin)
+        optional{ ?resource sphn:hasNumericalReference/sphn:hasUpperLimit/sphn:hasUnit/sphn:hasCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#LabResult> .
+
+        BIND("sphn:hasNumericalReference/sphn:hasUpperLimit/sphn:hasComparator" as ?origin)
+        optional{ ?resource sphn:hasNumericalReference/sphn:hasUpperLimit/sphn:hasComparator ?predicate . }
+    }
+    GROUP BY ?origin
+}}

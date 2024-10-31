@@ -1,0 +1,1524 @@
+PREFIX sphn:<https://biomedit.ch/rdf/sphn-schema/sphn#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT *
+WHERE {
+    {
+    SELECT ?origin (COUNT(?origin) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+        BIND("https://biomedit.ch/rdf/sphn-schema/sphn#Exposure" as ?origin)
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasRecordDateTime" as ?origin)
+        optional{ ?resource sphn:hasRecordDateTime ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasDataProvider" as ?origin)
+        optional{ ?resource sphn:hasDataProvider ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasDataProvider/sphn:hasDepartment" as ?origin)
+        optional{ ?resource sphn:hasDataProvider/sphn:hasDepartment ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasDataProvider/sphn:hasInstitutionCode" as ?origin)
+        optional{ ?resource sphn:hasDataProvider/sphn:hasInstitutionCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasDataProvider/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasDataProvider/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasQuantity" as ?origin)
+        optional{ ?resource sphn:hasQuantity ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasQuantity/sphn:hasValue" as ?origin)
+        optional{ ?resource sphn:hasQuantity/sphn:hasValue ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasQuantity/sphn:hasUnit" as ?origin)
+        optional{ ?resource sphn:hasQuantity/sphn:hasUnit ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasQuantity/sphn:hasUnit/sphn:hasCode" as ?origin)
+        optional{ ?resource sphn:hasQuantity/sphn:hasUnit/sphn:hasCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasQuantity/sphn:hasComparator" as ?origin)
+        optional{ ?resource sphn:hasQuantity/sphn:hasComparator ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasSourceSystem" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasDataProvider" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasDataProvider ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasDepartment" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasDepartment ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasPrimarySystem" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasCode" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasDepartment" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasDepartment ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasSourceSystem/sphn:hasPurpose" as ?origin)
+        optional{ ?resource sphn:hasSourceSystem/sphn:hasPurpose ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasSubjectPseudoIdentifier" as ?origin)
+        optional{ ?resource sphn:hasSubjectPseudoIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasSubjectPseudoIdentifier/sphn:hasSharedIdentifier" as ?origin)
+        optional{ ?resource sphn:hasSubjectPseudoIdentifier/sphn:hasSharedIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasSubjectPseudoIdentifier/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasSubjectPseudoIdentifier/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider" as ?origin)
+        optional{ ?resource sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasDepartment" as ?origin)
+        optional{ ?resource sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasDepartment ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode" as ?origin)
+        optional{ ?resource sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasRouteCode" as ?origin)
+        optional{ ?resource sphn:hasRouteCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAgentCode" as ?origin)
+        optional{ ?resource sphn:hasAgentCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasDegreeCode" as ?origin)
+        optional{ ?resource sphn:hasDegreeCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasAdmissionDateTime" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasAdmissionDateTime ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDischargeDateTime" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDischargeDateTime ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDataProvider" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDataProvider ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDataProvider/sphn:hasDepartment" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDataProvider/sphn:hasDepartment ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDataProvider/sphn:hasInstitutionCode" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDataProvider/sphn:hasInstitutionCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDataProvider/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDataProvider/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasDataProvider" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasDataProvider ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasDepartment" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasDepartment ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasCode" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasDepartment" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasDepartment ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPurpose" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasSourceSystem/sphn:hasPurpose ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasTypeCode" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasCareHandling/sphn:hasTypeCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDischargeLocation" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDischargeLocation ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDischargeLocation/sphn:hasExact" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDischargeLocation/sphn:hasExact ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDischargeLocation/sphn:hasDataProvider" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDischargeLocation/sphn:hasDataProvider ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDischargeLocation/sphn:hasDataProvider/sphn:hasDepartment" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDischargeLocation/sphn:hasDataProvider/sphn:hasDepartment ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDischargeLocation/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDischargeLocation/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDischargeLocation/sphn:hasDataProvider/sphn:hasInstitutionCode" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDischargeLocation/sphn:hasDataProvider/sphn:hasInstitutionCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDischargeLocation/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDischargeLocation/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDischargeLocation/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDischargeLocation/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDischargeLocation/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDischargeLocation/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDischargeLocation/sphn:hasDataProvider/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDischargeLocation/sphn:hasDataProvider/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasDischargeLocation/sphn:hasTypeCode" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasDischargeLocation/sphn:hasTypeCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasDataProvider" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasDataProvider ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasDepartment" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasDepartment ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasDataProvider/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasCode" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasDepartment" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasDepartment ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPrimarySystem/sphn:hasDataProvider/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPurpose" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSourceSystem/sphn:hasPurpose ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier/sphn:hasSharedIdentifier" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier/sphn:hasSharedIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasDepartment" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasDepartment ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasSubjectPseudoIdentifier/sphn:hasDataProvider/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasOriginLocation" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasOriginLocation ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasOriginLocation/sphn:hasExact" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasOriginLocation/sphn:hasExact ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasOriginLocation/sphn:hasDataProvider" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasOriginLocation/sphn:hasDataProvider ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasOriginLocation/sphn:hasDataProvider/sphn:hasDepartment" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasOriginLocation/sphn:hasDataProvider/sphn:hasDepartment ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasOriginLocation/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasOriginLocation/sphn:hasDataProvider/sphn:hasDepartment/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasOriginLocation/sphn:hasDataProvider/sphn:hasInstitutionCode" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasOriginLocation/sphn:hasDataProvider/sphn:hasInstitutionCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasOriginLocation/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasOriginLocation/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasOriginLocation/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasOriginLocation/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasOriginLocation/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasOriginLocation/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasOriginLocation/sphn:hasDataProvider/sphn:hasCategory" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasOriginLocation/sphn:hasDataProvider/sphn:hasCategory ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasAdministrativeCase/sphn:hasOriginLocation/sphn:hasTypeCode" as ?origin)
+        optional{ ?resource sphn:hasAdministrativeCase/sphn:hasOriginLocation/sphn:hasTypeCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasStartDateTime" as ?origin)
+        optional{ ?resource sphn:hasStartDateTime ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasEndDateTime" as ?origin)
+        optional{ ?resource sphn:hasEndDateTime ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasDuration" as ?origin)
+        optional{ ?resource sphn:hasDuration ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasDuration/sphn:hasValue" as ?origin)
+        optional{ ?resource sphn:hasDuration/sphn:hasValue ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasDuration/sphn:hasUnit" as ?origin)
+        optional{ ?resource sphn:hasDuration/sphn:hasUnit ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasDuration/sphn:hasUnit/sphn:hasCode" as ?origin)
+        optional{ ?resource sphn:hasDuration/sphn:hasUnit/sphn:hasCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#Exposure> .
+
+        BIND("sphn:hasDuration/sphn:hasComparator" as ?origin)
+        optional{ ?resource sphn:hasDuration/sphn:hasComparator ?predicate . }
+    }
+    GROUP BY ?origin
+}}

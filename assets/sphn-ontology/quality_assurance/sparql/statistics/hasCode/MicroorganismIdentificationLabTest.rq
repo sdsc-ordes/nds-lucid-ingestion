@@ -1,0 +1,202 @@
+PREFIX sphn:<https://biomedit.ch/rdf/sphn-schema/sphn#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT *
+WHERE {
+    {
+    SELECT ?origin ?code ?code_identifier ?code_name ?code_codingSystemAndVersion (COUNT(?code) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#MicroorganismIdentificationLabTest> .
+
+        BIND("sphn:hasCode" as ?origin)
+        optional{ ?resource sphn:hasCode ?code . }
+        optional{ ?resource sphn:hasCode/sphn:hasIdentifier ?code_identifier . }
+        optional{ ?resource sphn:hasCode/sphn:hasName ?code_name . }
+        optional{ ?resource sphn:hasCode/sphn:hasCodingSystemAndVersion ?code_codingSystemAndVersion . }
+
+    }
+    GROUP BY ?origin ?code ?code_identifier ?code_name ?code_codingSystemAndVersion
+    }
+        UNION
+    {
+    SELECT ?origin ?code ?code_identifier ?code_name ?code_codingSystemAndVersion (COUNT(?code) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#MicroorganismIdentificationLabTest> .
+
+        BIND("sphn:hasResult/sphn:hasCode" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasCode ?code . }
+        optional{ ?resource sphn:hasResult/sphn:hasCode/sphn:hasIdentifier ?code_identifier . }
+        optional{ ?resource sphn:hasResult/sphn:hasCode/sphn:hasName ?code_name . }
+        optional{ ?resource sphn:hasResult/sphn:hasCode/sphn:hasCodingSystemAndVersion ?code_codingSystemAndVersion . }
+
+    }
+    GROUP BY ?origin ?code ?code_identifier ?code_name ?code_codingSystemAndVersion
+    }
+        UNION
+    {
+    SELECT ?origin ?code ?code_identifier ?code_name ?code_codingSystemAndVersion (COUNT(?code) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#MicroorganismIdentificationLabTest> .
+
+        BIND("sphn:hasResult/sphn:hasTimeToPositivity/sphn:hasUnit/sphn:hasCode" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasTimeToPositivity/sphn:hasUnit/sphn:hasCode ?code . }
+        optional{ ?resource sphn:hasResult/sphn:hasTimeToPositivity/sphn:hasUnit/sphn:hasCode/sphn:hasIdentifier ?code_identifier . }
+        optional{ ?resource sphn:hasResult/sphn:hasTimeToPositivity/sphn:hasUnit/sphn:hasCode/sphn:hasName ?code_name . }
+        optional{ ?resource sphn:hasResult/sphn:hasTimeToPositivity/sphn:hasUnit/sphn:hasCode/sphn:hasCodingSystemAndVersion ?code_codingSystemAndVersion . }
+
+    }
+    GROUP BY ?origin ?code ?code_identifier ?code_name ?code_codingSystemAndVersion
+    }
+        UNION
+    {
+    SELECT ?origin ?code ?code_identifier ?code_name ?code_codingSystemAndVersion (COUNT(?code) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#MicroorganismIdentificationLabTest> .
+
+        BIND("sphn:hasResult/sphn:hasOrganism/sphn:hasCode" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasOrganism/sphn:hasCode ?code . }
+        optional{ ?resource sphn:hasResult/sphn:hasOrganism/sphn:hasCode/sphn:hasIdentifier ?code_identifier . }
+        optional{ ?resource sphn:hasResult/sphn:hasOrganism/sphn:hasCode/sphn:hasName ?code_name . }
+        optional{ ?resource sphn:hasResult/sphn:hasOrganism/sphn:hasCode/sphn:hasCodingSystemAndVersion ?code_codingSystemAndVersion . }
+
+    }
+    GROUP BY ?origin ?code ?code_identifier ?code_name ?code_codingSystemAndVersion
+    }
+        UNION
+    {
+    SELECT ?origin ?code ?code_identifier ?code_name ?code_codingSystemAndVersion (COUNT(?code) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#MicroorganismIdentificationLabTest> .
+
+        BIND("sphn:hasResult/sphn:hasNumericalReference/sphn:hasQuantity/sphn:hasUnit/sphn:hasCode" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasNumericalReference/sphn:hasQuantity/sphn:hasUnit/sphn:hasCode ?code . }
+        optional{ ?resource sphn:hasResult/sphn:hasNumericalReference/sphn:hasQuantity/sphn:hasUnit/sphn:hasCode/sphn:hasIdentifier ?code_identifier . }
+        optional{ ?resource sphn:hasResult/sphn:hasNumericalReference/sphn:hasQuantity/sphn:hasUnit/sphn:hasCode/sphn:hasName ?code_name . }
+        optional{ ?resource sphn:hasResult/sphn:hasNumericalReference/sphn:hasQuantity/sphn:hasUnit/sphn:hasCode/sphn:hasCodingSystemAndVersion ?code_codingSystemAndVersion . }
+
+    }
+    GROUP BY ?origin ?code ?code_identifier ?code_name ?code_codingSystemAndVersion
+    }
+        UNION
+    {
+    SELECT ?origin ?code ?code_identifier ?code_name ?code_codingSystemAndVersion (COUNT(?code) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#MicroorganismIdentificationLabTest> .
+
+        BIND("sphn:hasResult/sphn:hasNumericalReference/sphn:hasLowerLimit/sphn:hasUnit/sphn:hasCode" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasNumericalReference/sphn:hasLowerLimit/sphn:hasUnit/sphn:hasCode ?code . }
+        optional{ ?resource sphn:hasResult/sphn:hasNumericalReference/sphn:hasLowerLimit/sphn:hasUnit/sphn:hasCode/sphn:hasIdentifier ?code_identifier . }
+        optional{ ?resource sphn:hasResult/sphn:hasNumericalReference/sphn:hasLowerLimit/sphn:hasUnit/sphn:hasCode/sphn:hasName ?code_name . }
+        optional{ ?resource sphn:hasResult/sphn:hasNumericalReference/sphn:hasLowerLimit/sphn:hasUnit/sphn:hasCode/sphn:hasCodingSystemAndVersion ?code_codingSystemAndVersion . }
+
+    }
+    GROUP BY ?origin ?code ?code_identifier ?code_name ?code_codingSystemAndVersion
+    }
+        UNION
+    {
+    SELECT ?origin ?code ?code_identifier ?code_name ?code_codingSystemAndVersion (COUNT(?code) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#MicroorganismIdentificationLabTest> .
+
+        BIND("sphn:hasResult/sphn:hasNumericalReference/sphn:hasUpperLimit/sphn:hasUnit/sphn:hasCode" as ?origin)
+        optional{ ?resource sphn:hasResult/sphn:hasNumericalReference/sphn:hasUpperLimit/sphn:hasUnit/sphn:hasCode ?code . }
+        optional{ ?resource sphn:hasResult/sphn:hasNumericalReference/sphn:hasUpperLimit/sphn:hasUnit/sphn:hasCode/sphn:hasIdentifier ?code_identifier . }
+        optional{ ?resource sphn:hasResult/sphn:hasNumericalReference/sphn:hasUpperLimit/sphn:hasUnit/sphn:hasCode/sphn:hasName ?code_name . }
+        optional{ ?resource sphn:hasResult/sphn:hasNumericalReference/sphn:hasUpperLimit/sphn:hasUnit/sphn:hasCode/sphn:hasCodingSystemAndVersion ?code_codingSystemAndVersion . }
+
+    }
+    GROUP BY ?origin ?code ?code_identifier ?code_name ?code_codingSystemAndVersion
+    }
+        UNION
+    {
+    SELECT ?origin ?code ?code_identifier ?code_name ?code_codingSystemAndVersion (COUNT(?code) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#MicroorganismIdentificationLabTest> .
+
+        BIND("sphn:hasInstrument/sphn:hasTypeCode" as ?origin)
+        optional{ ?resource sphn:hasInstrument/sphn:hasTypeCode ?code . }
+        optional{ ?resource sphn:hasInstrument/sphn:hasTypeCode/sphn:hasIdentifier ?code_identifier . }
+        optional{ ?resource sphn:hasInstrument/sphn:hasTypeCode/sphn:hasName ?code_name . }
+        optional{ ?resource sphn:hasInstrument/sphn:hasTypeCode/sphn:hasCodingSystemAndVersion ?code_codingSystemAndVersion . }
+
+    }
+    GROUP BY ?origin ?code ?code_identifier ?code_name ?code_codingSystemAndVersion
+    }
+        UNION
+    {
+    SELECT ?origin ?code ?code_identifier ?code_name ?code_codingSystemAndVersion (COUNT(?code) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#MicroorganismIdentificationLabTest> .
+
+        BIND("sphn:hasInstrument/sphn:hasSoftware/sphn:hasDataProvider/sphn:hasInstitutionCode" as ?origin)
+        optional{ ?resource sphn:hasInstrument/sphn:hasSoftware/sphn:hasDataProvider/sphn:hasInstitutionCode ?code . }
+        optional{ ?resource sphn:hasInstrument/sphn:hasSoftware/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?code_identifier . }
+        optional{ ?resource sphn:hasInstrument/sphn:hasSoftware/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?code_name . }
+        optional{ ?resource sphn:hasInstrument/sphn:hasSoftware/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?code_codingSystemAndVersion . }
+
+    }
+    GROUP BY ?origin ?code ?code_identifier ?code_name ?code_codingSystemAndVersion
+    }
+        UNION
+    {
+    SELECT ?origin ?code ?code_identifier ?code_name ?code_codingSystemAndVersion (COUNT(?code) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#MicroorganismIdentificationLabTest> .
+
+        BIND("sphn:hasInstrument/sphn:hasProductCode" as ?origin)
+        optional{ ?resource sphn:hasInstrument/sphn:hasProductCode ?code . }
+        optional{ ?resource sphn:hasInstrument/sphn:hasProductCode/sphn:hasIdentifier ?code_identifier . }
+        optional{ ?resource sphn:hasInstrument/sphn:hasProductCode/sphn:hasName ?code_name . }
+        optional{ ?resource sphn:hasInstrument/sphn:hasProductCode/sphn:hasCodingSystemAndVersion ?code_codingSystemAndVersion . }
+
+    }
+    GROUP BY ?origin ?code ?code_identifier ?code_name ?code_codingSystemAndVersion
+    }
+        UNION
+    {
+    SELECT ?origin ?code ?code_identifier ?code_name ?code_codingSystemAndVersion (COUNT(?code) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#MicroorganismIdentificationLabTest> .
+
+        BIND("sphn:hasTestKit/sphn:hasTypeCode" as ?origin)
+        optional{ ?resource sphn:hasTestKit/sphn:hasTypeCode ?code . }
+        optional{ ?resource sphn:hasTestKit/sphn:hasTypeCode/sphn:hasIdentifier ?code_identifier . }
+        optional{ ?resource sphn:hasTestKit/sphn:hasTypeCode/sphn:hasName ?code_name . }
+        optional{ ?resource sphn:hasTestKit/sphn:hasTypeCode/sphn:hasCodingSystemAndVersion ?code_codingSystemAndVersion . }
+
+    }
+    GROUP BY ?origin ?code ?code_identifier ?code_name ?code_codingSystemAndVersion
+    }
+        UNION
+    {
+    SELECT ?origin ?code ?code_identifier ?code_name ?code_codingSystemAndVersion (COUNT(?code) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#MicroorganismIdentificationLabTest> .
+
+        BIND("sphn:hasTestKit/sphn:hasSoftware/sphn:hasDataProvider/sphn:hasInstitutionCode" as ?origin)
+        optional{ ?resource sphn:hasTestKit/sphn:hasSoftware/sphn:hasDataProvider/sphn:hasInstitutionCode ?code . }
+        optional{ ?resource sphn:hasTestKit/sphn:hasSoftware/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasIdentifier ?code_identifier . }
+        optional{ ?resource sphn:hasTestKit/sphn:hasSoftware/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasName ?code_name . }
+        optional{ ?resource sphn:hasTestKit/sphn:hasSoftware/sphn:hasDataProvider/sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?code_codingSystemAndVersion . }
+
+    }
+    GROUP BY ?origin ?code ?code_identifier ?code_name ?code_codingSystemAndVersion
+    }
+        UNION
+    {
+    SELECT ?origin ?code ?code_identifier ?code_name ?code_codingSystemAndVersion (COUNT(?code) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#MicroorganismIdentificationLabTest> .
+
+        BIND("sphn:hasTestKit/sphn:hasProductCode" as ?origin)
+        optional{ ?resource sphn:hasTestKit/sphn:hasProductCode ?code . }
+        optional{ ?resource sphn:hasTestKit/sphn:hasProductCode/sphn:hasIdentifier ?code_identifier . }
+        optional{ ?resource sphn:hasTestKit/sphn:hasProductCode/sphn:hasName ?code_name . }
+        optional{ ?resource sphn:hasTestKit/sphn:hasProductCode/sphn:hasCodingSystemAndVersion ?code_codingSystemAndVersion . }
+
+    }
+    GROUP BY ?origin ?code ?code_identifier ?code_name ?code_codingSystemAndVersion
+    }
+
+}

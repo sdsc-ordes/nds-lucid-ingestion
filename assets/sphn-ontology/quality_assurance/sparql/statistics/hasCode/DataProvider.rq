@@ -1,0 +1,22 @@
+PREFIX sphn:<https://biomedit.ch/rdf/sphn-schema/sphn#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT *
+WHERE {
+    {
+    SELECT ?origin ?code ?code_identifier ?code_name ?code_codingSystemAndVersion (COUNT(?code) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#DataProvider> .
+
+        BIND("sphn:hasInstitutionCode" as ?origin)
+        optional{ ?resource sphn:hasInstitutionCode ?code . }
+        optional{ ?resource sphn:hasInstitutionCode/sphn:hasIdentifier ?code_identifier . }
+        optional{ ?resource sphn:hasInstitutionCode/sphn:hasName ?code_name . }
+        optional{ ?resource sphn:hasInstitutionCode/sphn:hasCodingSystemAndVersion ?code_codingSystemAndVersion . }
+
+    }
+    GROUP BY ?origin ?code ?code_identifier ?code_name ?code_codingSystemAndVersion
+    }
+
+}

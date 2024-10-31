@@ -1,0 +1,84 @@
+PREFIX sphn:<https://biomedit.ch/rdf/sphn-schema/sphn#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT *
+WHERE {
+    {
+    SELECT ?origin (COUNT(?origin) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#TumorStageAssessmentResult> .
+        BIND("https://biomedit.ch/rdf/sphn-schema/sphn#TumorStageAssessmentResult" as ?origin)
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#TumorStageAssessmentResult> .
+
+        BIND("sphn:hasCode" as ?origin)
+        optional{ ?resource sphn:hasCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#TumorStageAssessmentResult> .
+
+        BIND("sphn:hasQuantity" as ?origin)
+        optional{ ?resource sphn:hasQuantity ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#TumorStageAssessmentResult> .
+
+        BIND("sphn:hasQuantity/sphn:hasValue" as ?origin)
+        optional{ ?resource sphn:hasQuantity/sphn:hasValue ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#TumorStageAssessmentResult> .
+
+        BIND("sphn:hasQuantity/sphn:hasUnit" as ?origin)
+        optional{ ?resource sphn:hasQuantity/sphn:hasUnit ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#TumorStageAssessmentResult> .
+
+        BIND("sphn:hasQuantity/sphn:hasUnit/sphn:hasCode" as ?origin)
+        optional{ ?resource sphn:hasQuantity/sphn:hasUnit/sphn:hasCode ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#TumorStageAssessmentResult> .
+
+        BIND("sphn:hasQuantity/sphn:hasComparator" as ?origin)
+        optional{ ?resource sphn:hasQuantity/sphn:hasComparator ?predicate . }
+    }
+    GROUP BY ?origin
+    } UNION
+    {
+    SELECT ?origin (COUNT(?predicate) as ?count_instances)
+    WHERE {
+        ?resource a <https://biomedit.ch/rdf/sphn-schema/sphn#TumorStageAssessmentResult> .
+
+        BIND("sphn:hasStringValue" as ?origin)
+        optional{ ?resource sphn:hasStringValue ?predicate . }
+    }
+    GROUP BY ?origin
+}}
