@@ -117,7 +117,7 @@ See [usage docs](./docs/usage.md) for all of the available options when running 
    <!-- TODO nf-core: Update the example "typical command" below used to run the pipeline -->
 
    ```bash
-   nextflow run nds-lucid/ingestion --input_dir /data/source --output_dir /data/target --notification_dir /data/notification --shapes /data/shapes
+   nextflow run main.nf -profile standard,test --input_dir /data/source --output_dir /data/target --notification_dir /data/notification --shapes /data/shapes
    ```
 
 ## Production use
