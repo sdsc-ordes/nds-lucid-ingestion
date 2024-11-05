@@ -72,7 +72,7 @@ flowchart TD
     check_integrity --> get_sett_metadata
     check_integrity --> unpack
     unpack --> patient_data
-    subgraph &nbsp &nbsp &nbsp biomedit
+    subgraph biomedit
         get_sett_metadata --> sett_unpack
     end
     subgraph config
