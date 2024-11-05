@@ -42,7 +42,6 @@ See [usage instructions](docs/usage.md) for more information.
 
 ## Pipeline summary
 
-<!-- TODO nf-core: Fill in short bullet-pointed list of the default steps in the pipeline -->
 
 1. Check for new `zip` files or rerun worfklow on current `zip` files in source directory
 2. Decrypt and decompress files to extract datasets
@@ -113,8 +112,6 @@ See [usage docs](./docs/usage.md) for all of the available options when running 
    Note that some form of configuration will be needed so that Nextflow knows how to fetch the required software. This is usually done in the form of a config profile (`test` in the example command above). You can chain multiple config profiles in a comma-separated string.
 
 2. Start running your own analysis!
-
-   <!-- TODO nf-core: Update the example "typical command" below used to run the pipeline -->
 
    ```bash
    nextflow run main.nf -profile standard,test --input_dir /data/source --output_dir /data/target --notification_dir /data/notification --shapes /data/shapes
