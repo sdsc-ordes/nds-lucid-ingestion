@@ -138,9 +138,6 @@ nextflow run main.nf -profile biomedit -w /data/work/  --rerun=true
 
 nds-lucid/ingestion was originally written by Stefan Milosavljevic and Cyril Matthey-Doret.
 
-## Contributions and Support
-
-If you would like to contribute to this pipeline, please see the [contributing guidelines](.github/CONTRIBUTING.md).
 
 ## Citations
 
