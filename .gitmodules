@@ -1,0 +1,3 @@
+[submodule "assets/sphn-schema"]
+	path = assets/sphn-schema
+	url = https://git.dcc.sib.swiss/sphn-semantic-framework/sphn-schema.git
