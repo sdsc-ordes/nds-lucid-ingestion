@@ -1,0 +1,2097 @@
+@prefix ns0: <https://biomedit.ch/rdf/sphn-ontology/sphn#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://github.com/synthetichealth/synthea/code>
+  ns0:hasIdentifier "https://github.com/synthetichealth/synthea" ;
+  ns0:hasCodingSystemAndVersion "v2.4.0-404-ge7ce2295" ;
+  ns0:hasName "Synthea" ;
+  a ns0:Code .
+
+<https://github.com/synthetichealth/synthea/>
+  a ns0:DataProviderInstitute ;
+  ns0:hasCode <https://github.com/synthetichealth/synthea/code> .
+
+<urn:uuid:6a8407d2-8c48-4486-b39f-f25810797a6a>
+  ns0:hasAdministrativeCase <urn:uuid:6a8407d2-8c48-4486-b39f-f25810797a6a> ;
+  ns0:hasEndDateTime "2010-02-11T22:51:23-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "6a8407d2-8c48-4486-b39f-f25810797a6a" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2010-02-11T22:21:23-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2010-02-11T22:21:23-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:bdc25f3c-9a6a-40c1-8174-07625ef79fec> ;
+  ns0:hasCurrentLocation <urn:uuid:dea603e3-1eca-34ac-a7b9-566138fc878b> ;
+  ns0:hasDataProviderInstitute <urn:uuid:dea603e3-1eca-34ac-a7b9-566138fc878b> .
+
+<urn:uuid:eb3d6f23-4d5d-48ac-9c11-d4c6960653fc>
+  ns0:hasAdministrativeCase <urn:uuid:eb3d6f23-4d5d-48ac-9c11-d4c6960653fc> ;
+  ns0:hasEndDateTime "2011-02-17T22:36:23-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "eb3d6f23-4d5d-48ac-9c11-d4c6960653fc" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2011-02-17T22:21:23-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2011-02-17T22:21:23-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:bdc25f3c-9a6a-40c1-8174-07625ef79fec> ;
+  ns0:hasCurrentLocation <urn:uuid:dea603e3-1eca-34ac-a7b9-566138fc878b> ;
+  ns0:hasDataProviderInstitute <urn:uuid:dea603e3-1eca-34ac-a7b9-566138fc878b> .
+
+<urn:uuid:62e6fcc5-7532-4d0a-bbee-809122509569>
+  ns0:hasAdministrativeCase <urn:uuid:62e6fcc5-7532-4d0a-bbee-809122509569> ;
+  ns0:hasEndDateTime "2012-02-23T22:36:23-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "62e6fcc5-7532-4d0a-bbee-809122509569" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2012-02-23T22:21:23-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2012-02-23T22:21:23-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:bdc25f3c-9a6a-40c1-8174-07625ef79fec> ;
+  ns0:hasCurrentLocation <urn:uuid:dea603e3-1eca-34ac-a7b9-566138fc878b> ;
+  ns0:hasDataProviderInstitute <urn:uuid:dea603e3-1eca-34ac-a7b9-566138fc878b> .
+
+<urn:uuid:910d1ba8-1971-4292-925c-c0f0e49784da>
+  ns0:hasAdministrativeCase <urn:uuid:910d1ba8-1971-4292-925c-c0f0e49784da> ;
+  ns0:hasEndDateTime "2012-04-26T23:36:23-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "910d1ba8-1971-4292-925c-c0f0e49784da" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2012-04-26T23:21:23-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2012-04-26T23:21:23-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:bdc25f3c-9a6a-40c1-8174-07625ef79fec> ;
+  ns0:hasCurrentLocation <urn:uuid:56e0b3b3-4fac-3776-8fc9-7b465eb2fc17> ;
+  ns0:hasDataProviderInstitute <urn:uuid:56e0b3b3-4fac-3776-8fc9-7b465eb2fc17> .
+
+<urn:uuid:76e730ea-e972-4af8-92d1-823a81ccec05>
+  ns0:hasAdministrativeCase <urn:uuid:76e730ea-e972-4af8-92d1-823a81ccec05> ;
+  ns0:hasEndDateTime "2013-02-28T22:36:23-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "76e730ea-e972-4af8-92d1-823a81ccec05" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2013-02-28T22:21:23-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2013-02-28T22:21:23-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:bdc25f3c-9a6a-40c1-8174-07625ef79fec> ;
+  ns0:hasCurrentLocation <urn:uuid:dea603e3-1eca-34ac-a7b9-566138fc878b> ;
+  ns0:hasDataProviderInstitute <urn:uuid:dea603e3-1eca-34ac-a7b9-566138fc878b> .
+
+<urn:uuid:863af393-a398-400f-9e2a-c883e639d3c0>
+  ns0:hasAdministrativeCase <urn:uuid:863af393-a398-400f-9e2a-c883e639d3c0> ;
+  ns0:hasEndDateTime "2013-06-03T23:36:23-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "863af393-a398-400f-9e2a-c883e639d3c0" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2013-06-03T23:21:23-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2013-06-03T23:21:23-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:bdc25f3c-9a6a-40c1-8174-07625ef79fec> ;
+  ns0:hasCurrentLocation <urn:uuid:56e0b3b3-4fac-3776-8fc9-7b465eb2fc17> ;
+  ns0:hasDataProviderInstitute <urn:uuid:56e0b3b3-4fac-3776-8fc9-7b465eb2fc17> .
+
+<urn:uuid:c025cdca-94db-44ae-95f4-45ad2260b0e1>
+  ns0:hasAdministrativeCase <urn:uuid:c025cdca-94db-44ae-95f4-45ad2260b0e1> ;
+  ns0:hasEndDateTime "2013-06-16T03:21:23-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "c025cdca-94db-44ae-95f4-45ad2260b0e1" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2013-06-15T23:21:23-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2013-06-15T23:21:23-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:bdc25f3c-9a6a-40c1-8174-07625ef79fec> ;
+  ns0:hasCurrentLocation <urn:uuid:56e0b3b3-4fac-3776-8fc9-7b465eb2fc17> ;
+  ns0:hasDataProviderInstitute <urn:uuid:56e0b3b3-4fac-3776-8fc9-7b465eb2fc17> .
+
+<urn:uuid:051ab7d1-16b5-43cb-9945-d189a03ba929>
+  ns0:hasAdministrativeCase <urn:uuid:051ab7d1-16b5-43cb-9945-d189a03ba929> ;
+  ns0:hasEndDateTime "2013-09-13T23:36:23-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "051ab7d1-16b5-43cb-9945-d189a03ba929" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2013-09-13T23:21:23-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2013-09-13T23:21:23-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:bdc25f3c-9a6a-40c1-8174-07625ef79fec> ;
+  ns0:hasCurrentLocation <urn:uuid:56e0b3b3-4fac-3776-8fc9-7b465eb2fc17> ;
+  ns0:hasDataProviderInstitute <urn:uuid:56e0b3b3-4fac-3776-8fc9-7b465eb2fc17> .
+
+<urn:uuid:22bad81a-0a71-442f-824b-c2bd7ab2b39e>
+  ns0:hasAdministrativeCase <urn:uuid:22bad81a-0a71-442f-824b-c2bd7ab2b39e> ;
+  ns0:hasEndDateTime "2014-01-30T22:36:23-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "22bad81a-0a71-442f-824b-c2bd7ab2b39e" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2014-01-30T22:21:23-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2014-01-30T22:21:23-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:bdc25f3c-9a6a-40c1-8174-07625ef79fec> ;
+  ns0:hasCurrentLocation <urn:uuid:56e0b3b3-4fac-3776-8fc9-7b465eb2fc17> ;
+  ns0:hasDataProviderInstitute <urn:uuid:56e0b3b3-4fac-3776-8fc9-7b465eb2fc17> .
+
+<urn:uuid:f1e80e91-fcc2-4a81-b144-1d242c8a6f16>
+  ns0:hasAdministrativeCase <urn:uuid:f1e80e91-fcc2-4a81-b144-1d242c8a6f16> ;
+  ns0:hasEndDateTime "2014-03-06T22:51:23-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "f1e80e91-fcc2-4a81-b144-1d242c8a6f16" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2014-03-06T22:21:23-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2014-03-06T22:21:23-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:bdc25f3c-9a6a-40c1-8174-07625ef79fec> ;
+  ns0:hasCurrentLocation <urn:uuid:dea603e3-1eca-34ac-a7b9-566138fc878b> ;
+  ns0:hasDataProviderInstitute <urn:uuid:dea603e3-1eca-34ac-a7b9-566138fc878b> .
+
+<urn:uuid:f9d830fb-7c04-4176-8c2e-401ce523ae17>
+  ns0:hasAdministrativeCase <urn:uuid:f9d830fb-7c04-4176-8c2e-401ce523ae17> ;
+  ns0:hasEndDateTime "2015-01-25T22:36:23-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "f9d830fb-7c04-4176-8c2e-401ce523ae17" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2015-01-25T22:21:23-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2015-01-25T22:21:23-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:bdc25f3c-9a6a-40c1-8174-07625ef79fec> ;
+  ns0:hasCurrentLocation <urn:uuid:56e0b3b3-4fac-3776-8fc9-7b465eb2fc17> ;
+  ns0:hasDataProviderInstitute <urn:uuid:56e0b3b3-4fac-3776-8fc9-7b465eb2fc17> .
+
+<urn:uuid:7a4f229e-adf1-4879-b9bf-41e8b434bdbd>
+  ns0:hasAdministrativeCase <urn:uuid:7a4f229e-adf1-4879-b9bf-41e8b434bdbd> ;
+  ns0:hasEndDateTime "2015-03-12T23:51:23-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "7a4f229e-adf1-4879-b9bf-41e8b434bdbd" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2015-03-12T23:21:23-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2015-03-12T23:21:23-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:bdc25f3c-9a6a-40c1-8174-07625ef79fec> ;
+  ns0:hasCurrentLocation <urn:uuid:dea603e3-1eca-34ac-a7b9-566138fc878b> ;
+  ns0:hasDataProviderInstitute <urn:uuid:dea603e3-1eca-34ac-a7b9-566138fc878b> .
+
+<urn:uuid:e2f499d3-adc7-4ff6-ac45-45abaa8f7e05>
+  ns0:hasAdministrativeCase <urn:uuid:e2f499d3-adc7-4ff6-ac45-45abaa8f7e05> ;
+  ns0:hasEndDateTime "2016-03-17T23:51:23-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "e2f499d3-adc7-4ff6-ac45-45abaa8f7e05" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2016-03-17T23:21:23-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2016-03-17T23:21:23-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:bdc25f3c-9a6a-40c1-8174-07625ef79fec> ;
+  ns0:hasCurrentLocation <urn:uuid:dea603e3-1eca-34ac-a7b9-566138fc878b> ;
+  ns0:hasDataProviderInstitute <urn:uuid:dea603e3-1eca-34ac-a7b9-566138fc878b> .
+
+<urn:uuid:e6b7ee8b-3991-4189-bc38-f7acaa739f95>
+  ns0:hasAdministrativeCase <urn:uuid:e6b7ee8b-3991-4189-bc38-f7acaa739f95> ;
+  ns0:hasEndDateTime "2017-01-14T22:36:23-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "e6b7ee8b-3991-4189-bc38-f7acaa739f95" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2017-01-14T22:21:23-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2017-01-14T22:21:23-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:bdc25f3c-9a6a-40c1-8174-07625ef79fec> ;
+  ns0:hasCurrentLocation <urn:uuid:56e0b3b3-4fac-3776-8fc9-7b465eb2fc17> ;
+  ns0:hasDataProviderInstitute <urn:uuid:56e0b3b3-4fac-3776-8fc9-7b465eb2fc17> .
+
+<urn:uuid:a8e43fdd-05df-4a86-9091-c50f6f4e8fff>
+  ns0:hasAdministrativeCase <urn:uuid:a8e43fdd-05df-4a86-9091-c50f6f4e8fff> ;
+  ns0:hasEndDateTime "2017-03-23T23:51:23-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "a8e43fdd-05df-4a86-9091-c50f6f4e8fff" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2017-03-23T23:21:23-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2017-03-23T23:21:23-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:bdc25f3c-9a6a-40c1-8174-07625ef79fec> ;
+  ns0:hasCurrentLocation <urn:uuid:dea603e3-1eca-34ac-a7b9-566138fc878b> ;
+  ns0:hasDataProviderInstitute <urn:uuid:dea603e3-1eca-34ac-a7b9-566138fc878b> .
+
+<urn:uuid:8aaf4cb9-7c00-4f44-8fa6-5e8fa3f47813>
+  ns0:hasAdministrativeCase <urn:uuid:8aaf4cb9-7c00-4f44-8fa6-5e8fa3f47813> ;
+  ns0:hasEndDateTime "2017-03-30T23:36:23-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "8aaf4cb9-7c00-4f44-8fa6-5e8fa3f47813" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2017-03-30T23:21:23-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2017-03-30T23:21:23-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:bdc25f3c-9a6a-40c1-8174-07625ef79fec> ;
+  ns0:hasCurrentLocation <urn:uuid:56e0b3b3-4fac-3776-8fc9-7b465eb2fc17> ;
+  ns0:hasDataProviderInstitute <urn:uuid:56e0b3b3-4fac-3776-8fc9-7b465eb2fc17> .
+
+<urn:uuid:1de47b9c-4769-4a13-8be9-e0a80e9f56f5>
+  ns0:hasAdministrativeCase <urn:uuid:1de47b9c-4769-4a13-8be9-e0a80e9f56f5> ;
+  ns0:hasEndDateTime "2017-03-25T23:51:23-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "1de47b9c-4769-4a13-8be9-e0a80e9f56f5" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2017-03-25T23:21:23-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2017-03-25T23:21:23-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:bdc25f3c-9a6a-40c1-8174-07625ef79fec> ;
+  ns0:hasCurrentLocation <urn:uuid:56e0b3b3-4fac-3776-8fc9-7b465eb2fc17> ;
+  ns0:hasDataProviderInstitute <urn:uuid:56e0b3b3-4fac-3776-8fc9-7b465eb2fc17> .
+
+<urn:uuid:e3f47e13-66c5-4ff4-aa37-b3da76274375>
+  ns0:hasAdministrativeCase <urn:uuid:e3f47e13-66c5-4ff4-aa37-b3da76274375> ;
+  ns0:hasEndDateTime "2018-01-05T22:36:23-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "e3f47e13-66c5-4ff4-aa37-b3da76274375" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2018-01-05T22:21:23-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2018-01-05T22:21:23-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:bdc25f3c-9a6a-40c1-8174-07625ef79fec> ;
+  ns0:hasCurrentLocation <urn:uuid:56e0b3b3-4fac-3776-8fc9-7b465eb2fc17> ;
+  ns0:hasDataProviderInstitute <urn:uuid:56e0b3b3-4fac-3776-8fc9-7b465eb2fc17> .
+
+<urn:uuid:64d0a624-8c02-472c-95ca-808ea0f2a5ab>
+  ns0:hasAdministrativeCase <urn:uuid:64d0a624-8c02-472c-95ca-808ea0f2a5ab> ;
+  ns0:hasEndDateTime "2018-03-29T23:51:23-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "64d0a624-8c02-472c-95ca-808ea0f2a5ab" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2018-03-29T23:21:23-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2018-03-29T23:21:23-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:bdc25f3c-9a6a-40c1-8174-07625ef79fec> ;
+  ns0:hasCurrentLocation <urn:uuid:dea603e3-1eca-34ac-a7b9-566138fc878b> ;
+  ns0:hasDataProviderInstitute <urn:uuid:dea603e3-1eca-34ac-a7b9-566138fc878b> .
+
+<urn:uuid:179011d8-a1e7-41f1-93bf-acd50eaa1cd8>
+  ns0:hasAdministrativeCase <urn:uuid:179011d8-a1e7-41f1-93bf-acd50eaa1cd8> ;
+  ns0:hasEndDateTime "2019-01-04T22:36:23-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "179011d8-a1e7-41f1-93bf-acd50eaa1cd8" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2019-01-04T22:21:23-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2019-01-04T22:21:23-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:bdc25f3c-9a6a-40c1-8174-07625ef79fec> ;
+  ns0:hasCurrentLocation <urn:uuid:56e0b3b3-4fac-3776-8fc9-7b465eb2fc17> ;
+  ns0:hasDataProviderInstitute <urn:uuid:56e0b3b3-4fac-3776-8fc9-7b465eb2fc17> .
+
+<urn:uuid:9ce478c3-2d98-4b25-b765-362cb5c16193>
+  ns0:hasAdministrativeCase <urn:uuid:9ce478c3-2d98-4b25-b765-362cb5c16193> ;
+  ns0:hasEndDateTime "2019-01-07T23:45:23-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "9ce478c3-2d98-4b25-b765-362cb5c16193" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2019-01-07T22:21:23-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2019-01-07T22:21:23-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:bdc25f3c-9a6a-40c1-8174-07625ef79fec> ;
+  ns0:hasCurrentLocation <urn:uuid:56e0b3b3-4fac-3776-8fc9-7b465eb2fc17> ;
+  ns0:hasDataProviderInstitute <urn:uuid:56e0b3b3-4fac-3776-8fc9-7b465eb2fc17> .
+
+<urn:uuid:df5e715f-7366-458d-96ca-45cde13ec1e9>
+  ns0:hasAdministrativeCase <urn:uuid:df5e715f-7366-458d-96ca-45cde13ec1e9> ;
+  ns0:hasEndDateTime "2019-04-04T23:36:23-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "df5e715f-7366-458d-96ca-45cde13ec1e9" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2019-04-04T23:21:23-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2019-04-04T23:21:23-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:bdc25f3c-9a6a-40c1-8174-07625ef79fec> ;
+  ns0:hasCurrentLocation <urn:uuid:dea603e3-1eca-34ac-a7b9-566138fc878b> ;
+  ns0:hasDataProviderInstitute <urn:uuid:dea603e3-1eca-34ac-a7b9-566138fc878b> .
+
+<urn:uuid:a650b6fd-7438-4d5b-a06a-326f90706143>
+  ns0:hasAdministrativeCase <urn:uuid:a650b6fd-7438-4d5b-a06a-326f90706143> ;
+  ns0:hasEndDateTime "2019-02-24T20:38:32-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "a650b6fd-7438-4d5b-a06a-326f90706143" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2006-02-12T20:38:32-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2006-02-12T20:38:32-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> .
+
+<urn:uuid:f60e8c68-c814-431a-af6e-5fe1ce190fef>
+  ns0:hasAdministrativeCase <urn:uuid:f60e8c68-c814-431a-af6e-5fe1ce190fef> ;
+  ns0:hasEndDateTime "2007-06-19T21:53:32-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "f60e8c68-c814-431a-af6e-5fe1ce190fef" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2007-06-19T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2007-06-19T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> .
+
+<urn:uuid:ae04028e-7a71-41e4-9bca-0b30695f1429>
+  ns0:hasAdministrativeCase <urn:uuid:ae04028e-7a71-41e4-9bca-0b30695f1429> ;
+  ns0:hasEndDateTime "2010-01-17T21:08:32-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "ae04028e-7a71-41e4-9bca-0b30695f1429" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2010-01-17T20:38:32-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2010-01-17T20:38:32-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:88b776b1-23b8-33b6-9b84-b5957ce4790b> ;
+  ns0:hasDataProviderInstitute <urn:uuid:88b776b1-23b8-33b6-9b84-b5957ce4790b> .
+
+<urn:uuid:aee36b9e-0454-40ce-ac9e-73ef60f7a773>
+  ns0:hasAdministrativeCase <urn:uuid:aee36b9e-0454-40ce-ac9e-73ef60f7a773> ;
+  ns0:hasEndDateTime "2011-01-23T20:53:32-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "aee36b9e-0454-40ce-ac9e-73ef60f7a773" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2011-01-23T20:38:32-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2011-01-23T20:38:32-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:88b776b1-23b8-33b6-9b84-b5957ce4790b> ;
+  ns0:hasDataProviderInstitute <urn:uuid:88b776b1-23b8-33b6-9b84-b5957ce4790b> .
+
+<urn:uuid:2ad96678-df8d-4d58-99f6-e228fa7efb38>
+  ns0:hasAdministrativeCase <urn:uuid:2ad96678-df8d-4d58-99f6-e228fa7efb38> ;
+  ns0:hasEndDateTime "2011-04-26T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "2ad96678-df8d-4d58-99f6-e228fa7efb38" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2011-04-25T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2011-04-25T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> .
+
+<urn:uuid:73ef0566-ac99-4b8e-ab3a-a96d8829a017>
+  ns0:hasAdministrativeCase <urn:uuid:73ef0566-ac99-4b8e-ab3a-a96d8829a017> ;
+  ns0:hasEndDateTime "2011-07-16T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "73ef0566-ac99-4b8e-ab3a-a96d8829a017" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2011-07-15T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2011-07-15T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> .
+
+<urn:uuid:82d24aed-3708-4da7-9502-00138ec0afb1>
+  ns0:hasAdministrativeCase <urn:uuid:82d24aed-3708-4da7-9502-00138ec0afb1> ;
+  ns0:hasEndDateTime "2011-08-22T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "82d24aed-3708-4da7-9502-00138ec0afb1" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2011-08-21T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2011-08-21T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> .
+
+<urn:uuid:6fe71be9-360b-494e-baee-c5f98b133170>
+  ns0:hasAdministrativeCase <urn:uuid:6fe71be9-360b-494e-baee-c5f98b133170> ;
+  ns0:hasEndDateTime "2012-01-29T21:08:32-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "6fe71be9-360b-494e-baee-c5f98b133170" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2012-01-29T20:38:32-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2012-01-29T20:38:32-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:88b776b1-23b8-33b6-9b84-b5957ce4790b> ;
+  ns0:hasDataProviderInstitute <urn:uuid:88b776b1-23b8-33b6-9b84-b5957ce4790b> .
+
+<urn:uuid:499e6181-bb76-4411-9ce2-fd68c426b3af>
+  ns0:hasAdministrativeCase <urn:uuid:499e6181-bb76-4411-9ce2-fd68c426b3af> ;
+  ns0:hasEndDateTime "2012-02-25T20:38:32-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "499e6181-bb76-4411-9ce2-fd68c426b3af" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2012-02-24T20:38:32-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2012-02-24T20:38:32-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> .
+
+<urn:uuid:11fcca09-6ec6-4886-8e6d-42c5a0fea2b7>
+  ns0:hasAdministrativeCase <urn:uuid:11fcca09-6ec6-4886-8e6d-42c5a0fea2b7> ;
+  ns0:hasEndDateTime "2012-08-07T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "11fcca09-6ec6-4886-8e6d-42c5a0fea2b7" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2012-08-06T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2012-08-06T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> .
+
+<urn:uuid:addf2b4d-d608-4179-bbea-afeaaaec2e5b>
+  ns0:hasAdministrativeCase <urn:uuid:addf2b4d-d608-4179-bbea-afeaaaec2e5b> ;
+  ns0:hasEndDateTime "2012-12-17T20:53:32-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "addf2b4d-d608-4179-bbea-afeaaaec2e5b" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2012-12-16T20:38:32-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2012-12-16T20:38:32-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> .
+
+<urn:uuid:36d8392a-6176-45b5-8e76-2bde3d28e6fc>
+  ns0:hasAdministrativeCase <urn:uuid:36d8392a-6176-45b5-8e76-2bde3d28e6fc> ;
+  ns0:hasEndDateTime "2013-02-03T20:53:32-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "36d8392a-6176-45b5-8e76-2bde3d28e6fc" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2013-02-03T20:38:32-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2013-02-03T20:38:32-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:88b776b1-23b8-33b6-9b84-b5957ce4790b> ;
+  ns0:hasDataProviderInstitute <urn:uuid:88b776b1-23b8-33b6-9b84-b5957ce4790b> .
+
+<urn:uuid:2bfb47d4-e9c2-4aa5-8c1e-65ab326ce4ba>
+  ns0:hasAdministrativeCase <urn:uuid:2bfb47d4-e9c2-4aa5-8c1e-65ab326ce4ba> ;
+  ns0:hasEndDateTime "2013-04-14T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "2bfb47d4-e9c2-4aa5-8c1e-65ab326ce4ba" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2013-04-13T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2013-04-13T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> .
+
+<urn:uuid:8bd50414-2bbe-43df-a140-e37afab9d5ef>
+  ns0:hasAdministrativeCase <urn:uuid:8bd50414-2bbe-43df-a140-e37afab9d5ef> ;
+  ns0:hasEndDateTime "2013-07-27T21:53:32-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "8bd50414-2bbe-43df-a140-e37afab9d5ef" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2013-07-26T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2013-07-26T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> .
+
+<urn:uuid:6278adeb-8850-4360-b8e6-b1a95eb2632e>
+  ns0:hasAdministrativeCase <urn:uuid:6278adeb-8850-4360-b8e6-b1a95eb2632e> ;
+  ns0:hasEndDateTime "2014-02-09T20:53:32-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "6278adeb-8850-4360-b8e6-b1a95eb2632e" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2014-02-09T20:38:32-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2014-02-09T20:38:32-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:88b776b1-23b8-33b6-9b84-b5957ce4790b> ;
+  ns0:hasDataProviderInstitute <urn:uuid:88b776b1-23b8-33b6-9b84-b5957ce4790b> .
+
+<urn:uuid:b8fb9d03-b083-4968-b617-9c1352921163>
+  ns0:hasAdministrativeCase <urn:uuid:b8fb9d03-b083-4968-b617-9c1352921163> ;
+  ns0:hasEndDateTime "2014-05-30T21:53:32-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "b8fb9d03-b083-4968-b617-9c1352921163" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2014-05-30T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2014-05-30T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> .
+
+<urn:uuid:46cb5df9-f85d-4be2-a683-2819b5f1a1ee>
+  ns0:hasAdministrativeCase <urn:uuid:46cb5df9-f85d-4be2-a683-2819b5f1a1ee> ;
+  ns0:hasEndDateTime "2014-06-29T21:53:32-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "46cb5df9-f85d-4be2-a683-2819b5f1a1ee" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2014-06-29T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2014-06-29T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> .
+
+<urn:uuid:06528ff5-652a-4af3-af89-d5b7724f2673>
+  ns0:hasAdministrativeCase <urn:uuid:06528ff5-652a-4af3-af89-d5b7724f2673> ;
+  ns0:hasEndDateTime "2014-10-21T21:53:32-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "06528ff5-652a-4af3-af89-d5b7724f2673" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2014-10-21T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2014-10-21T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> .
+
+<urn:uuid:7fad65c9-0f39-4e19-9fbb-55a963cf98fc>
+  ns0:hasAdministrativeCase <urn:uuid:7fad65c9-0f39-4e19-9fbb-55a963cf98fc> ;
+  ns0:hasEndDateTime "2015-02-15T21:08:32-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "7fad65c9-0f39-4e19-9fbb-55a963cf98fc" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2015-02-15T20:38:32-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2015-02-15T20:38:32-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:88b776b1-23b8-33b6-9b84-b5957ce4790b> ;
+  ns0:hasDataProviderInstitute <urn:uuid:88b776b1-23b8-33b6-9b84-b5957ce4790b> .
+
+<urn:uuid:c1e649c7-3d4a-43d7-84df-9a145ad3ca19>
+  ns0:hasAdministrativeCase <urn:uuid:c1e649c7-3d4a-43d7-84df-9a145ad3ca19> ;
+  ns0:hasEndDateTime "2015-02-26T20:53:32-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "c1e649c7-3d4a-43d7-84df-9a145ad3ca19" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2015-02-26T20:38:32-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2015-02-26T20:38:32-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> .
+
+<urn:uuid:6e57c0ef-6b86-4fa8-8569-967dfec26718>
+  ns0:hasAdministrativeCase <urn:uuid:6e57c0ef-6b86-4fa8-8569-967dfec26718> ;
+  ns0:hasEndDateTime "2015-03-28T21:53:32-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "6e57c0ef-6b86-4fa8-8569-967dfec26718" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2015-03-28T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2015-03-28T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> .
+
+<urn:uuid:9a8c20a8-90d7-484b-8aee-79ee4fdfb3bf>
+  ns0:hasAdministrativeCase <urn:uuid:9a8c20a8-90d7-484b-8aee-79ee4fdfb3bf> ;
+  ns0:hasEndDateTime "2015-06-22T21:53:32-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "9a8c20a8-90d7-484b-8aee-79ee4fdfb3bf" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2015-06-22T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2015-06-22T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> .
+
+<urn:uuid:f6d99d25-4bef-4432-94ce-ec238dcfbcda>
+  ns0:hasAdministrativeCase <urn:uuid:f6d99d25-4bef-4432-94ce-ec238dcfbcda> ;
+  ns0:hasEndDateTime "2015-07-22T21:53:32-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "f6d99d25-4bef-4432-94ce-ec238dcfbcda" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2015-07-22T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2015-07-22T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> .
+
+<urn:uuid:f815d3e7-860c-4975-8a06-4468d55864ee>
+  ns0:hasAdministrativeCase <urn:uuid:f815d3e7-860c-4975-8a06-4468d55864ee> ;
+  ns0:hasEndDateTime "2016-02-21T21:08:32-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "f815d3e7-860c-4975-8a06-4468d55864ee" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2016-02-21T20:38:32-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2016-02-21T20:38:32-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:88b776b1-23b8-33b6-9b84-b5957ce4790b> ;
+  ns0:hasDataProviderInstitute <urn:uuid:88b776b1-23b8-33b6-9b84-b5957ce4790b> .
+
+<urn:uuid:50e3812f-b398-435f-b705-d5a215afa485>
+  ns0:hasAdministrativeCase <urn:uuid:50e3812f-b398-435f-b705-d5a215afa485> ;
+  ns0:hasEndDateTime "2016-06-17T21:53:32-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "50e3812f-b398-435f-b705-d5a215afa485" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2016-06-17T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2016-06-17T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> .
+
+<urn:uuid:e73662ae-c254-4017-8d77-193ebef09a51>
+  ns0:hasAdministrativeCase <urn:uuid:e73662ae-c254-4017-8d77-193ebef09a51> ;
+  ns0:hasEndDateTime "2016-07-17T21:53:32-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "e73662ae-c254-4017-8d77-193ebef09a51" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2016-07-17T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2016-07-17T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> .
+
+<urn:uuid:093df449-704e-4998-aeba-b109de3e321d>
+  ns0:hasAdministrativeCase <urn:uuid:093df449-704e-4998-aeba-b109de3e321d> ;
+  ns0:hasEndDateTime "2016-08-16T21:53:32-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "093df449-704e-4998-aeba-b109de3e321d" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2016-08-16T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2016-08-16T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> .
+
+<urn:uuid:f137523d-95a5-440a-af11-0762abff506c>
+  ns0:hasAdministrativeCase <urn:uuid:f137523d-95a5-440a-af11-0762abff506c> ;
+  ns0:hasEndDateTime "2016-09-15T21:53:32-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "f137523d-95a5-440a-af11-0762abff506c" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2016-09-15T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2016-09-15T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> .
+
+<urn:uuid:a73c95f5-9ad4-4334-b450-b6610b155fce>
+  ns0:hasAdministrativeCase <urn:uuid:a73c95f5-9ad4-4334-b450-b6610b155fce> ;
+  ns0:hasEndDateTime "2016-10-15T21:53:32-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "a73c95f5-9ad4-4334-b450-b6610b155fce" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2016-10-15T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2016-10-15T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> .
+
+<urn:uuid:c8dbf0e2-6ec7-4b50-a975-1a57ddd919f7>
+  ns0:hasAdministrativeCase <urn:uuid:c8dbf0e2-6ec7-4b50-a975-1a57ddd919f7> ;
+  ns0:hasEndDateTime "2018-01-01T20:53:32-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "c8dbf0e2-6ec7-4b50-a975-1a57ddd919f7" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2018-01-01T20:38:32-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2018-01-01T20:38:32-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> .
+
+<urn:uuid:332e1ac3-9b84-4448-8902-16ad5725131a>
+  ns0:hasAdministrativeCase <urn:uuid:332e1ac3-9b84-4448-8902-16ad5725131a> ;
+  ns0:hasEndDateTime "2018-01-31T20:53:32-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "332e1ac3-9b84-4448-8902-16ad5725131a" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2018-01-31T20:38:32-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2018-01-31T20:38:32-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> .
+
+<urn:uuid:818551d4-1dce-439c-95ac-81d714b6f222>
+  ns0:hasAdministrativeCase <urn:uuid:818551d4-1dce-439c-95ac-81d714b6f222> ;
+  ns0:hasEndDateTime "2018-03-02T20:53:32-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "818551d4-1dce-439c-95ac-81d714b6f222" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2018-03-02T20:38:32-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2018-03-02T20:38:32-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> .
+
+<urn:uuid:fd43e2b7-905a-4c1b-8f05-b0c65eeb4864>
+  ns0:hasAdministrativeCase <urn:uuid:fd43e2b7-905a-4c1b-8f05-b0c65eeb4864> ;
+  ns0:hasEndDateTime "2018-10-21T21:53:32-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "fd43e2b7-905a-4c1b-8f05-b0c65eeb4864" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2018-10-21T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2018-10-21T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> .
+
+<urn:uuid:9578bac9-cddc-4a0b-a69f-6797fa756b9b>
+  ns0:hasAdministrativeCase <urn:uuid:9578bac9-cddc-4a0b-a69f-6797fa756b9b> ;
+  ns0:hasEndDateTime "2018-11-20T20:53:32-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "9578bac9-cddc-4a0b-a69f-6797fa756b9b" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2018-11-20T20:38:32-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2018-11-20T20:38:32-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> .
+
+<urn:uuid:6b4050e8-4e7c-483e-bef6-1ec0c8c46b17>
+  ns0:hasAdministrativeCase <urn:uuid:6b4050e8-4e7c-483e-bef6-1ec0c8c46b17> ;
+  ns0:hasEndDateTime "2018-12-20T20:53:32-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "6b4050e8-4e7c-483e-bef6-1ec0c8c46b17" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2018-12-20T20:38:32-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2018-12-20T20:38:32-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> .
+
+<urn:uuid:2994d4ff-b5d0-459e-aa2e-89b5387420f7>
+  ns0:hasAdministrativeCase <urn:uuid:2994d4ff-b5d0-459e-aa2e-89b5387420f7> ;
+  ns0:hasEndDateTime "2019-01-19T20:53:32-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "2994d4ff-b5d0-459e-aa2e-89b5387420f7" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2019-01-19T20:38:32-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2019-01-19T20:38:32-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> .
+
+<urn:uuid:8cd8f90b-cbee-48f7-a115-de8fe6b67d9b>
+  ns0:hasAdministrativeCase <urn:uuid:8cd8f90b-cbee-48f7-a115-de8fe6b67d9b> ;
+  ns0:hasEndDateTime "2019-02-24T20:53:32-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "8cd8f90b-cbee-48f7-a115-de8fe6b67d9b" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2019-02-24T20:38:32-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2019-02-24T20:38:32-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:88b776b1-23b8-33b6-9b84-b5957ce4790b> ;
+  ns0:hasDataProviderInstitute <urn:uuid:88b776b1-23b8-33b6-9b84-b5957ce4790b> .
+
+<urn:uuid:5ed9eaee-4e4a-46e5-a701-afdabe7d444b>
+  ns0:hasAdministrativeCase <urn:uuid:5ed9eaee-4e4a-46e5-a701-afdabe7d444b> ;
+  ns0:hasEndDateTime "2019-02-18T20:53:32-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "5ed9eaee-4e4a-46e5-a701-afdabe7d444b" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2019-02-18T20:38:32-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2019-02-18T20:38:32-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> .
+
+<urn:uuid:829ef210-1d3f-4e53-b543-a25667f8a914>
+  ns0:hasAdministrativeCase <urn:uuid:829ef210-1d3f-4e53-b543-a25667f8a914> ;
+  ns0:hasEndDateTime "2019-03-20T21:53:32-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "829ef210-1d3f-4e53-b543-a25667f8a914" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2019-03-20T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2019-03-20T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> .
+
+<urn:uuid:28922579-431d-4ddd-9846-e02fd34eb2f2>
+  ns0:hasAdministrativeCase <urn:uuid:28922579-431d-4ddd-9846-e02fd34eb2f2> ;
+  ns0:hasEndDateTime "2019-04-19T21:53:32-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "28922579-431d-4ddd-9846-e02fd34eb2f2" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2019-04-19T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2019-04-19T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> .
+
+<urn:uuid:96f38ac0-540f-4bc9-88af-343426d55621>
+  ns0:hasAdministrativeCase <urn:uuid:96f38ac0-540f-4bc9-88af-343426d55621> ;
+  ns0:hasEndDateTime "2019-05-19T21:53:32-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "96f38ac0-540f-4bc9-88af-343426d55621" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2019-05-19T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2019-05-19T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> .
+
+<urn:uuid:ad8847ba-a90f-45ae-a012-76f0e5ef8ecd>
+  ns0:hasAdministrativeCase <urn:uuid:ad8847ba-a90f-45ae-a012-76f0e5ef8ecd> ;
+  ns0:hasEndDateTime "2019-06-18T21:53:32-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "ad8847ba-a90f-45ae-a012-76f0e5ef8ecd" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2019-06-18T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2019-06-18T21:38:32-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46> ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> .
+
+<urn:uuid:7436a63f-0a42-405a-a0cc-c1217faa9e58>
+  ns0:hasAdministrativeCase <urn:uuid:7436a63f-0a42-405a-a0cc-c1217faa9e58> ;
+  ns0:hasEndDateTime "2011-03-11T03:40:10-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "7436a63f-0a42-405a-a0cc-c1217faa9e58" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2011-03-11T03:25:10-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2011-03-11T03:25:10-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:06b9b9b8-81a1-46da-b285-4f59394cb9d1> ;
+  ns0:hasCurrentLocation <urn:uuid:28107b63-8bb1-382e-8d00-ecb2cc3be277> ;
+  ns0:hasDataProviderInstitute <urn:uuid:28107b63-8bb1-382e-8d00-ecb2cc3be277> .
+
+<urn:uuid:a98d042c-85a0-42c9-9b1a-f126a1ecc64d>
+  ns0:hasAdministrativeCase <urn:uuid:a98d042c-85a0-42c9-9b1a-f126a1ecc64d> ;
+  ns0:hasEndDateTime "2011-04-15T04:40:10-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "a98d042c-85a0-42c9-9b1a-f126a1ecc64d" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2011-04-15T04:25:10-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2011-04-15T04:25:10-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:06b9b9b8-81a1-46da-b285-4f59394cb9d1> ;
+  ns0:hasCurrentLocation <urn:uuid:28107b63-8bb1-382e-8d00-ecb2cc3be277> ;
+  ns0:hasDataProviderInstitute <urn:uuid:28107b63-8bb1-382e-8d00-ecb2cc3be277> .
+
+<urn:uuid:3e56eaf5-7e1f-4b9b-9ba4-4646ab23dbc8>
+  ns0:hasAdministrativeCase <urn:uuid:3e56eaf5-7e1f-4b9b-9ba4-4646ab23dbc8> ;
+  ns0:hasEndDateTime "2011-06-17T04:55:10-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "3e56eaf5-7e1f-4b9b-9ba4-4646ab23dbc8" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2011-06-17T04:25:10-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2011-06-17T04:25:10-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:06b9b9b8-81a1-46da-b285-4f59394cb9d1> ;
+  ns0:hasCurrentLocation <urn:uuid:28107b63-8bb1-382e-8d00-ecb2cc3be277> ;
+  ns0:hasDataProviderInstitute <urn:uuid:28107b63-8bb1-382e-8d00-ecb2cc3be277> .
+
+<urn:uuid:bbf9691e-2256-4df9-8967-d4723b004374>
+  ns0:hasAdministrativeCase <urn:uuid:bbf9691e-2256-4df9-8967-d4723b004374> ;
+  ns0:hasEndDateTime "2011-08-19T04:40:10-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "bbf9691e-2256-4df9-8967-d4723b004374" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2011-08-19T04:25:10-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2011-08-19T04:25:10-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:06b9b9b8-81a1-46da-b285-4f59394cb9d1> ;
+  ns0:hasCurrentLocation <urn:uuid:28107b63-8bb1-382e-8d00-ecb2cc3be277> ;
+  ns0:hasDataProviderInstitute <urn:uuid:28107b63-8bb1-382e-8d00-ecb2cc3be277> .
+
+<urn:uuid:d00effb2-4d07-4db2-85ee-05df57da1e1f>
+  ns0:hasAdministrativeCase <urn:uuid:d00effb2-4d07-4db2-85ee-05df57da1e1f> ;
+  ns0:hasEndDateTime "2011-11-18T03:40:10-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "d00effb2-4d07-4db2-85ee-05df57da1e1f" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2011-11-18T03:25:10-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2011-11-18T03:25:10-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:06b9b9b8-81a1-46da-b285-4f59394cb9d1> ;
+  ns0:hasCurrentLocation <urn:uuid:28107b63-8bb1-382e-8d00-ecb2cc3be277> ;
+  ns0:hasDataProviderInstitute <urn:uuid:28107b63-8bb1-382e-8d00-ecb2cc3be277> .
+
+<urn:uuid:0d52c084-5fc1-4bd8-8d5d-41dc18a68595>
+  ns0:hasAdministrativeCase <urn:uuid:0d52c084-5fc1-4bd8-8d5d-41dc18a68595> ;
+  ns0:hasEndDateTime "2012-02-17T03:40:10-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "0d52c084-5fc1-4bd8-8d5d-41dc18a68595" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2012-02-17T03:25:10-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2012-02-17T03:25:10-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:06b9b9b8-81a1-46da-b285-4f59394cb9d1> ;
+  ns0:hasCurrentLocation <urn:uuid:28107b63-8bb1-382e-8d00-ecb2cc3be277> ;
+  ns0:hasDataProviderInstitute <urn:uuid:28107b63-8bb1-382e-8d00-ecb2cc3be277> .
+
+<urn:uuid:0125a1bf-4320-4a58-93ef-b0e390f0032e>
+  ns0:hasAdministrativeCase <urn:uuid:0125a1bf-4320-4a58-93ef-b0e390f0032e> ;
+  ns0:hasEndDateTime "2012-04-04T05:25:10-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "0125a1bf-4320-4a58-93ef-b0e390f0032e" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2012-04-04T04:25:10-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2012-04-04T04:25:10-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:06b9b9b8-81a1-46da-b285-4f59394cb9d1> ;
+  ns0:hasCurrentLocation <urn:uuid:b0e04623-b02c-3f8b-92ea-943fc4db60da> ;
+  ns0:hasDataProviderInstitute <urn:uuid:b0e04623-b02c-3f8b-92ea-943fc4db60da> .
+
+<urn:uuid:ef78dfa6-f39e-455b-857a-f38627a13ed4>
+  ns0:hasAdministrativeCase <urn:uuid:ef78dfa6-f39e-455b-857a-f38627a13ed4> ;
+  ns0:hasEndDateTime "2012-05-18T04:55:10-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "ef78dfa6-f39e-455b-857a-f38627a13ed4" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2012-05-18T04:25:10-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2012-05-18T04:25:10-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:06b9b9b8-81a1-46da-b285-4f59394cb9d1> ;
+  ns0:hasCurrentLocation <urn:uuid:28107b63-8bb1-382e-8d00-ecb2cc3be277> ;
+  ns0:hasDataProviderInstitute <urn:uuid:28107b63-8bb1-382e-8d00-ecb2cc3be277> .
+
+<urn:uuid:17937da5-7f2f-44fb-89e7-293ad47b190a>
+  ns0:hasAdministrativeCase <urn:uuid:17937da5-7f2f-44fb-89e7-293ad47b190a> ;
+  ns0:hasEndDateTime "2012-08-17T04:40:10-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "17937da5-7f2f-44fb-89e7-293ad47b190a" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2012-08-17T04:25:10-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2012-08-17T04:25:10-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:06b9b9b8-81a1-46da-b285-4f59394cb9d1> ;
+  ns0:hasCurrentLocation <urn:uuid:28107b63-8bb1-382e-8d00-ecb2cc3be277> ;
+  ns0:hasDataProviderInstitute <urn:uuid:28107b63-8bb1-382e-8d00-ecb2cc3be277> .
+
+<urn:uuid:71f93fe3-53fd-4cf2-8c92-1899ef3b271a>
+  ns0:hasAdministrativeCase <urn:uuid:71f93fe3-53fd-4cf2-8c92-1899ef3b271a> ;
+  ns0:hasEndDateTime "2013-02-15T03:55:10-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "71f93fe3-53fd-4cf2-8c92-1899ef3b271a" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2013-02-15T03:25:10-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2013-02-15T03:25:10-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:06b9b9b8-81a1-46da-b285-4f59394cb9d1> ;
+  ns0:hasCurrentLocation <urn:uuid:28107b63-8bb1-382e-8d00-ecb2cc3be277> ;
+  ns0:hasDataProviderInstitute <urn:uuid:28107b63-8bb1-382e-8d00-ecb2cc3be277> .
+
+<urn:uuid:9b01c43f-3030-4dd6-a49e-3c91e7e49ba9>
+  ns0:hasAdministrativeCase <urn:uuid:9b01c43f-3030-4dd6-a49e-3c91e7e49ba9> ;
+  ns0:hasEndDateTime "2013-05-20T06:55:10-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "9b01c43f-3030-4dd6-a49e-3c91e7e49ba9" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2013-05-20T04:25:10-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2013-05-20T04:25:10-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:06b9b9b8-81a1-46da-b285-4f59394cb9d1> ;
+  ns0:hasCurrentLocation <urn:uuid:b0e04623-b02c-3f8b-92ea-943fc4db60da> ;
+  ns0:hasDataProviderInstitute <urn:uuid:b0e04623-b02c-3f8b-92ea-943fc4db60da> .
+
+<urn:uuid:deb696f7-3f82-4326-9a23-0e64f7279ffa>
+  ns0:hasAdministrativeCase <urn:uuid:deb696f7-3f82-4326-9a23-0e64f7279ffa> ;
+  ns0:hasEndDateTime "2013-06-28T04:40:10-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "deb696f7-3f82-4326-9a23-0e64f7279ffa" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2013-06-28T04:25:10-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2013-06-28T04:25:10-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:06b9b9b8-81a1-46da-b285-4f59394cb9d1> ;
+  ns0:hasCurrentLocation <urn:uuid:b0e04623-b02c-3f8b-92ea-943fc4db60da> ;
+  ns0:hasDataProviderInstitute <urn:uuid:b0e04623-b02c-3f8b-92ea-943fc4db60da> .
+
+<urn:uuid:57a46c7c-e3d5-471e-afd9-c0af0cec7b7b>
+  ns0:hasAdministrativeCase <urn:uuid:57a46c7c-e3d5-471e-afd9-c0af0cec7b7b> ;
+  ns0:hasEndDateTime "2013-08-16T04:55:10-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "57a46c7c-e3d5-471e-afd9-c0af0cec7b7b" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2013-08-16T04:25:10-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2013-08-16T04:25:10-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:06b9b9b8-81a1-46da-b285-4f59394cb9d1> ;
+  ns0:hasCurrentLocation <urn:uuid:28107b63-8bb1-382e-8d00-ecb2cc3be277> ;
+  ns0:hasDataProviderInstitute <urn:uuid:28107b63-8bb1-382e-8d00-ecb2cc3be277> .
+
+<urn:uuid:08f38e22-21a8-4c33-98c0-504fd828b543>
+  ns0:hasAdministrativeCase <urn:uuid:08f38e22-21a8-4c33-98c0-504fd828b543> ;
+  ns0:hasEndDateTime "2013-08-18T04:40:10-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "08f38e22-21a8-4c33-98c0-504fd828b543" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2013-08-18T04:25:10-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2013-08-18T04:25:10-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:06b9b9b8-81a1-46da-b285-4f59394cb9d1> ;
+  ns0:hasCurrentLocation <urn:uuid:b0e04623-b02c-3f8b-92ea-943fc4db60da> ;
+  ns0:hasDataProviderInstitute <urn:uuid:b0e04623-b02c-3f8b-92ea-943fc4db60da> .
+
+<urn:uuid:b4d607ad-e999-45f5-b265-18e5a5425086>
+  ns0:hasAdministrativeCase <urn:uuid:b4d607ad-e999-45f5-b265-18e5a5425086> ;
+  ns0:hasEndDateTime "2014-02-14T03:40:10-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "b4d607ad-e999-45f5-b265-18e5a5425086" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2014-02-14T03:25:10-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2014-02-14T03:25:10-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:06b9b9b8-81a1-46da-b285-4f59394cb9d1> ;
+  ns0:hasCurrentLocation <urn:uuid:28107b63-8bb1-382e-8d00-ecb2cc3be277> ;
+  ns0:hasDataProviderInstitute <urn:uuid:28107b63-8bb1-382e-8d00-ecb2cc3be277> .
+
+<urn:uuid:03bb438c-401d-4753-b007-1dd43aaaf13b>
+  ns0:hasAdministrativeCase <urn:uuid:03bb438c-401d-4753-b007-1dd43aaaf13b> ;
+  ns0:hasEndDateTime "2014-08-15T04:40:10-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "03bb438c-401d-4753-b007-1dd43aaaf13b" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2014-08-15T04:25:10-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2014-08-15T04:25:10-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:06b9b9b8-81a1-46da-b285-4f59394cb9d1> ;
+  ns0:hasCurrentLocation <urn:uuid:28107b63-8bb1-382e-8d00-ecb2cc3be277> ;
+  ns0:hasDataProviderInstitute <urn:uuid:28107b63-8bb1-382e-8d00-ecb2cc3be277> .
+
+<urn:uuid:4c830e8f-d20a-4dfe-8040-efcc913ccd55>
+  ns0:hasAdministrativeCase <urn:uuid:4c830e8f-d20a-4dfe-8040-efcc913ccd55> ;
+  ns0:hasEndDateTime "2015-02-13T03:40:10-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "4c830e8f-d20a-4dfe-8040-efcc913ccd55" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2015-02-13T03:25:10-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2015-02-13T03:25:10-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:06b9b9b8-81a1-46da-b285-4f59394cb9d1> ;
+  ns0:hasCurrentLocation <urn:uuid:28107b63-8bb1-382e-8d00-ecb2cc3be277> ;
+  ns0:hasDataProviderInstitute <urn:uuid:28107b63-8bb1-382e-8d00-ecb2cc3be277> .
+
+<urn:uuid:8b9ed2aa-28ff-4955-af45-3a19a83907d3>
+  ns0:hasAdministrativeCase <urn:uuid:8b9ed2aa-28ff-4955-af45-3a19a83907d3> ;
+  ns0:hasEndDateTime "2016-02-19T03:55:10-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "8b9ed2aa-28ff-4955-af45-3a19a83907d3" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2016-02-19T03:25:10-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2016-02-19T03:25:10-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:06b9b9b8-81a1-46da-b285-4f59394cb9d1> ;
+  ns0:hasCurrentLocation <urn:uuid:28107b63-8bb1-382e-8d00-ecb2cc3be277> ;
+  ns0:hasDataProviderInstitute <urn:uuid:28107b63-8bb1-382e-8d00-ecb2cc3be277> .
+
+<urn:uuid:75dffb09-a221-4a43-880e-35f7cd4505f4>
+  ns0:hasAdministrativeCase <urn:uuid:75dffb09-a221-4a43-880e-35f7cd4505f4> ;
+  ns0:hasEndDateTime "2016-07-31T04:40:10-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "75dffb09-a221-4a43-880e-35f7cd4505f4" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2016-07-31T04:25:10-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2016-07-31T04:25:10-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:06b9b9b8-81a1-46da-b285-4f59394cb9d1> ;
+  ns0:hasCurrentLocation <urn:uuid:b0e04623-b02c-3f8b-92ea-943fc4db60da> ;
+  ns0:hasDataProviderInstitute <urn:uuid:b0e04623-b02c-3f8b-92ea-943fc4db60da> .
+
+<urn:uuid:f85cfbff-f026-4f1a-9a3a-08f566996d90>
+  ns0:hasAdministrativeCase <urn:uuid:f85cfbff-f026-4f1a-9a3a-08f566996d90> ;
+  ns0:hasEndDateTime "2017-02-24T03:55:10-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "f85cfbff-f026-4f1a-9a3a-08f566996d90" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2017-02-24T03:25:10-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2017-02-24T03:25:10-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:06b9b9b8-81a1-46da-b285-4f59394cb9d1> ;
+  ns0:hasCurrentLocation <urn:uuid:28107b63-8bb1-382e-8d00-ecb2cc3be277> ;
+  ns0:hasDataProviderInstitute <urn:uuid:28107b63-8bb1-382e-8d00-ecb2cc3be277> .
+
+<urn:uuid:2a3035d9-ed90-40f3-acd7-64e124818a2c>
+  ns0:hasAdministrativeCase <urn:uuid:2a3035d9-ed90-40f3-acd7-64e124818a2c> ;
+  ns0:hasEndDateTime "2018-03-02T03:55:10-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "2a3035d9-ed90-40f3-acd7-64e124818a2c" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2018-03-02T03:25:10-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2018-03-02T03:25:10-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:06b9b9b8-81a1-46da-b285-4f59394cb9d1> ;
+  ns0:hasCurrentLocation <urn:uuid:28107b63-8bb1-382e-8d00-ecb2cc3be277> ;
+  ns0:hasDataProviderInstitute <urn:uuid:28107b63-8bb1-382e-8d00-ecb2cc3be277> .
+
+<urn:uuid:8f33ced2-cb6e-4bf7-b013-3e871b950de5>
+  ns0:hasAdministrativeCase <urn:uuid:8f33ced2-cb6e-4bf7-b013-3e871b950de5> ;
+  ns0:hasEndDateTime "2019-03-08T03:40:10-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "8f33ced2-cb6e-4bf7-b013-3e871b950de5" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2019-03-08T03:25:10-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2019-03-08T03:25:10-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:06b9b9b8-81a1-46da-b285-4f59394cb9d1> ;
+  ns0:hasCurrentLocation <urn:uuid:28107b63-8bb1-382e-8d00-ecb2cc3be277> ;
+  ns0:hasDataProviderInstitute <urn:uuid:28107b63-8bb1-382e-8d00-ecb2cc3be277> .
+
+<urn:uuid:63e586bf-891f-4aae-b76d-7f5f969e1503>
+  ns0:hasAdministrativeCase <urn:uuid:63e586bf-891f-4aae-b76d-7f5f969e1503> ;
+  ns0:hasEndDateTime "2001-02-12T18:03:37-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "63e586bf-891f-4aae-b76d-7f5f969e1503" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2001-02-12T17:48:37-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2001-02-12T17:48:37-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:409994fd-a1ff-4e6b-8097-28507ad91677> ;
+  ns0:hasCurrentLocation <urn:uuid:03347b4d-994e-302b-848b-58019a4e274d> ;
+  ns0:hasDataProviderInstitute <urn:uuid:03347b4d-994e-302b-848b-58019a4e274d> .
+
+<urn:uuid:8803d1bd-a6c2-466f-86ca-dcfb5ba285f3>
+  ns0:hasAdministrativeCase <urn:uuid:8803d1bd-a6c2-466f-86ca-dcfb5ba285f3> ;
+  ns0:hasEndDateTime "2010-02-21T18:03:37-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "8803d1bd-a6c2-466f-86ca-dcfb5ba285f3" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2010-02-21T17:48:37-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2010-02-21T17:48:37-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:409994fd-a1ff-4e6b-8097-28507ad91677> ;
+  ns0:hasCurrentLocation <urn:uuid:e155878b-35e5-3f8d-98e6-51979b6c52e8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:e155878b-35e5-3f8d-98e6-51979b6c52e8> .
+
+<urn:uuid:6bdf5c4d-21f6-49e5-b77e-7114d009472d>
+  ns0:hasAdministrativeCase <urn:uuid:6bdf5c4d-21f6-49e5-b77e-7114d009472d> ;
+  ns0:hasEndDateTime "2011-01-11T19:08:37-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "6bdf5c4d-21f6-49e5-b77e-7114d009472d" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2011-01-11T17:48:37-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2011-01-11T17:48:37-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:409994fd-a1ff-4e6b-8097-28507ad91677> ;
+  ns0:hasCurrentLocation <urn:uuid:03347b4d-994e-302b-848b-58019a4e274d> ;
+  ns0:hasDataProviderInstitute <urn:uuid:03347b4d-994e-302b-848b-58019a4e274d> .
+
+<urn:uuid:97e9b1f1-4d80-4cbc-b976-2d8b0b376dd0>
+  ns0:hasAdministrativeCase <urn:uuid:97e9b1f1-4d80-4cbc-b976-2d8b0b376dd0> ;
+  ns0:hasEndDateTime "2011-02-27T18:03:37-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "97e9b1f1-4d80-4cbc-b976-2d8b0b376dd0" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2011-02-27T17:48:37-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2011-02-27T17:48:37-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:409994fd-a1ff-4e6b-8097-28507ad91677> ;
+  ns0:hasCurrentLocation <urn:uuid:e155878b-35e5-3f8d-98e6-51979b6c52e8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:e155878b-35e5-3f8d-98e6-51979b6c52e8> .
+
+<urn:uuid:59b8f3fb-5a0e-447f-bed9-f92481972e3c>
+  ns0:hasAdministrativeCase <urn:uuid:59b8f3fb-5a0e-447f-bed9-f92481972e3c> ;
+  ns0:hasEndDateTime "2012-03-04T18:03:37-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "59b8f3fb-5a0e-447f-bed9-f92481972e3c" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2012-03-04T17:48:37-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2012-03-04T17:48:37-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:409994fd-a1ff-4e6b-8097-28507ad91677> ;
+  ns0:hasCurrentLocation <urn:uuid:e155878b-35e5-3f8d-98e6-51979b6c52e8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:e155878b-35e5-3f8d-98e6-51979b6c52e8> .
+
+<urn:uuid:1986680c-989d-4d86-a477-3b83eac961c3>
+  ns0:hasAdministrativeCase <urn:uuid:1986680c-989d-4d86-a477-3b83eac961c3> ;
+  ns0:hasEndDateTime "2012-07-24T19:03:37-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "1986680c-989d-4d86-a477-3b83eac961c3" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2012-07-24T18:48:37-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2012-07-24T18:48:37-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:409994fd-a1ff-4e6b-8097-28507ad91677> ;
+  ns0:hasCurrentLocation <urn:uuid:03347b4d-994e-302b-848b-58019a4e274d> ;
+  ns0:hasDataProviderInstitute <urn:uuid:03347b4d-994e-302b-848b-58019a4e274d> .
+
+<urn:uuid:3d3ca68b-0468-4d0e-b547-7d6e4c5cd812>
+  ns0:hasAdministrativeCase <urn:uuid:3d3ca68b-0468-4d0e-b547-7d6e4c5cd812> ;
+  ns0:hasEndDateTime "2013-03-10T19:03:37-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "3d3ca68b-0468-4d0e-b547-7d6e4c5cd812" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2013-03-10T18:48:37-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2013-03-10T18:48:37-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:409994fd-a1ff-4e6b-8097-28507ad91677> ;
+  ns0:hasCurrentLocation <urn:uuid:e155878b-35e5-3f8d-98e6-51979b6c52e8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:e155878b-35e5-3f8d-98e6-51979b6c52e8> .
+
+<urn:uuid:2e73dcba-29e3-4b5c-abe2-b421eb3a631e>
+  ns0:hasAdministrativeCase <urn:uuid:2e73dcba-29e3-4b5c-abe2-b421eb3a631e> ;
+  ns0:hasEndDateTime "2014-03-16T19:18:37-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "2e73dcba-29e3-4b5c-abe2-b421eb3a631e" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2014-03-16T18:48:37-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2014-03-16T18:48:37-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:409994fd-a1ff-4e6b-8097-28507ad91677> ;
+  ns0:hasCurrentLocation <urn:uuid:e155878b-35e5-3f8d-98e6-51979b6c52e8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:e155878b-35e5-3f8d-98e6-51979b6c52e8> .
+
+<urn:uuid:8eec2984-75de-45c1-af58-bd414e0a8529>
+  ns0:hasAdministrativeCase <urn:uuid:8eec2984-75de-45c1-af58-bd414e0a8529> ;
+  ns0:hasEndDateTime "2015-01-19T18:48:37-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "8eec2984-75de-45c1-af58-bd414e0a8529" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2015-01-19T17:48:37-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2015-01-19T17:48:37-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:409994fd-a1ff-4e6b-8097-28507ad91677> ;
+  ns0:hasCurrentLocation <urn:uuid:1eaf97fa-9de6-38de-a9c4-6efe5dc574be> ;
+  ns0:hasDataProviderInstitute <urn:uuid:1eaf97fa-9de6-38de-a9c4-6efe5dc574be> .
+
+<urn:uuid:56ae8938-7e13-41a7-b32d-3103de12f20c>
+  ns0:hasAdministrativeCase <urn:uuid:56ae8938-7e13-41a7-b32d-3103de12f20c> ;
+  ns0:hasEndDateTime "2016-01-27T18:03:37-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "56ae8938-7e13-41a7-b32d-3103de12f20c" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2016-01-27T17:48:37-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2016-01-27T17:48:37-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:409994fd-a1ff-4e6b-8097-28507ad91677> ;
+  ns0:hasCurrentLocation <urn:uuid:03347b4d-994e-302b-848b-58019a4e274d> ;
+  ns0:hasDataProviderInstitute <urn:uuid:03347b4d-994e-302b-848b-58019a4e274d> .
+
+<urn:uuid:9fbf5aa5-35dd-4f53-9f36-ac9cbbcc43f7>
+  ns0:hasAdministrativeCase <urn:uuid:9fbf5aa5-35dd-4f53-9f36-ac9cbbcc43f7> ;
+  ns0:hasEndDateTime "2016-02-07T18:03:37-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "9fbf5aa5-35dd-4f53-9f36-ac9cbbcc43f7" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2016-02-07T17:48:37-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2016-02-07T17:48:37-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:409994fd-a1ff-4e6b-8097-28507ad91677> ;
+  ns0:hasCurrentLocation <urn:uuid:f99c74cc-7d1a-3f95-9a33-4a9357bf2f2a> ;
+  ns0:hasDataProviderInstitute <urn:uuid:f99c74cc-7d1a-3f95-9a33-4a9357bf2f2a> .
+
+<urn:uuid:ed204c71-5c0e-4761-8c27-6cb87bc2e0b2>
+  ns0:hasAdministrativeCase <urn:uuid:ed204c71-5c0e-4761-8c27-6cb87bc2e0b2> ;
+  ns0:hasEndDateTime "2017-03-19T19:18:37-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "ed204c71-5c0e-4761-8c27-6cb87bc2e0b2" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2017-03-19T18:48:37-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2017-03-19T18:48:37-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:409994fd-a1ff-4e6b-8097-28507ad91677> ;
+  ns0:hasCurrentLocation <urn:uuid:e155878b-35e5-3f8d-98e6-51979b6c52e8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:e155878b-35e5-3f8d-98e6-51979b6c52e8> .
+
+<urn:uuid:7cd9277d-f067-4de9-a8fb-4d19a0c9f534>
+  ns0:hasAdministrativeCase <urn:uuid:7cd9277d-f067-4de9-a8fb-4d19a0c9f534> ;
+  ns0:hasEndDateTime "2017-09-23T19:18:37-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "7cd9277d-f067-4de9-a8fb-4d19a0c9f534" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2017-09-23T18:48:37-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2017-09-23T18:48:37-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:409994fd-a1ff-4e6b-8097-28507ad91677> ;
+  ns0:hasCurrentLocation <urn:uuid:03347b4d-994e-302b-848b-58019a4e274d> ;
+  ns0:hasDataProviderInstitute <urn:uuid:03347b4d-994e-302b-848b-58019a4e274d> .
+
+<urn:uuid:a56ce130-6a3c-402c-8c56-3270c0bbc97b>
+  ns0:hasAdministrativeCase <urn:uuid:a56ce130-6a3c-402c-8c56-3270c0bbc97b> ;
+  ns0:hasEndDateTime "1973-12-02T15:03:37-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "a56ce130-6a3c-402c-8c56-3270c0bbc97b" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "1973-12-02T14:48:37-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "1973-12-02T14:48:37-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:c661d0e1-91d6-4504-8d4a-bc9a84b95d82> ;
+  ns0:hasCurrentLocation <urn:uuid:851964ad-fff8-3ab6-aba0-4f85090f0041> ;
+  ns0:hasDataProviderInstitute <urn:uuid:851964ad-fff8-3ab6-aba0-4f85090f0041> .
+
+<urn:uuid:164bbede-bb13-40bd-9499-adf9c782862b>
+  ns0:hasAdministrativeCase <urn:uuid:164bbede-bb13-40bd-9499-adf9c782862b> ;
+  ns0:hasEndDateTime "2009-11-01T15:18:37-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "164bbede-bb13-40bd-9499-adf9c782862b" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2009-11-01T14:48:37-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2009-11-01T14:48:37-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:c661d0e1-91d6-4504-8d4a-bc9a84b95d82> ;
+  ns0:hasCurrentLocation <urn:uuid:851964ad-fff8-3ab6-aba0-4f85090f0041> ;
+  ns0:hasDataProviderInstitute <urn:uuid:851964ad-fff8-3ab6-aba0-4f85090f0041> .
+
+<urn:uuid:e3dc530d-4af8-4e39-92d2-8aa33271f221>
+  ns0:hasAdministrativeCase <urn:uuid:e3dc530d-4af8-4e39-92d2-8aa33271f221> ;
+  ns0:hasEndDateTime "2010-10-08T17:04:37-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "e3dc530d-4af8-4e39-92d2-8aa33271f221" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2010-10-08T15:48:37-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2010-10-08T15:48:37-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:c661d0e1-91d6-4504-8d4a-bc9a84b95d82> ;
+  ns0:hasCurrentLocation <urn:uuid:3d10019f-c88e-3de5-9916-6107b9c0263d> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3d10019f-c88e-3de5-9916-6107b9c0263d> .
+
+<urn:uuid:b9b6ef01-5406-4dab-a633-18a3de08c8fc>
+  ns0:hasAdministrativeCase <urn:uuid:b9b6ef01-5406-4dab-a633-18a3de08c8fc> ;
+  ns0:hasEndDateTime "2010-11-07T15:18:37-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "b9b6ef01-5406-4dab-a633-18a3de08c8fc" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2010-11-07T14:48:37-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2010-11-07T14:48:37-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:c661d0e1-91d6-4504-8d4a-bc9a84b95d82> ;
+  ns0:hasCurrentLocation <urn:uuid:851964ad-fff8-3ab6-aba0-4f85090f0041> ;
+  ns0:hasDataProviderInstitute <urn:uuid:851964ad-fff8-3ab6-aba0-4f85090f0041> .
+
+<urn:uuid:1efd4fba-c41c-465a-bb3e-8061acf2b6e3>
+  ns0:hasAdministrativeCase <urn:uuid:1efd4fba-c41c-465a-bb3e-8061acf2b6e3> ;
+  ns0:hasEndDateTime "2011-11-02T16:44:37-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "1efd4fba-c41c-465a-bb3e-8061acf2b6e3" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2011-11-02T15:48:37-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2011-11-02T15:48:37-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:c661d0e1-91d6-4504-8d4a-bc9a84b95d82> ;
+  ns0:hasCurrentLocation <urn:uuid:3d10019f-c88e-3de5-9916-6107b9c0263d> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3d10019f-c88e-3de5-9916-6107b9c0263d> .
+
+<urn:uuid:0c566b7b-7204-4139-a9b0-7dd9141bf42c>
+  ns0:hasAdministrativeCase <urn:uuid:0c566b7b-7204-4139-a9b0-7dd9141bf42c> ;
+  ns0:hasEndDateTime "2011-11-13T15:18:37-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "0c566b7b-7204-4139-a9b0-7dd9141bf42c" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2011-11-13T14:48:37-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2011-11-13T14:48:37-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:c661d0e1-91d6-4504-8d4a-bc9a84b95d82> ;
+  ns0:hasCurrentLocation <urn:uuid:851964ad-fff8-3ab6-aba0-4f85090f0041> ;
+  ns0:hasDataProviderInstitute <urn:uuid:851964ad-fff8-3ab6-aba0-4f85090f0041> .
+
+<urn:uuid:2ee555af-46e5-451c-a55a-41d69b62c60b>
+  ns0:hasAdministrativeCase <urn:uuid:2ee555af-46e5-451c-a55a-41d69b62c60b> ;
+  ns0:hasEndDateTime "2012-11-18T15:03:37-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "2ee555af-46e5-451c-a55a-41d69b62c60b" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2012-11-18T14:48:37-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2012-11-18T14:48:37-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:c661d0e1-91d6-4504-8d4a-bc9a84b95d82> ;
+  ns0:hasCurrentLocation <urn:uuid:851964ad-fff8-3ab6-aba0-4f85090f0041> ;
+  ns0:hasDataProviderInstitute <urn:uuid:851964ad-fff8-3ab6-aba0-4f85090f0041> .
+
+<urn:uuid:09266739-232d-418d-9e40-0d2c723b280f>
+  ns0:hasAdministrativeCase <urn:uuid:09266739-232d-418d-9e40-0d2c723b280f> ;
+  ns0:hasEndDateTime "2013-11-24T15:18:37-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "09266739-232d-418d-9e40-0d2c723b280f" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2013-11-24T14:48:37-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2013-11-24T14:48:37-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:c661d0e1-91d6-4504-8d4a-bc9a84b95d82> ;
+  ns0:hasCurrentLocation <urn:uuid:851964ad-fff8-3ab6-aba0-4f85090f0041> ;
+  ns0:hasDataProviderInstitute <urn:uuid:851964ad-fff8-3ab6-aba0-4f85090f0041> .
+
+<urn:uuid:bdc25f3c-9a6a-40c1-8174-07625ef79fec>
+  ns0:hasIdentifier "bdc25f3c-9a6a-40c1-8174-07625ef79fec" ;
+  a ns0:SubjectPseudoIdentifier ;
+  ns0:hasDataProviderInstitute <https://github.com/synthetichealth/synthea/> .
+
+<urn:uuid:8cf26b2a-1cd6-4a7f-a9c4-c25324832c46>
+  ns0:hasIdentifier "8cf26b2a-1cd6-4a7f-a9c4-c25324832c46" ;
+  a ns0:SubjectPseudoIdentifier ;
+  ns0:hasDataProviderInstitute <https://github.com/synthetichealth/synthea/> .
+
+<urn:uuid:06b9b9b8-81a1-46da-b285-4f59394cb9d1>
+  ns0:hasIdentifier "06b9b9b8-81a1-46da-b285-4f59394cb9d1" ;
+  a ns0:SubjectPseudoIdentifier ;
+  ns0:hasDataProviderInstitute <https://github.com/synthetichealth/synthea/> .
+
+<urn:uuid:409994fd-a1ff-4e6b-8097-28507ad91677>
+  ns0:hasIdentifier "409994fd-a1ff-4e6b-8097-28507ad91677" ;
+  a ns0:SubjectPseudoIdentifier ;
+  ns0:hasDataProviderInstitute <https://github.com/synthetichealth/synthea/> .
+
+<urn:uuid:c661d0e1-91d6-4504-8d4a-bc9a84b95d82>
+  ns0:hasIdentifier "c661d0e1-91d6-4504-8d4a-bc9a84b95d82" ;
+  a ns0:SubjectPseudoIdentifier ;
+  ns0:hasDataProviderInstitute <https://github.com/synthetichealth/synthea/> .
+
+<urn:uuid:ac3de6f1-e236-4200-b9da-f1b7758de992>
+  ns0:hasIdentifier "ac3de6f1-e236-4200-b9da-f1b7758de992" ;
+  a ns0:SubjectPseudoIdentifier ;
+  ns0:hasDataProviderInstitute <https://github.com/synthetichealth/synthea/> .
+
+<urn:uuid:98381b9b-4d30-447a-812a-2917cfd4ee53>
+  ns0:hasIdentifier "98381b9b-4d30-447a-812a-2917cfd4ee53" ;
+  a ns0:SubjectPseudoIdentifier ;
+  ns0:hasDataProviderInstitute <https://github.com/synthetichealth/synthea/> .
+
+<urn:uuid:88444082-d233-4e0f-9d90-3c6b5f4c9a90>
+  ns0:hasAdministrativeCase <urn:uuid:88444082-d233-4e0f-9d90-3c6b5f4c9a90> ;
+  ns0:hasEndDateTime "2014-11-30T15:18:37-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "88444082-d233-4e0f-9d90-3c6b5f4c9a90" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2014-11-30T14:48:37-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2014-11-30T14:48:37-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:c661d0e1-91d6-4504-8d4a-bc9a84b95d82> ;
+  ns0:hasCurrentLocation <urn:uuid:851964ad-fff8-3ab6-aba0-4f85090f0041> ;
+  ns0:hasDataProviderInstitute <urn:uuid:851964ad-fff8-3ab6-aba0-4f85090f0041> .
+
+<urn:uuid:fa27a605-affb-4ace-80c0-0e5ad371df1d>
+  ns0:hasAdministrativeCase <urn:uuid:fa27a605-affb-4ace-80c0-0e5ad371df1d> ;
+  ns0:hasEndDateTime "2015-12-06T15:03:37-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "fa27a605-affb-4ace-80c0-0e5ad371df1d" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2015-12-06T14:48:37-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2015-12-06T14:48:37-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:c661d0e1-91d6-4504-8d4a-bc9a84b95d82> ;
+  ns0:hasCurrentLocation <urn:uuid:851964ad-fff8-3ab6-aba0-4f85090f0041> ;
+  ns0:hasDataProviderInstitute <urn:uuid:851964ad-fff8-3ab6-aba0-4f85090f0041> .
+
+<urn:uuid:5812b224-73a8-467b-9de7-c64184a8cc26>
+  ns0:hasAdministrativeCase <urn:uuid:5812b224-73a8-467b-9de7-c64184a8cc26> ;
+  ns0:hasEndDateTime "2016-10-31T16:45:37-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "5812b224-73a8-467b-9de7-c64184a8cc26" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2016-10-31T15:48:37-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2016-10-31T15:48:37-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:c661d0e1-91d6-4504-8d4a-bc9a84b95d82> ;
+  ns0:hasCurrentLocation <urn:uuid:3d10019f-c88e-3de5-9916-6107b9c0263d> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3d10019f-c88e-3de5-9916-6107b9c0263d> .
+
+<urn:uuid:41b21702-31fb-4463-bb1e-0a59ae68f251>
+  ns0:hasAdministrativeCase <urn:uuid:41b21702-31fb-4463-bb1e-0a59ae68f251> ;
+  ns0:hasEndDateTime "2016-12-11T15:18:37-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "41b21702-31fb-4463-bb1e-0a59ae68f251" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2016-12-11T14:48:37-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2016-12-11T14:48:37-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:c661d0e1-91d6-4504-8d4a-bc9a84b95d82> ;
+  ns0:hasCurrentLocation <urn:uuid:851964ad-fff8-3ab6-aba0-4f85090f0041> ;
+  ns0:hasDataProviderInstitute <urn:uuid:851964ad-fff8-3ab6-aba0-4f85090f0041> .
+
+<urn:uuid:d2a5954c-5a20-4ab2-8965-16897f3c78f1>
+  ns0:hasAdministrativeCase <urn:uuid:d2a5954c-5a20-4ab2-8965-16897f3c78f1> ;
+  ns0:hasEndDateTime "2017-12-17T15:18:37-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "d2a5954c-5a20-4ab2-8965-16897f3c78f1" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2017-12-17T14:48:37-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2017-12-17T14:48:37-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:c661d0e1-91d6-4504-8d4a-bc9a84b95d82> ;
+  ns0:hasCurrentLocation <urn:uuid:851964ad-fff8-3ab6-aba0-4f85090f0041> ;
+  ns0:hasDataProviderInstitute <urn:uuid:851964ad-fff8-3ab6-aba0-4f85090f0041> .
+
+<urn:uuid:e8c2fb9f-f414-43b2-b97f-f2f11b9e80d9>
+  ns0:hasAdministrativeCase <urn:uuid:e8c2fb9f-f414-43b2-b97f-f2f11b9e80d9> ;
+  ns0:hasEndDateTime "2018-12-23T15:03:37-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "e8c2fb9f-f414-43b2-b97f-f2f11b9e80d9" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2018-12-23T14:48:37-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2018-12-23T14:48:37-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:c661d0e1-91d6-4504-8d4a-bc9a84b95d82> ;
+  ns0:hasCurrentLocation <urn:uuid:851964ad-fff8-3ab6-aba0-4f85090f0041> ;
+  ns0:hasDataProviderInstitute <urn:uuid:851964ad-fff8-3ab6-aba0-4f85090f0041> .
+
+<urn:uuid:74816842-a979-45a3-b153-d145e253fe4f>
+  ns0:hasAdministrativeCase <urn:uuid:74816842-a979-45a3-b153-d145e253fe4f> ;
+  ns0:hasEndDateTime "1965-11-15T08:07:41-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "74816842-a979-45a3-b153-d145e253fe4f" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "1965-11-15T06:22:41-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "1965-11-15T06:22:41-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:ac3de6f1-e236-4200-b9da-f1b7758de992> ;
+  ns0:hasCurrentLocation <urn:uuid:8ad64ecf-c817-3753-bee7-006a8e662e06> ;
+  ns0:hasDataProviderInstitute <urn:uuid:8ad64ecf-c817-3753-bee7-006a8e662e06> .
+
+<urn:uuid:3ba8ae45-23da-4256-81e6-a2a063872361>
+  ns0:hasAdministrativeCase <urn:uuid:3ba8ae45-23da-4256-81e6-a2a063872361> ;
+  ns0:hasEndDateTime "1977-02-21T06:52:41-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "3ba8ae45-23da-4256-81e6-a2a063872361" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "1977-02-21T06:22:41-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "1977-02-21T06:22:41-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:ac3de6f1-e236-4200-b9da-f1b7758de992> ;
+  ns0:hasCurrentLocation <urn:uuid:78f24216-8805-3436-ae9f-53aa1cb276b7> ;
+  ns0:hasDataProviderInstitute <urn:uuid:78f24216-8805-3436-ae9f-53aa1cb276b7> .
+
+<urn:uuid:ad8a0338-8a11-4ee3-b49e-382701c8a3a9>
+  ns0:hasAdministrativeCase <urn:uuid:ad8a0338-8a11-4ee3-b49e-382701c8a3a9> ;
+  ns0:hasEndDateTime "1987-12-21T06:37:41-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "ad8a0338-8a11-4ee3-b49e-382701c8a3a9" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "1987-12-21T06:22:41-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "1987-12-21T06:22:41-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:ac3de6f1-e236-4200-b9da-f1b7758de992> ;
+  ns0:hasCurrentLocation <urn:uuid:78f24216-8805-3436-ae9f-53aa1cb276b7> ;
+  ns0:hasDataProviderInstitute <urn:uuid:78f24216-8805-3436-ae9f-53aa1cb276b7> .
+
+<urn:uuid:e0d01182-27a5-47c9-a4c5-81e5feb3b4cc>
+  ns0:hasAdministrativeCase <urn:uuid:e0d01182-27a5-47c9-a4c5-81e5feb3b4cc> ;
+  ns0:hasEndDateTime "2010-03-01T06:37:41-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "e0d01182-27a5-47c9-a4c5-81e5feb3b4cc" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2010-03-01T06:22:41-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2010-03-01T06:22:41-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:ac3de6f1-e236-4200-b9da-f1b7758de992> ;
+  ns0:hasCurrentLocation <urn:uuid:78f24216-8805-3436-ae9f-53aa1cb276b7> ;
+  ns0:hasDataProviderInstitute <urn:uuid:78f24216-8805-3436-ae9f-53aa1cb276b7> .
+
+<urn:uuid:7bbed799-1a54-4885-ba14-9e1bc84aaf44>
+  ns0:hasAdministrativeCase <urn:uuid:7bbed799-1a54-4885-ba14-9e1bc84aaf44> ;
+  ns0:hasEndDateTime "2010-12-07T07:35:41-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "7bbed799-1a54-4885-ba14-9e1bc84aaf44" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2010-12-07T06:22:41-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2010-12-07T06:22:41-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:ac3de6f1-e236-4200-b9da-f1b7758de992> ;
+  ns0:hasCurrentLocation <urn:uuid:8ad64ecf-c817-3753-bee7-006a8e662e06> ;
+  ns0:hasDataProviderInstitute <urn:uuid:8ad64ecf-c817-3753-bee7-006a8e662e06> .
+
+<urn:uuid:690f1ba8-95a3-4706-b570-794fea7e9ae7>
+  ns0:hasAdministrativeCase <urn:uuid:690f1ba8-95a3-4706-b570-794fea7e9ae7> ;
+  ns0:hasEndDateTime "2011-03-07T06:52:41-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "690f1ba8-95a3-4706-b570-794fea7e9ae7" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2011-03-07T06:22:41-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2011-03-07T06:22:41-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:ac3de6f1-e236-4200-b9da-f1b7758de992> ;
+  ns0:hasCurrentLocation <urn:uuid:78f24216-8805-3436-ae9f-53aa1cb276b7> ;
+  ns0:hasDataProviderInstitute <urn:uuid:78f24216-8805-3436-ae9f-53aa1cb276b7> .
+
+<urn:uuid:998f69cb-08c7-4a7e-a30c-daa8b7ee960f>
+  ns0:hasAdministrativeCase <urn:uuid:998f69cb-08c7-4a7e-a30c-daa8b7ee960f> ;
+  ns0:hasEndDateTime "2011-11-03T07:37:41-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "998f69cb-08c7-4a7e-a30c-daa8b7ee960f" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2011-11-03T07:22:41-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2011-11-03T07:22:41-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:ac3de6f1-e236-4200-b9da-f1b7758de992> ;
+  ns0:hasCurrentLocation <urn:uuid:8ad64ecf-c817-3753-bee7-006a8e662e06> ;
+  ns0:hasDataProviderInstitute <urn:uuid:8ad64ecf-c817-3753-bee7-006a8e662e06> .
+
+<urn:uuid:f692f709-4356-436f-854d-fb0e4f838c29>
+  ns0:hasAdministrativeCase <urn:uuid:f692f709-4356-436f-854d-fb0e4f838c29> ;
+  ns0:hasEndDateTime "2012-03-12T07:37:41-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "f692f709-4356-436f-854d-fb0e4f838c29" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2012-03-12T07:22:41-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2012-03-12T07:22:41-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:ac3de6f1-e236-4200-b9da-f1b7758de992> ;
+  ns0:hasCurrentLocation <urn:uuid:78f24216-8805-3436-ae9f-53aa1cb276b7> ;
+  ns0:hasDataProviderInstitute <urn:uuid:78f24216-8805-3436-ae9f-53aa1cb276b7> .
+
+<urn:uuid:71f63583-aa52-4b91-b8b6-426911de3167>
+  ns0:hasAdministrativeCase <urn:uuid:71f63583-aa52-4b91-b8b6-426911de3167> ;
+  ns0:hasEndDateTime "2012-03-31T08:16:41-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "71f63583-aa52-4b91-b8b6-426911de3167" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2012-03-31T07:22:41-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2012-03-31T07:22:41-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:ac3de6f1-e236-4200-b9da-f1b7758de992> ;
+  ns0:hasCurrentLocation <urn:uuid:8ad64ecf-c817-3753-bee7-006a8e662e06> ;
+  ns0:hasDataProviderInstitute <urn:uuid:8ad64ecf-c817-3753-bee7-006a8e662e06> .
+
+<urn:uuid:9d957d57-5c71-4e73-9399-a202303c130f>
+  ns0:hasAdministrativeCase <urn:uuid:9d957d57-5c71-4e73-9399-a202303c130f> ;
+  ns0:hasEndDateTime "2013-01-18T06:37:41-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "9d957d57-5c71-4e73-9399-a202303c130f" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2013-01-18T06:22:41-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2013-01-18T06:22:41-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:ac3de6f1-e236-4200-b9da-f1b7758de992> ;
+  ns0:hasCurrentLocation <urn:uuid:8ad64ecf-c817-3753-bee7-006a8e662e06> ;
+  ns0:hasDataProviderInstitute <urn:uuid:8ad64ecf-c817-3753-bee7-006a8e662e06> .
+
+<urn:uuid:9e30217c-1e5a-45d9-9f29-e3f7a2b5f82d>
+  ns0:hasAdministrativeCase <urn:uuid:9e30217c-1e5a-45d9-9f29-e3f7a2b5f82d> ;
+  ns0:hasEndDateTime "2013-03-18T07:52:41-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "9e30217c-1e5a-45d9-9f29-e3f7a2b5f82d" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2013-03-18T07:22:41-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2013-03-18T07:22:41-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:ac3de6f1-e236-4200-b9da-f1b7758de992> ;
+  ns0:hasCurrentLocation <urn:uuid:78f24216-8805-3436-ae9f-53aa1cb276b7> ;
+  ns0:hasDataProviderInstitute <urn:uuid:78f24216-8805-3436-ae9f-53aa1cb276b7> .
+
+<urn:uuid:2c39bdc4-5579-4bde-8308-480bfb54bfc5>
+  ns0:hasAdministrativeCase <urn:uuid:2c39bdc4-5579-4bde-8308-480bfb54bfc5> ;
+  ns0:hasEndDateTime "2013-10-13T07:37:41-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "2c39bdc4-5579-4bde-8308-480bfb54bfc5" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2013-10-13T07:22:41-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2013-10-13T07:22:41-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:ac3de6f1-e236-4200-b9da-f1b7758de992> ;
+  ns0:hasCurrentLocation <urn:uuid:8ad64ecf-c817-3753-bee7-006a8e662e06> ;
+  ns0:hasDataProviderInstitute <urn:uuid:8ad64ecf-c817-3753-bee7-006a8e662e06> .
+
+<urn:uuid:4be7e51b-bc01-444d-8deb-9bf1790ca385>
+  ns0:hasAdministrativeCase <urn:uuid:4be7e51b-bc01-444d-8deb-9bf1790ca385> ;
+  ns0:hasEndDateTime "2014-03-24T07:37:41-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "4be7e51b-bc01-444d-8deb-9bf1790ca385" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2014-03-24T07:22:41-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2014-03-24T07:22:41-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:ac3de6f1-e236-4200-b9da-f1b7758de992> ;
+  ns0:hasCurrentLocation <urn:uuid:78f24216-8805-3436-ae9f-53aa1cb276b7> ;
+  ns0:hasDataProviderInstitute <urn:uuid:78f24216-8805-3436-ae9f-53aa1cb276b7> .
+
+<urn:uuid:bf2d7e4e-5bf5-4ad0-b42f-fee5f3197434>
+  ns0:hasAdministrativeCase <urn:uuid:bf2d7e4e-5bf5-4ad0-b42f-fee5f3197434> ;
+  ns0:hasEndDateTime "2015-03-30T07:52:41-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "bf2d7e4e-5bf5-4ad0-b42f-fee5f3197434" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2015-03-30T07:22:41-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2015-03-30T07:22:41-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:ac3de6f1-e236-4200-b9da-f1b7758de992> ;
+  ns0:hasCurrentLocation <urn:uuid:78f24216-8805-3436-ae9f-53aa1cb276b7> ;
+  ns0:hasDataProviderInstitute <urn:uuid:78f24216-8805-3436-ae9f-53aa1cb276b7> .
+
+<urn:uuid:abdfa632-e8dc-4a4d-ab59-a6dbe3c6a064>
+  ns0:hasAdministrativeCase <urn:uuid:abdfa632-e8dc-4a4d-ab59-a6dbe3c6a064> ;
+  ns0:hasEndDateTime "2016-04-04T07:37:41-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "abdfa632-e8dc-4a4d-ab59-a6dbe3c6a064" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2016-04-04T07:22:41-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2016-04-04T07:22:41-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:ac3de6f1-e236-4200-b9da-f1b7758de992> ;
+  ns0:hasCurrentLocation <urn:uuid:78f24216-8805-3436-ae9f-53aa1cb276b7> ;
+  ns0:hasDataProviderInstitute <urn:uuid:78f24216-8805-3436-ae9f-53aa1cb276b7> .
+
+<urn:uuid:d6546944-c71d-4f5c-9f35-f401b1f4c24a>
+  ns0:hasAdministrativeCase <urn:uuid:d6546944-c71d-4f5c-9f35-f401b1f4c24a> ;
+  ns0:hasEndDateTime "2016-05-21T10:07:41-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "d6546944-c71d-4f5c-9f35-f401b1f4c24a" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2016-05-21T07:22:41-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2016-05-21T07:22:41-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:ac3de6f1-e236-4200-b9da-f1b7758de992> ;
+  ns0:hasCurrentLocation <urn:uuid:8ad64ecf-c817-3753-bee7-006a8e662e06> ;
+  ns0:hasDataProviderInstitute <urn:uuid:8ad64ecf-c817-3753-bee7-006a8e662e06> .
+
+<urn:uuid:1b459881-8f25-461c-9591-2d3f86d65e67>
+  ns0:hasAdministrativeCase <urn:uuid:1b459881-8f25-461c-9591-2d3f86d65e67> ;
+  ns0:hasEndDateTime "2016-06-20T07:37:41-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "1b459881-8f25-461c-9591-2d3f86d65e67" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2016-06-20T07:22:41-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2016-06-20T07:22:41-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:ac3de6f1-e236-4200-b9da-f1b7758de992> ;
+  ns0:hasCurrentLocation <urn:uuid:8ad64ecf-c817-3753-bee7-006a8e662e06> ;
+  ns0:hasDataProviderInstitute <urn:uuid:8ad64ecf-c817-3753-bee7-006a8e662e06> .
+
+<urn:uuid:e4aa0593-6489-4395-977a-b60e1ce449b2>
+  ns0:hasAdministrativeCase <urn:uuid:e4aa0593-6489-4395-977a-b60e1ce449b2> ;
+  ns0:hasEndDateTime "2017-03-30T08:20:41-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "e4aa0593-6489-4395-977a-b60e1ce449b2" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2017-03-30T07:22:41-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2017-03-30T07:22:41-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:ac3de6f1-e236-4200-b9da-f1b7758de992> ;
+  ns0:hasCurrentLocation <urn:uuid:8ad64ecf-c817-3753-bee7-006a8e662e06> ;
+  ns0:hasDataProviderInstitute <urn:uuid:8ad64ecf-c817-3753-bee7-006a8e662e06> .
+
+<urn:uuid:af649a17-dccf-4077-bff5-6833c552eafd>
+  ns0:hasAdministrativeCase <urn:uuid:af649a17-dccf-4077-bff5-6833c552eafd> ;
+  ns0:hasEndDateTime "2017-04-10T07:52:41-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "af649a17-dccf-4077-bff5-6833c552eafd" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2017-04-10T07:22:41-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2017-04-10T07:22:41-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:ac3de6f1-e236-4200-b9da-f1b7758de992> ;
+  ns0:hasCurrentLocation <urn:uuid:78f24216-8805-3436-ae9f-53aa1cb276b7> ;
+  ns0:hasDataProviderInstitute <urn:uuid:78f24216-8805-3436-ae9f-53aa1cb276b7> .
+
+<urn:uuid:51161d57-eb13-4802-9ace-6c4bd3dfc846>
+  ns0:hasAdministrativeCase <urn:uuid:51161d57-eb13-4802-9ace-6c4bd3dfc846> ;
+  ns0:hasEndDateTime "2018-04-16T07:37:41-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "51161d57-eb13-4802-9ace-6c4bd3dfc846" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2018-04-16T07:22:41-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2018-04-16T07:22:41-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:ac3de6f1-e236-4200-b9da-f1b7758de992> ;
+  ns0:hasCurrentLocation <urn:uuid:78f24216-8805-3436-ae9f-53aa1cb276b7> ;
+  ns0:hasDataProviderInstitute <urn:uuid:78f24216-8805-3436-ae9f-53aa1cb276b7> .
+
+<https://github.com/synthetichealth/synthea/code_dea603e3-1eca-34ac-a7b9-566138fc878b>
+  ns0:hasName "GATEWAYPHYSICALTHERAPYANDWELLNESSCORP" ;
+  ns0:hasCodingSystemAndVersion "https://github.com/synthetichealth/synthea" ;
+  ns0:hasIdentifier "dea603e3-1eca-34ac-a7b9-566138fc878b" ;
+  a ns0:Code .
+
+<urn:uuid:dea603e3-1eca-34ac-a7b9-566138fc878b>
+  ns0:hasDataProviderInstitute <urn:uuid:dea603e3-1eca-34ac-a7b9-566138fc878b> ;
+  ns0:hasClass ns0:MedicalCenter ;
+  a ns0:DataProviderInstitute, ns0:Location ;
+  ns0:hasCode <https://github.com/synthetichealth/synthea/code_dea603e3-1eca-34ac-a7b9-566138fc878b> .
+
+<https://github.com/synthetichealth/synthea/code_56e0b3b3-4fac-3776-8fc9-7b465eb2fc17>
+  ns0:hasName "FAIRVIEWHOSPITAL" ;
+  ns0:hasCodingSystemAndVersion "https://github.com/synthetichealth/synthea" ;
+  ns0:hasIdentifier "56e0b3b3-4fac-3776-8fc9-7b465eb2fc17" ;
+  a ns0:Code .
+
+<urn:uuid:56e0b3b3-4fac-3776-8fc9-7b465eb2fc17>
+  ns0:hasDataProviderInstitute <urn:uuid:56e0b3b3-4fac-3776-8fc9-7b465eb2fc17> ;
+  ns0:hasClass ns0:MedicalCenter ;
+  a ns0:DataProviderInstitute, ns0:Location ;
+  ns0:hasCode <https://github.com/synthetichealth/synthea/code_56e0b3b3-4fac-3776-8fc9-7b465eb2fc17> .
+
+<https://github.com/synthetichealth/synthea/code_3bd5eda0-16da-3ba5-8500-4dfd6ae118b8>
+  ns0:hasName "NORWOODHOSPITAL" ;
+  ns0:hasCodingSystemAndVersion "https://github.com/synthetichealth/synthea" ;
+  ns0:hasIdentifier "3bd5eda0-16da-3ba5-8500-4dfd6ae118b8" ;
+  a ns0:Code .
+
+<urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8>
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasClass ns0:MedicalCenter ;
+  a ns0:DataProviderInstitute, ns0:Location ;
+  ns0:hasCode <https://github.com/synthetichealth/synthea/code_3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> .
+
+<https://github.com/synthetichealth/synthea/code_88b776b1-23b8-33b6-9b84-b5957ce4790b>
+  ns0:hasName "PCP32843" ;
+  ns0:hasCodingSystemAndVersion "https://github.com/synthetichealth/synthea" ;
+  ns0:hasIdentifier "88b776b1-23b8-33b6-9b84-b5957ce4790b" ;
+  a ns0:Code .
+
+<urn:uuid:88b776b1-23b8-33b6-9b84-b5957ce4790b>
+  ns0:hasDataProviderInstitute <urn:uuid:88b776b1-23b8-33b6-9b84-b5957ce4790b> ;
+  ns0:hasClass ns0:MedicalCenter ;
+  a ns0:DataProviderInstitute, ns0:Location ;
+  ns0:hasCode <https://github.com/synthetichealth/synthea/code_88b776b1-23b8-33b6-9b84-b5957ce4790b> .
+
+<https://github.com/synthetichealth/synthea/code_28107b63-8bb1-382e-8d00-ecb2cc3be277>
+  ns0:hasName "PCP120265" ;
+  ns0:hasCodingSystemAndVersion "https://github.com/synthetichealth/synthea" ;
+  ns0:hasIdentifier "28107b63-8bb1-382e-8d00-ecb2cc3be277" ;
+  a ns0:Code .
+
+<urn:uuid:28107b63-8bb1-382e-8d00-ecb2cc3be277>
+  ns0:hasDataProviderInstitute <urn:uuid:28107b63-8bb1-382e-8d00-ecb2cc3be277> ;
+  ns0:hasClass ns0:MedicalCenter ;
+  a ns0:DataProviderInstitute, ns0:Location ;
+  ns0:hasCode <https://github.com/synthetichealth/synthea/code_28107b63-8bb1-382e-8d00-ecb2cc3be277> .
+
+<https://github.com/synthetichealth/synthea/code_b0e04623-b02c-3f8b-92ea-943fc4db60da>
+  ns0:hasName "LOWELLGENERALHOSPITAL" ;
+  ns0:hasCodingSystemAndVersion "https://github.com/synthetichealth/synthea" ;
+  ns0:hasIdentifier "b0e04623-b02c-3f8b-92ea-943fc4db60da" ;
+  a ns0:Code .
+
+<urn:uuid:b0e04623-b02c-3f8b-92ea-943fc4db60da>
+  ns0:hasDataProviderInstitute <urn:uuid:b0e04623-b02c-3f8b-92ea-943fc4db60da> ;
+  ns0:hasClass ns0:MedicalCenter ;
+  a ns0:DataProviderInstitute, ns0:Location ;
+  ns0:hasCode <https://github.com/synthetichealth/synthea/code_b0e04623-b02c-3f8b-92ea-943fc4db60da> .
+
+<https://github.com/synthetichealth/synthea/code_03347b4d-994e-302b-848b-58019a4e274d>
+  ns0:hasName "EMERSONHOSPITAL-" ;
+  ns0:hasCodingSystemAndVersion "https://github.com/synthetichealth/synthea" ;
+  ns0:hasIdentifier "03347b4d-994e-302b-848b-58019a4e274d" ;
+  a ns0:Code .
+
+<urn:uuid:03347b4d-994e-302b-848b-58019a4e274d>
+  ns0:hasDataProviderInstitute <urn:uuid:03347b4d-994e-302b-848b-58019a4e274d> ;
+  ns0:hasClass ns0:MedicalCenter ;
+  a ns0:DataProviderInstitute, ns0:Location ;
+  ns0:hasCode <https://github.com/synthetichealth/synthea/code_03347b4d-994e-302b-848b-58019a4e274d> .
+
+<https://github.com/synthetichealth/synthea/code_e155878b-35e5-3f8d-98e6-51979b6c52e8>
+  ns0:hasName "PCP25430" ;
+  ns0:hasCodingSystemAndVersion "https://github.com/synthetichealth/synthea" ;
+  ns0:hasIdentifier "e155878b-35e5-3f8d-98e6-51979b6c52e8" ;
+  a ns0:Code .
+
+<urn:uuid:e155878b-35e5-3f8d-98e6-51979b6c52e8>
+  ns0:hasDataProviderInstitute <urn:uuid:e155878b-35e5-3f8d-98e6-51979b6c52e8> ;
+  ns0:hasClass ns0:MedicalCenter ;
+  a ns0:DataProviderInstitute, ns0:Location ;
+  ns0:hasCode <https://github.com/synthetichealth/synthea/code_e155878b-35e5-3f8d-98e6-51979b6c52e8> .
+
+<https://github.com/synthetichealth/synthea/code_1eaf97fa-9de6-38de-a9c4-6efe5dc574be>
+  ns0:hasName "STVINCENTHOSPITAL" ;
+  ns0:hasCodingSystemAndVersion "https://github.com/synthetichealth/synthea" ;
+  ns0:hasIdentifier "1eaf97fa-9de6-38de-a9c4-6efe5dc574be" ;
+  a ns0:Code .
+
+<urn:uuid:1eaf97fa-9de6-38de-a9c4-6efe5dc574be>
+  ns0:hasDataProviderInstitute <urn:uuid:1eaf97fa-9de6-38de-a9c4-6efe5dc574be> ;
+  ns0:hasClass ns0:MedicalCenter ;
+  a ns0:DataProviderInstitute, ns0:Location ;
+  ns0:hasCode <https://github.com/synthetichealth/synthea/code_1eaf97fa-9de6-38de-a9c4-6efe5dc574be> .
+
+<https://github.com/synthetichealth/synthea/code_f99c74cc-7d1a-3f95-9a33-4a9357bf2f2a>
+  ns0:hasName "UMASSMEMORIALMEDICALCENTERINC" ;
+  ns0:hasCodingSystemAndVersion "https://github.com/synthetichealth/synthea" ;
+  ns0:hasIdentifier "f99c74cc-7d1a-3f95-9a33-4a9357bf2f2a" ;
+  a ns0:Code .
+
+<urn:uuid:f99c74cc-7d1a-3f95-9a33-4a9357bf2f2a>
+  ns0:hasDataProviderInstitute <urn:uuid:f99c74cc-7d1a-3f95-9a33-4a9357bf2f2a> ;
+  ns0:hasClass ns0:MedicalCenter ;
+  a ns0:DataProviderInstitute, ns0:Location ;
+  ns0:hasCode <https://github.com/synthetichealth/synthea/code_f99c74cc-7d1a-3f95-9a33-4a9357bf2f2a> .
+
+<https://github.com/synthetichealth/synthea/code_851964ad-fff8-3ab6-aba0-4f85090f0041>
+  ns0:hasName "PCP260628" ;
+  ns0:hasCodingSystemAndVersion "https://github.com/synthetichealth/synthea" ;
+  ns0:hasIdentifier "851964ad-fff8-3ab6-aba0-4f85090f0041" ;
+  a ns0:Code .
+
+<urn:uuid:851964ad-fff8-3ab6-aba0-4f85090f0041>
+  ns0:hasDataProviderInstitute <urn:uuid:851964ad-fff8-3ab6-aba0-4f85090f0041> ;
+  ns0:hasClass ns0:MedicalCenter ;
+  a ns0:DataProviderInstitute, ns0:Location ;
+  ns0:hasCode <https://github.com/synthetichealth/synthea/code_851964ad-fff8-3ab6-aba0-4f85090f0041> .
+
+<https://github.com/synthetichealth/synthea/code_3d10019f-c88e-3de5-9916-6107b9c0263d>
+  ns0:hasName "NEWTON-WELLESLEYHOSPITAL" ;
+  ns0:hasCodingSystemAndVersion "https://github.com/synthetichealth/synthea" ;
+  ns0:hasIdentifier "3d10019f-c88e-3de5-9916-6107b9c0263d" ;
+  a ns0:Code .
+
+<urn:uuid:3d10019f-c88e-3de5-9916-6107b9c0263d>
+  ns0:hasDataProviderInstitute <urn:uuid:3d10019f-c88e-3de5-9916-6107b9c0263d> ;
+  ns0:hasClass ns0:MedicalCenter ;
+  a ns0:DataProviderInstitute, ns0:Location ;
+  ns0:hasCode <https://github.com/synthetichealth/synthea/code_3d10019f-c88e-3de5-9916-6107b9c0263d> .
+
+<https://github.com/synthetichealth/synthea/code_8ad64ecf-c817-3753-bee7-006a8e662e06>
+  ns0:hasName "MORTONHOSPITAL" ;
+  ns0:hasCodingSystemAndVersion "https://github.com/synthetichealth/synthea" ;
+  ns0:hasIdentifier "8ad64ecf-c817-3753-bee7-006a8e662e06" ;
+  a ns0:Code .
+
+<urn:uuid:8ad64ecf-c817-3753-bee7-006a8e662e06>
+  ns0:hasDataProviderInstitute <urn:uuid:8ad64ecf-c817-3753-bee7-006a8e662e06> ;
+  ns0:hasClass ns0:MedicalCenter ;
+  a ns0:DataProviderInstitute, ns0:Location ;
+  ns0:hasCode <https://github.com/synthetichealth/synthea/code_8ad64ecf-c817-3753-bee7-006a8e662e06> .
+
+<https://github.com/synthetichealth/synthea/code_78f24216-8805-3436-ae9f-53aa1cb276b7>
+  ns0:hasName "PCP116891" ;
+  ns0:hasCodingSystemAndVersion "https://github.com/synthetichealth/synthea" ;
+  ns0:hasIdentifier "78f24216-8805-3436-ae9f-53aa1cb276b7" ;
+  a ns0:Code .
+
+<urn:uuid:78f24216-8805-3436-ae9f-53aa1cb276b7>
+  ns0:hasDataProviderInstitute <urn:uuid:78f24216-8805-3436-ae9f-53aa1cb276b7> ;
+  ns0:hasClass ns0:MedicalCenter ;
+  a ns0:DataProviderInstitute, ns0:Location ;
+  ns0:hasCode <https://github.com/synthetichealth/synthea/code_78f24216-8805-3436-ae9f-53aa1cb276b7> .
+
+<https://github.com/synthetichealth/synthea/code_e45f3260-37a6-33e9-a149-369afd48566f>
+  ns0:hasName "CARLGUSTAFSONLLC" ;
+  ns0:hasCodingSystemAndVersion "https://github.com/synthetichealth/synthea" ;
+  ns0:hasIdentifier "e45f3260-37a6-33e9-a149-369afd48566f" ;
+  a ns0:Code .
+
+<urn:uuid:e45f3260-37a6-33e9-a149-369afd48566f>
+  ns0:hasDataProviderInstitute <urn:uuid:e45f3260-37a6-33e9-a149-369afd48566f> ;
+  ns0:hasClass ns0:MedicalCenter ;
+  a ns0:DataProviderInstitute, ns0:Location ;
+  ns0:hasCode <https://github.com/synthetichealth/synthea/code_e45f3260-37a6-33e9-a149-369afd48566f> .
+
+<urn:uuid:529d24b0-e878-4bbc-9780-e1ee54f24f54>
+  ns0:hasAdministrativeCase <urn:uuid:529d24b0-e878-4bbc-9780-e1ee54f24f54> ;
+  ns0:hasEndDateTime "2019-04-22T07:52:41-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "529d24b0-e878-4bbc-9780-e1ee54f24f54" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2019-04-22T07:22:41-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2019-04-22T07:22:41-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:ac3de6f1-e236-4200-b9da-f1b7758de992> ;
+  ns0:hasCurrentLocation <urn:uuid:78f24216-8805-3436-ae9f-53aa1cb276b7> ;
+  ns0:hasDataProviderInstitute <urn:uuid:78f24216-8805-3436-ae9f-53aa1cb276b7> .
+
+<urn:uuid:e2562aa6-1881-435d-b144-1c3890431af9>
+  ns0:hasAdministrativeCase <urn:uuid:e2562aa6-1881-435d-b144-1c3890431af9> ;
+  ns0:hasEndDateTime "1949-09-22T01:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "e2562aa6-1881-435d-b144-1c3890431af9" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "1949-09-22T00:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "1949-09-22T00:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:98381b9b-4d30-447a-812a-2917cfd4ee53> ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> .
+
+<urn:uuid:733db15a-6360-4e0e-9228-c57ea003c1de>
+  ns0:hasAdministrativeCase <urn:uuid:733db15a-6360-4e0e-9228-c57ea003c1de> ;
+  ns0:hasEndDateTime "1959-09-16T00:32:55-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "733db15a-6360-4e0e-9228-c57ea003c1de" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "1959-09-16T00:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "1959-09-16T00:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:98381b9b-4d30-447a-812a-2917cfd4ee53> ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> .
+
+<urn:uuid:c7619586-e108-4cb8-9bf7-910cb770e957>
+  ns0:hasAdministrativeCase <urn:uuid:c7619586-e108-4cb8-9bf7-910cb770e957> ;
+  ns0:hasEndDateTime "1964-07-06T00:32:55-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "c7619586-e108-4cb8-9bf7-910cb770e957" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "1964-07-06T00:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "1964-07-06T00:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:98381b9b-4d30-447a-812a-2917cfd4ee53> ;
+  ns0:hasCurrentLocation <urn:uuid:e45f3260-37a6-33e9-a149-369afd48566f> ;
+  ns0:hasDataProviderInstitute <urn:uuid:e45f3260-37a6-33e9-a149-369afd48566f> .
+
+<urn:uuid:c57e7df8-f4a8-4cd1-8eaf-1f9db19fd0a1>
+  ns0:hasAdministrativeCase <urn:uuid:c57e7df8-f4a8-4cd1-8eaf-1f9db19fd0a1> ;
+  ns0:hasEndDateTime "1969-06-19T00:32:55-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "c57e7df8-f4a8-4cd1-8eaf-1f9db19fd0a1" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "1969-06-19T00:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "1969-06-19T00:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:98381b9b-4d30-447a-812a-2917cfd4ee53> .
+
+<urn:uuid:8820161d-b39c-4234-bc8f-8e649fccb9e5>
+  ns0:hasAdministrativeCase <urn:uuid:8820161d-b39c-4234-bc8f-8e649fccb9e5> ;
+  ns0:hasEndDateTime "1986-09-08T00:47:55-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "8820161d-b39c-4234-bc8f-8e649fccb9e5" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "1986-09-08T00:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "1986-09-08T00:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:98381b9b-4d30-447a-812a-2917cfd4ee53> ;
+  ns0:hasCurrentLocation <urn:uuid:e45f3260-37a6-33e9-a149-369afd48566f> ;
+  ns0:hasDataProviderInstitute <urn:uuid:e45f3260-37a6-33e9-a149-369afd48566f> .
+
+<urn:uuid:7d2b8523-b021-4264-85a0-05c6013b2f4b>
+  ns0:hasAdministrativeCase <urn:uuid:7d2b8523-b021-4264-85a0-05c6013b2f4b> ;
+  ns0:hasEndDateTime "1991-10-07T00:32:55-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "7d2b8523-b021-4264-85a0-05c6013b2f4b" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "1991-10-07T00:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "1991-10-07T00:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:98381b9b-4d30-447a-812a-2917cfd4ee53> ;
+  ns0:hasCurrentLocation <urn:uuid:e45f3260-37a6-33e9-a149-369afd48566f> ;
+  ns0:hasDataProviderInstitute <urn:uuid:e45f3260-37a6-33e9-a149-369afd48566f> .
+
+<urn:uuid:de8fb1e0-0a4e-47c3-af05-5d357c9f6c17>
+  ns0:hasAdministrativeCase <urn:uuid:de8fb1e0-0a4e-47c3-af05-5d357c9f6c17> ;
+  ns0:hasEndDateTime "1994-10-24T00:47:55-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "de8fb1e0-0a4e-47c3-af05-5d357c9f6c17" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "1994-10-24T00:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "1994-10-24T00:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:98381b9b-4d30-447a-812a-2917cfd4ee53> ;
+  ns0:hasCurrentLocation <urn:uuid:e45f3260-37a6-33e9-a149-369afd48566f> ;
+  ns0:hasDataProviderInstitute <urn:uuid:e45f3260-37a6-33e9-a149-369afd48566f> .
+
+<urn:uuid:b990e2e2-1569-4080-acf0-a51edb036b75>
+  ns0:hasAdministrativeCase <urn:uuid:b990e2e2-1569-4080-acf0-a51edb036b75> ;
+  ns0:hasEndDateTime "1997-03-23T23:32:55-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "b990e2e2-1569-4080-acf0-a51edb036b75" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "1997-03-23T23:17:55-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "1997-03-23T23:17:55-05:00"^^xsd:dateTime ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:98381b9b-4d30-447a-812a-2917cfd4ee53> .
+
+<urn:uuid:f8316834-d075-4c34-8381-70a916db8e6b>
+  ns0:hasAdministrativeCase <urn:uuid:f8316834-d075-4c34-8381-70a916db8e6b> ;
+  ns0:hasEndDateTime "1998-11-16T00:02:55-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "f8316834-d075-4c34-8381-70a916db8e6b" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "1998-11-15T23:17:55-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "1998-11-15T23:17:55-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:98381b9b-4d30-447a-812a-2917cfd4ee53> ;
+  ns0:hasCurrentLocation <urn:uuid:e45f3260-37a6-33e9-a149-369afd48566f> ;
+  ns0:hasDataProviderInstitute <urn:uuid:e45f3260-37a6-33e9-a149-369afd48566f> .
+
+<urn:uuid:781e539a-cf3e-4afa-89ce-2aae1f28cfa6>
+  ns0:hasAdministrativeCase <urn:uuid:781e539a-cf3e-4afa-89ce-2aae1f28cfa6> ;
+  ns0:hasEndDateTime "2000-11-16T00:16:55-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "781e539a-cf3e-4afa-89ce-2aae1f28cfa6" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2000-11-15T23:17:55-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2000-11-15T23:17:55-05:00"^^xsd:dateTime ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:98381b9b-4d30-447a-812a-2917cfd4ee53> .
+
+<urn:uuid:a850da7c-a9d9-48bc-b279-4b9d2067599d>
+  ns0:hasAdministrativeCase <urn:uuid:a850da7c-a9d9-48bc-b279-4b9d2067599d> ;
+  ns0:hasEndDateTime "2000-11-26T23:47:55-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "a850da7c-a9d9-48bc-b279-4b9d2067599d" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2000-11-26T23:17:55-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2000-11-26T23:17:55-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:98381b9b-4d30-447a-812a-2917cfd4ee53> ;
+  ns0:hasCurrentLocation <urn:uuid:e45f3260-37a6-33e9-a149-369afd48566f> ;
+  ns0:hasDataProviderInstitute <urn:uuid:e45f3260-37a6-33e9-a149-369afd48566f> .
+
+<urn:uuid:773b590f-820b-429b-8504-b6fba88fe233>
+  ns0:hasAdministrativeCase <urn:uuid:773b590f-820b-429b-8504-b6fba88fe233> ;
+  ns0:hasEndDateTime "2001-12-03T00:02:55-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "773b590f-820b-429b-8504-b6fba88fe233" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2001-12-02T23:17:55-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2001-12-02T23:17:55-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:98381b9b-4d30-447a-812a-2917cfd4ee53> ;
+  ns0:hasCurrentLocation <urn:uuid:e45f3260-37a6-33e9-a149-369afd48566f> ;
+  ns0:hasDataProviderInstitute <urn:uuid:e45f3260-37a6-33e9-a149-369afd48566f> .
+
+<urn:uuid:f0d31d96-91d3-48bb-adb0-5708406f215c>
+  ns0:hasAdministrativeCase <urn:uuid:f0d31d96-91d3-48bb-adb0-5708406f215c> ;
+  ns0:hasEndDateTime "2002-12-08T23:47:55-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "f0d31d96-91d3-48bb-adb0-5708406f215c" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2002-12-08T23:17:55-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2002-12-08T23:17:55-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:98381b9b-4d30-447a-812a-2917cfd4ee53> ;
+  ns0:hasCurrentLocation <urn:uuid:e45f3260-37a6-33e9-a149-369afd48566f> ;
+  ns0:hasDataProviderInstitute <urn:uuid:e45f3260-37a6-33e9-a149-369afd48566f> .
+
+<urn:uuid:cb0ca9dc-eb8f-4d15-a5d8-ed4ad6f57824>
+  ns0:hasAdministrativeCase <urn:uuid:cb0ca9dc-eb8f-4d15-a5d8-ed4ad6f57824> ;
+  ns0:hasEndDateTime "2003-06-30T00:47:55-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "cb0ca9dc-eb8f-4d15-a5d8-ed4ad6f57824" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2003-06-30T00:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2003-06-30T00:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:98381b9b-4d30-447a-812a-2917cfd4ee53> .
+
+<urn:uuid:beb0a6e0-3a70-44b9-ae9b-1c9a4468e030>
+  ns0:hasAdministrativeCase <urn:uuid:beb0a6e0-3a70-44b9-ae9b-1c9a4468e030> ;
+  ns0:hasEndDateTime "2003-07-07T00:47:55-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "beb0a6e0-3a70-44b9-ae9b-1c9a4468e030" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2003-07-07T00:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2003-07-07T00:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:98381b9b-4d30-447a-812a-2917cfd4ee53> .
+
+<urn:uuid:916da5b5-3b6a-409b-a560-9f9b2dae73fa>
+  ns0:hasAdministrativeCase <urn:uuid:916da5b5-3b6a-409b-a560-9f9b2dae73fa> ;
+  ns0:hasEndDateTime "2003-12-14T23:47:55-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "916da5b5-3b6a-409b-a560-9f9b2dae73fa" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2003-12-14T23:17:55-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2003-12-14T23:17:55-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:98381b9b-4d30-447a-812a-2917cfd4ee53> ;
+  ns0:hasCurrentLocation <urn:uuid:e45f3260-37a6-33e9-a149-369afd48566f> ;
+  ns0:hasDataProviderInstitute <urn:uuid:e45f3260-37a6-33e9-a149-369afd48566f> .
+
+<urn:uuid:12fcf040-473e-4e8a-b053-b2d9c0bb45fd>
+  ns0:hasAdministrativeCase <urn:uuid:12fcf040-473e-4e8a-b053-b2d9c0bb45fd> ;
+  ns0:hasEndDateTime "2004-03-26T00:34:55-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "12fcf040-473e-4e8a-b053-b2d9c0bb45fd" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2004-03-25T23:17:55-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2004-03-25T23:17:55-05:00"^^xsd:dateTime ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:98381b9b-4d30-447a-812a-2917cfd4ee53> .
+
+<urn:uuid:21999f5a-e137-414b-b3bc-f3757d3c657b>
+  ns0:hasAdministrativeCase <urn:uuid:21999f5a-e137-414b-b3bc-f3757d3c657b> ;
+  ns0:hasEndDateTime "2004-04-06T00:32:55-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "21999f5a-e137-414b-b3bc-f3757d3c657b" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2004-04-06T00:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2004-04-06T00:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:98381b9b-4d30-447a-812a-2917cfd4ee53> .
+
+<urn:uuid:c34cc5e0-eb40-4fff-8922-f80f9668e8c0>
+  ns0:hasAdministrativeCase <urn:uuid:c34cc5e0-eb40-4fff-8922-f80f9668e8c0> ;
+  ns0:hasEndDateTime "2004-09-28T00:32:55-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "c34cc5e0-eb40-4fff-8922-f80f9668e8c0" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2004-09-28T00:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2004-09-28T00:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:98381b9b-4d30-447a-812a-2917cfd4ee53> .
+
+<urn:uuid:195f13fd-ed5d-4f20-9acc-1eeb60cc819c>
+  ns0:hasAdministrativeCase <urn:uuid:195f13fd-ed5d-4f20-9acc-1eeb60cc819c> ;
+  ns0:hasEndDateTime "2004-12-19T23:47:55-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "195f13fd-ed5d-4f20-9acc-1eeb60cc819c" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2004-12-19T23:17:55-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2004-12-19T23:17:55-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:98381b9b-4d30-447a-812a-2917cfd4ee53> ;
+  ns0:hasCurrentLocation <urn:uuid:e45f3260-37a6-33e9-a149-369afd48566f> ;
+  ns0:hasDataProviderInstitute <urn:uuid:e45f3260-37a6-33e9-a149-369afd48566f> .
+
+<urn:uuid:9b9f7e23-11b9-45ba-bac2-e9846654a560>
+  ns0:hasAdministrativeCase <urn:uuid:9b9f7e23-11b9-45ba-bac2-e9846654a560> ;
+  ns0:hasEndDateTime "2005-12-26T00:02:55-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "9b9f7e23-11b9-45ba-bac2-e9846654a560" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2005-12-25T23:17:55-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2005-12-25T23:17:55-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:98381b9b-4d30-447a-812a-2917cfd4ee53> ;
+  ns0:hasCurrentLocation <urn:uuid:e45f3260-37a6-33e9-a149-369afd48566f> ;
+  ns0:hasDataProviderInstitute <urn:uuid:e45f3260-37a6-33e9-a149-369afd48566f> .
+
+<urn:uuid:3bc76e73-88ed-4096-939c-889d8f09f26f>
+  ns0:hasAdministrativeCase <urn:uuid:3bc76e73-88ed-4096-939c-889d8f09f26f> ;
+  ns0:hasEndDateTime "2006-03-07T01:47:55-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "3bc76e73-88ed-4096-939c-889d8f09f26f" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2006-03-06T23:17:55-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2006-03-06T23:17:55-05:00"^^xsd:dateTime ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:98381b9b-4d30-447a-812a-2917cfd4ee53> .
+
+<urn:uuid:f175b428-a0e4-4c8c-8e4c-9e627a335fb7>
+  ns0:hasAdministrativeCase <urn:uuid:f175b428-a0e4-4c8c-8e4c-9e627a335fb7> ;
+  ns0:hasEndDateTime "2006-06-05T00:32:55-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "f175b428-a0e4-4c8c-8e4c-9e627a335fb7" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2006-06-05T00:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2006-06-05T00:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:98381b9b-4d30-447a-812a-2917cfd4ee53> .
+
+<urn:uuid:b9be4976-cebd-459d-a5f7-aa17f5a3f88d>
+  ns0:hasAdministrativeCase <urn:uuid:b9be4976-cebd-459d-a5f7-aa17f5a3f88d> ;
+  ns0:hasEndDateTime "2006-12-31T23:47:55-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "b9be4976-cebd-459d-a5f7-aa17f5a3f88d" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2006-12-31T23:17:55-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2006-12-31T23:17:55-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:98381b9b-4d30-447a-812a-2917cfd4ee53> ;
+  ns0:hasCurrentLocation <urn:uuid:e45f3260-37a6-33e9-a149-369afd48566f> ;
+  ns0:hasDataProviderInstitute <urn:uuid:e45f3260-37a6-33e9-a149-369afd48566f> .
+
+<urn:uuid:e50bd84c-a94b-4761-a588-4f5c91a66c5a>
+  ns0:hasAdministrativeCase <urn:uuid:e50bd84c-a94b-4761-a588-4f5c91a66c5a> ;
+  ns0:hasEndDateTime "2007-05-01T01:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "e50bd84c-a94b-4761-a588-4f5c91a66c5a" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2007-05-01T00:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2007-05-01T00:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:98381b9b-4d30-447a-812a-2917cfd4ee53> .
+
+<urn:uuid:6da90cac-37b0-4a0c-8ce4-958a70321af9>
+  ns0:hasAdministrativeCase <urn:uuid:6da90cac-37b0-4a0c-8ce4-958a70321af9> ;
+  ns0:hasEndDateTime "2007-07-03T00:32:55-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "6da90cac-37b0-4a0c-8ce4-958a70321af9" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2007-07-03T00:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2007-07-03T00:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:98381b9b-4d30-447a-812a-2917cfd4ee53> .
+
+<urn:uuid:26164f34-337a-4122-9de8-e7eacf2c4a3e>
+  ns0:hasAdministrativeCase <urn:uuid:26164f34-337a-4122-9de8-e7eacf2c4a3e> ;
+  ns0:hasEndDateTime "2007-09-29T00:50:55-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "26164f34-337a-4122-9de8-e7eacf2c4a3e" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2007-09-29T00:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2007-09-29T00:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:98381b9b-4d30-447a-812a-2917cfd4ee53> .
+
+<urn:uuid:28bd6523-bbf1-4630-b633-470d5fc6ca9b>
+  ns0:hasAdministrativeCase <urn:uuid:28bd6523-bbf1-4630-b633-470d5fc6ca9b> ;
+  ns0:hasEndDateTime "2007-10-08T00:47:55-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "28bd6523-bbf1-4630-b633-470d5fc6ca9b" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2007-10-08T00:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2007-10-08T00:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:98381b9b-4d30-447a-812a-2917cfd4ee53> .
+
+<urn:uuid:f8060c68-0d11-4d2e-9020-bec4b69e81aa>
+  ns0:hasAdministrativeCase <urn:uuid:f8060c68-0d11-4d2e-9020-bec4b69e81aa> ;
+  ns0:hasEndDateTime "2008-01-06T23:47:55-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "f8060c68-0d11-4d2e-9020-bec4b69e81aa" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2008-01-06T23:17:55-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2008-01-06T23:17:55-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:98381b9b-4d30-447a-812a-2917cfd4ee53> ;
+  ns0:hasCurrentLocation <urn:uuid:e45f3260-37a6-33e9-a149-369afd48566f> ;
+  ns0:hasDataProviderInstitute <urn:uuid:e45f3260-37a6-33e9-a149-369afd48566f> .
+
+<urn:uuid:23826d5e-5908-49a1-9545-337fc8d454e7>
+  ns0:hasAdministrativeCase <urn:uuid:23826d5e-5908-49a1-9545-337fc8d454e7> ;
+  ns0:hasEndDateTime "2008-06-21T00:32:55-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "23826d5e-5908-49a1-9545-337fc8d454e7" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2008-06-21T00:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2008-06-21T00:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:98381b9b-4d30-447a-812a-2917cfd4ee53> .
+
+<urn:uuid:0ae99eba-cbeb-4367-a649-099e02c9f890>
+  ns0:hasAdministrativeCase <urn:uuid:0ae99eba-cbeb-4367-a649-099e02c9f890> ;
+  ns0:hasEndDateTime "2008-06-21T01:51:55-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "0ae99eba-cbeb-4367-a649-099e02c9f890" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2008-06-21T00:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2008-06-21T00:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:98381b9b-4d30-447a-812a-2917cfd4ee53> .
+
+<urn:uuid:bba99ea5-c8d3-42b2-98d4-72ade8c6c337>
+  ns0:hasAdministrativeCase <urn:uuid:bba99ea5-c8d3-42b2-98d4-72ade8c6c337> ;
+  ns0:hasEndDateTime "2008-07-12T01:02:55-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "bba99ea5-c8d3-42b2-98d4-72ade8c6c337" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2008-07-12T00:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2008-07-12T00:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:98381b9b-4d30-447a-812a-2917cfd4ee53> .
+
+<urn:uuid:4143479e-75e6-46e0-bb75-64c23866d817>
+  ns0:hasAdministrativeCase <urn:uuid:4143479e-75e6-46e0-bb75-64c23866d817> ;
+  ns0:hasEndDateTime "2009-01-12T00:02:55-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "4143479e-75e6-46e0-bb75-64c23866d817" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2009-01-11T23:17:55-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2009-01-11T23:17:55-05:00"^^xsd:dateTime ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:98381b9b-4d30-447a-812a-2917cfd4ee53> ;
+  ns0:hasCurrentLocation <urn:uuid:e45f3260-37a6-33e9-a149-369afd48566f> ;
+  ns0:hasDataProviderInstitute <urn:uuid:e45f3260-37a6-33e9-a149-369afd48566f> .
+
+<urn:uuid:8e53beb8-064c-4699-b450-5a46db35747f>
+  ns0:hasAdministrativeCase <urn:uuid:8e53beb8-064c-4699-b450-5a46db35747f> ;
+  ns0:hasEndDateTime "2009-07-07T01:02:55-04:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "8e53beb8-064c-4699-b450-5a46db35747f" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2009-07-07T00:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2009-07-07T00:17:55-04:00"^^xsd:dateTime ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:98381b9b-4d30-447a-812a-2917cfd4ee53> .
+
+<urn:uuid:18f5f893-a824-4824-b018-27921c785b2f>
+  ns0:hasAdministrativeCase <urn:uuid:18f5f893-a824-4824-b018-27921c785b2f> ;
+  ns0:hasEndDateTime "2010-01-03T00:47:55-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "18f5f893-a824-4824-b018-27921c785b2f" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2010-01-02T23:17:55-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2010-01-02T23:17:55-05:00"^^xsd:dateTime ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:98381b9b-4d30-447a-812a-2917cfd4ee53> .
+
+<urn:uuid:8111d9fe-f54e-49d8-9b32-33e848e4adb6>
+  ns0:hasAdministrativeCase <urn:uuid:8111d9fe-f54e-49d8-9b32-33e848e4adb6> ;
+  ns0:hasEndDateTime "2010-01-03T23:17:55-05:00"^^xsd:dateTime ;
+  ns0:hasIdentifier "8111d9fe-f54e-49d8-9b32-33e848e4adb6" ;
+  a ns0:HealthcareEncounter, ns0:AdministrativeCase ;
+  ns0:hasStartDateTime "2010-01-02T23:17:55-05:00"^^xsd:dateTime ;
+  ns0:hasAdmissionDateTime "2010-01-02T23:17:55-05:00"^^xsd:dateTime ;
+  ns0:hasCurrentLocation <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasDataProviderInstitute <urn:uuid:3bd5eda0-16da-3ba5-8500-4dfd6ae118b8> ;
+  ns0:hasSubjectPseudoIdentifier <urn:uuid:98381b9b-4d30-447a-812a-2917cfd4ee53> .
