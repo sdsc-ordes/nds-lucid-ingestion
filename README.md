@@ -29,13 +29,13 @@ The pipeline is built using [Nextflow](https://www.nextflow.io), a workflow tool
 
 By default, the workflow assumes that:
 * [`Nextflow`](https://www.nextflow.io/docs/latest/getstarted.html#installation) is installed (`>=22.10.1`)
-* [`Podman`](https://podman.io/) is installed for full pipeline reproducibility
+* [`Podman`](https://podman.io/) is installed for full pipeline reproducibility (tested on version `4.9.4`)
 * Basic UNIX libraries are installed: `gzip`, `cat`, `unzip`, `md5sum` and `fdfind`
   
 With the `biomedit` profile, in addition to the points above, the workflow assumes that:
-* [sett-rs](https://gitlab.com/biomedit/sett-rs) is installed with the command-line interface available (`sett-cli`)
+* [sett-rs](https://gitlab.com/biomedit/sett-rs) is installed with the command-line interface available (`sett-cli`, tested on version `5.3.0`)
 * A [Nextflow secret](https://www.nextflow.io/docs/latest/secrets.html) `SETT_OPENPGP_KEY_PWD` is set to provide the secret OpenPGP key used to decrypt data
-* [`jq`](https://jqlang.github.io/jq/) is installed and available
+* [`jq`](https://jqlang.github.io/jq/) is installed and available (`>=1.6`)
 
 See [usage instructions](docs/usage.md) for more information.
 
