@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+title: LUCID BioMedIT Ingestion Pipeline
+message: 'If you use this software, please cite it using the metadata below.'
+type: software
+authors:
+  - given-names: Stefan
+    family-names: Milosavljevic
+    affiliation: 'Swiss Data Science Center'
+    orcid: 'https://orcid.org/0000-0002-9135-1353'
+  - given-names: 'Cyril '
+    family-names: Matthey-Doret
+    affiliation: 'Swiss Data Science Center'
+    orcid: 'https://orcid.org/0000-0002-1126-1535'
+  - family-names: Riba Grognuz
+    given-names: Oksana
+    affiliation: 'Swiss Data Science Center'
+    orcid: 'https://orcid.org/0000-0002-2961-2655'
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.14726408
+    description: 'This DOI represents all versions, and will always resolve to the latest one.'
+repository-code: 'https://github.com/sdsc-ordes/nds-lucid-ingestion'
+license: MIT
