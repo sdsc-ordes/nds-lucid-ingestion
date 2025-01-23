@@ -1,8 +1,8 @@
 # ![ingestion](docs/images/sdsc-ingestion_logo.png)
 
-
 [![Nextflow](https://img.shields.io/badge/nextflow-%E2%89%A522.10.1-blue.svg)](https://www.nextflow.io/)
 [![Podman](https://img.shields.io/badge/podman-%20-blue)](https://podman.io/)
+[![DOI](https://zenodo.org/badge/881300852.svg)](https://doi.org/10.5281/zenodo.14726408)
 
 Copyright © 2023-2025 SDSC - Swiss Data Science Center.  
 Licensed under the MIT License - see the [LICENSE](https://raw.githubusercontent.com/sdsc-ordes/nds-lucid-ingestion/refs/heads/main/LICENSE) file for details.  
