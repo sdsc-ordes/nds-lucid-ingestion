@@ -4,10 +4,15 @@
 [![Nextflow](https://img.shields.io/badge/nextflow-%E2%89%A522.10.1-blue.svg)](https://www.nextflow.io/)
 [![Podman](https://img.shields.io/badge/podman-%20-blue)](https://podman.io/)
 
+Copyright © 2023-2025 SDSC - Swiss Data Science Center.  
+Licensed under the MIT License - see the [LICENSE](https://raw.githubusercontent.com/sdsc-ordes/nds-lucid-ingestion/refs/heads/main/LICENSE) file for details.  
+Funded by [SPHN](https://sphn.ch/) and [PHRT](https://www.sfa-phrt.ch/).
 
 ## Context
 
-This repository includes "digital infrastructure" code from a Swiss [National Data Stream (NDS)](https://sphn.ch/services/funding_old/nds/): LUCID. The general goal of the NDS initiative is to collect clinical data across five Swiss University Hospitals and share it with researchers. In the case of LUCID, research focuses on low-value care: services that provide little or no benefit to patients. If you're interested, check the [official project page](https://sphn.ch/network/projects/project-page_nds_lucid/).
+This repository includes "digital infrastructure" code from a Swiss [National Data Stream (NDS)](https://sphn.ch/services/funding_old/nds/): LUCID. The general goal of the NDS initiative is to collect clinical data across five Swiss University Hospitals and share it with researchers. In the case of LUCID, research focuses on low-value care: services that provide little or no benefit to patients. If you're interested, check the [official project page](https://sphn.ch/network/projects/project-page_nds_lucid/).  
+  
+*Digital infrastructure for LUCID project is also available in [these repositories](https://github.com/orgs/sdsc-ordes/repositories?q=nds-lucid).* 
 
 ## Code overview
 
@@ -136,7 +141,7 @@ nextflow run main.nf -profile biomedit -w /data/work/  --rerun=true
 nds-lucid/ingestion was originally written by Stefan Milosavljevic and Cyril Matthey-Doret.
 
 
-## Citations
+## References
 
 This pipeline uses code developed and maintained by the [nf-core](https://nf-co.re) community, reused here under the [MIT license](https://github.com/nf-core/tools/blob/master/LICENSE).
 
