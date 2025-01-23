@@ -139,6 +139,10 @@ nextflow run main.nf -profile biomedit -w /data/work/  --rerun=true
 ## Credits
 
 nds-lucid/ingestion was originally written by Stefan Milosavljevic and Cyril Matthey-Doret.
+  
+Cite this work by getting citation information from the GitHub menu on the right or the [Zenodo DOI record](https://doi.org/10.5281/zenodo.14726408), or like below (APA style citation):
+ 
+Milosavljevic, S., Matthey-Doret, C., & Riba Grognuz, O. (2025). LUCID BioMedIT Ingestion Pipeline v0.0.1 (v0.0.1). Zenodo. https://doi.org/10.5281/zenodo.14726408
 
 
 ## References
